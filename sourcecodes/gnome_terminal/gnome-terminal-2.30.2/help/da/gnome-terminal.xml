@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "GNOME Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="da"> 
+  <articleinfo> 
+     <title>Manual til GNOME-terminal</title> 
+     <abstract role="description">
+       <para>Terminalen giver brugere muligheden for at kommunikere med deres system ved brug af tekstbaserede kommandoer gennem en skal såsom Bash.</para>
+     </abstract>
+     <copyright> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright>
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright><copyright><year>2009.</year><holder>Ask Hjorth Larsen (asklarsen@gmail.com)</holder></copyright>	 
+     <publisher> 
+        <publishername>GNOME-dokumentationsprojektet</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne givet i GNU Free Documentation License (GFDL), version 1.1 eller enhver nyere version udgivet af Free Software Foundation uden invariante afsnit, uden forsidetekster, og uden bagsidetekster. Du kan findeen kopi af GFDL'en her: <ulink type="help" url="ghelp:fdl">link</ulink>, eller i filen COPYING-DOCS der distribueres med denne manual.</para>
+          <para>Denne manual er en del af GNOME-manualsamlingen distribueret under GFDL'en. Hvis du vil distribuere denne manual separat fra denne samling, kan du gøre det ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 af licensen.</para>
+ 
+         <para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er betegnet som mærkevarer. Der hvor de navne optræder i en GNOME-dokumentation, og medlemmerne af GNOME-dokumantationsprojektet er blevet gjort opmærksomme på disse varemærker, så er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+ 
+         <para>DETTE DOKUMENT OG MODIFICEREDE VERSIONER GØRES TILGÆNGELIGT UNDER BETINGELSERNE I GNU FREE DOKUMENTATION LICENS UNDER DEN FORUDSÆTNING AT: <orderedlist>
+                 <listitem>
+                   <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE FORBEHOLDSERKLÆRING; OG</para>
+                 </listitem>
+                 <listitem>
+                   <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDSTE SKADENDE HANDLING (INKLUSIV UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIV, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTER-FEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author> 
+          <firstname>Sun</firstname> 
+          <surname>GNOME-dokumentationsholdet</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>GNOME-dokumentationsprojektet</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>GNOME-dokumentationsprojektet</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>GNOME-dokumentationsprojektet</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>GNOME-dokumentationsprojektet</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision> 
+          <revnumber>Manual til GNOME-terminal, V2.9</revnumber> 
+          <date>Januar 2010</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler <email>pcutler@gnome.org</email></para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision> 
+	<revision> 
+          <revnumber>Manual til GNOME-terminal V2.8</revnumber> 
+          <date>March 2009</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual til GNOME-terminal V2.7</revnumber> 
+          <date>November 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual til GNOME-terminal V2.6</revnumber> 
+          <date>September 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual til GNOME-terminal V2.5</revnumber> 
+          <date>Maj 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+			<revision> 
+          <revnumber>Manual til GNOME-terminal V2.4</revnumber> 
+          <date>Januar 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual til GNOME-terminal V2.3</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual til GNOME-terminal V2.2</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual til GNOME-terminal V2.1</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual til GNOME-terminal V2.0</revnumber> 
+          <date>April 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME-dokumentationsholdet</para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Brugerguide til GNOME-terminal</revnumber> 
+          <date>Maj 2000</date> 
+          <revdescription> 
+             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email></para>
+             <para role="publisher">GNOME-dokumentationsprojektet</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Denne manual beskriver version 2.30 af GNOME-terminal.</releaseinfo> 
+     <legalnotice> 
+        <title>Tilbagemelding</title> 
+        <para>Følg vejledningen i <ulink url="ghelp:user-guide?feedback" type="help">GNOME-tilbagemeldingssiden</ulink> for at rapportere fejl eller komme med forslag til programmet GNOME-terminal eller denne manual.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+     <primary>GNOME Terminal</primary> 
+  </indexterm> 
+  <indexterm> 
+     <primary>terminalprogram</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-terminal-introduction"> 
+     <title>Introduktion</title> 
+     <para><application>GNOME-terminal</application> er et terminalemulatorprogram, som du kan bruge til at udføre følgende opgaver:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Tilgå en UNIX-skal i GNOME-miljøet</term> 
+          <listitem> 
+             <para>En skal er et program, som fortolker og eksekverer kommandoer som du skriver i en kommandoprompt. Når du starter <application>GNOME-terminal</application>, vil programmet som standard starte den skal, du har angivet i din systemkonto. Du kan skifte til en anden skal på et hvilket som helst tidspunkt.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Kør ethvert program som er designet til at køre på VT102, VT220 eller <application>xterm</application>-terminaler</term> 
+          <listitem> 
+             <para><application>GNOME-terminal</application> emulerer <application>xterm</application>-programmet som udvikles af X-konsortiet. Endvidere emulerer programmet <application>xterm</application> DEC VT102-terminalen og understøtter også DEC VT200-undvigesekvenser. En undvigesekvens er en række af tegn, som begynder ned <keycap>Esc</keycap>-tegnet. <application>GNOME-terminal</application> accepterer alle undvigesekvenserne som VT102- og VT220-terminalerne bruger, som f.eks. til at placere markøren og rydde skærmen.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="gnome-terminal-get-started"> 
+     <title>Kom godt i gang</title> 
+     <para>De følgende afsnit beskriver hvordan <application>GNOME-terminal</application> startes.</para>
+     <sect2 id="gnome-terminal-to-start"> 
+        <title>Start af GNOME-terminal</title> 
+        <para>Du kan starte <application>GNOME-terminal</application> på følgende måder:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term><guimenu>Programmer</guimenu>-menuen</term> 
+             <listitem>
+                <para>Vælg <menuchoice><guimenu>Tilbehør</guimenu><guimenuitem>Terminal</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>Kommandolinje</term> 
+             <listitem> 
+                <para>Kør følgende kommando: <command>gnome-terminal</command></para>
+                <para>Du kan anvende kommandolinjetilvalg til at ændre måden hvorpå <application>GNOME-terminal</application> køres. Kør kommandoen <command>gnome-terminal --help</command> for at se disse tilvalg</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-first-start"> 
+        <title>Når du først starter GNOME-terminal</title> 
+        <para>Når du starter <application>GNOME-terminal</application> for første gang, vil programmet åbne et terminalvindue med en gruppe af standardindstillinger. Denne gruppe af standardindstillinger kaldes standardprofilen. Profilnavnet vises i titelbjælken af <application>GNOME-terminal</application>-vinduet.</para>
+        <figure id="gnome-terminal_default"> 
+          <title>Eksempel på standardvindue for GNOME-terminal</title> 
+          <screenshot> 
+             <screeninfo>Standardvindue for GNOME-terminal</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Standardvindue for GNOME-terminal</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Terminalvinduet viser en kommandoprompt hvor du kan skrive UNIX-kommandoer. Kommandoprompten kan være en %, #, &gt;, $, eller ethvert andet specialtegn. Markøren er placeret ved kommandoprompten. Når du indtaster en UNIX-kommando og trykker <keycap>Retur</keycap>, vil computeren eksekvere kommandoen. Som standard vil <application>GNOME-terminal</application> bruge standardskallen angivet for brugeren som starter programmet.</para>
+        <para><application>GNOME-terminal</application> indstiller også følgende miljøvariable:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Sættes til <literal>xterm</literal> som standard.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Sættes til <literal>gnome-terminal</literal> som standard.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Sættes til X11-vinduesidentifikatoren som standard.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="gnome-terminal-profiles"> 
+        <title>Terminalprofiler</title> 
+        <para>Du kan oprette en ny profil, og anvende den nye profil i terminalen for at ændre egenskaber såsom skrifttype, farve og effekter, rulleopførsel, vinduestitel og kompatibilitet. Du kan også angive en kommando i profilen, som køres automatisk når <application>GNOME-terminal</application> startes.</para>
+          <para>Du definerer hver terminalprofil i vinduet <guilabel>Redigerer profil</guilabel>, som kan tilgås fra <guimenu>Redigér</guimenu>-menuen. Du kan definere så mange forskellige profiler som du finder nødvendigt. Når du starter en terminal, kan du vælge profilen som du ønsker at bruge for denne terminal. Alternativt kan du ændre terminalprofilen, mens du bruger terminalen. Brug denne kommando til at angive en startprofil for en terminal når programmet startes fra kommandolinjen:</para>
+        <para>
+          <command>gnome-terminal --window-with-profile=<replaceable>profilnavn</replaceable></command> 
+        </para>
+        <para>Navnet på den aktuelle profil vises i titelbjælken af <application>GNOME-terminal</application>, med mindre du angiver et andet navn til titelbjælken i vinduet <guilabel>Redigerer profil</guilabel>.</para>
+        <para>Se <xref linkend="gnome-terminal-manage-profiles"/> for information om hvordan man definerer og bruger en ny terminalprofil.</para>
+     </sect2> 
+     <sect2 id="gnome-terminal-more-windows"> 
+        <title>Arbejde med flere terminaler</title> 
+        <para>I <application>GNOME-terminal</application> er det muligt at anvende faneblade således at flere terminaler kan åbnes inden for samme vindue. Hver terminal åbnes således i et separat faneblad. Klik på et faneblad for at vise den tilsvarende terminalen i vinduet. Hvert terminalfaneblad i et vindue er en adskilt underproces, så du kan bruge hver terminal til forskellige opgaver. Du kan anvende forskellige profiler i hver fanebladsterminal i vinduet.</para>
+       <para>Titelbjælken af terminalvinduet viser enten navnet på den aktuelle profil, eller navnet angivet af den aktuelle profil. <xref linkend="gnome-terminal-tabbed"/> viser et <application>GNOME-terminal</application>-vindue med fire faneblade. I dette eksempel bruger hver af de fire faneblade forskellige profiler. Navnet af profilen i det aktive faneblad, Profile 1, vises i titelbjælken.</para>
+        <figure id="gnome-terminal-tabbed"> 
+          <title>Eksempel på et terminalvindue med bjælker</title> 
+          <screenshot> 
+             <screeninfo>Standardvindue for GNOME-terminal</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Standardvindue for GNOME-terminal</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Se <xref linkend="gnome-terminal-windows"/> for information om hvordan man åbner en ny fanebladsterminal.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="gnome-terminal-usage"> 
+     <title>Brug</title> 
+
+     <sect2 id="gnome-terminal-windows"> 
+        <title>Åbn og luk terminaler</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Åbn et nyt terminalvindue:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Åbn terminal</guimenuitem></menuchoice>.</para>
+                <para>Den nye terminal arver programindstillingerne og standardskallen fra ophavsterminalen.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Luk et terminal vindue:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Luk vindue</guimenuitem></menuchoice>.</para>
+                <para>Denne handling lukker terminalen og eventuelle underprocesser som du har åbnet fra den. Hvis du lukker det sidste terminalvindue, vil <application>GNOME-terminal</application> afsluttes.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Tilføj ny fanebladsterminal til et vindue:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Fil</guimenu><guisubmenu>Åbn faneblad</guisubmenu><guimenuitem>Forvalgt</guimenuitem></menuchoice> eller blot <menuchoice><guimenu>Fil</guimenu><guimenuitem>Åbn faneblad</guimenuitem></menuchoice> hvis der ikke er nogen undermenu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>At vise en fanebladsterminal:</term> 
+             <listitem> 
+                <para>Klik på fanebladet for den fanebladsterminal, du ønsker at se, eller vælg en fanebladstitel fra <guimenu>Faneblade</guimenu>-menuen.</para>
+                <para>Alternativt kan du vælge <menuchoice><guimenu>Faneblade</guimenu><guimenuitem>Næste faneblad</guimenuitem></menuchoice> eller <menuchoice><guimenu>Faneblade</guimenu><guimenuitem>Foregående faneblad</guimenuitem></menuchoice> for at navigere rundt mellem faneblade.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Luk en fanebladsterminal:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Vis fanebladsterminalen, du ønsker at lukke.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Luk faneblad</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-manage-profiles"> 
+        <title>Håndtering af profiler</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Tilføjelse af ny profil:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Ny profil</guimenuitem></menuchoice> for at vise vinduet <guilabel>Ny profil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Skriv det nye profilnavn i <guilabel>Profilnavn</guilabel>-tekstfeltet.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Brug rullegardinslisten <guilabel>Basér på</guilabel> til at vælge den profil, du vil basere den nye profil på.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klik på <guibutton>Opret</guibutton> for at vise vinduet <guilabel>Redigerer profil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klik på <guibutton>Luk</guibutton>. <application>GNOME-terminal</application> tilføjer profilen til <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Skift profil</guisubmenu></menuchoice>-undermenuen.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Skift profil for en fanebladsterminal:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Klik på fanebladet for den fanebladsterminal hvis profil du vil ændre.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Vælg <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Skift profil</guisubmenu><guimenuitem><replaceable>profilnavn</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Redigér en profil:</term> 
+             <listitem> 
+                <para>Du kan redigere profiler i <guilabel>Redigerer profil</guilabel>-vinduet. Du kan tilgå <guilabel>Redigerer profil</guilabel>-vinduet på følgende måder:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guisubmenu>Profilindstillinger</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Højreklik i terminalvinduet, og vælg så <guimenuitem>Redigér den aktuelle profil</guimenuitem> fra pop op-menuen.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guisubmenu>Profiler</guisubmenu></menuchoice>, vælg profilen du vil redigere, og klik så <guibutton>Redigér</guibutton>. Se <xref linkend="gnome-terminal-prefs"/> for yderligere information om profilindstillinger.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Slet en profil:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Profiler...</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Vælg navnet på den profil du vil slette i <guilabel>Profiler</guilabel>-listen, og klik så <guibutton>Slet</guibutton>. Vinduet <guilabel>Slet profil</guilabel> vises så.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klik på <guibutton>Slet</guibutton> for at bekræfte handlingen.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klik <guibutton>Luk</guibutton> for at lukke vinduet <guilabel>Redigér profiler</guilabel>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-tabs"> 
+        <title>Ændring af et terminalvindue</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Skjul menubjælken:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Vis menubjælke</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Vis en skjult menubjælke:</term> 
+             <listitem> 
+                <para>Højreklik på terminalvinduet, og vælg så <guimenuitem>Vis menubjælke</guimenuitem> fra pop op-menuen.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Vis <application>GNOME-terminal</application>-vinduet i fuldskærmstilstand:</term>
+            <listitem>
+              <para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Fuldskærm</guimenuitem></menuchoice>. Fuldskærmstilstand viser teksten i et vindue, som fylder hele skærmen. Dette vindue indeholder ikke en vinduesramme eller titellinje. Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Fuldskærm</guimenuitem></menuchoice> igen for at gå ud af denne tilstand.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Ændr udseende af terminalvinduet:</term> 
+             <listitem> 
+                <para>Se <xref linkend="gnome-terminal-prefs"/> for information om de indstillinger, du kan vælge i vinduet <guilabel>Redigerer profil</guilabel> vedrørende terminalvinduets udseende. For eksempel kan du ændre baggrundsfarven eller placeringen af rullebjælken.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-contents"> 
+        <title>Arbejde med terminalvinduernes indhold</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Rul gennem tidligere kommando og uddata:</term> 
+             <listitem> 
+                <para>Udfør en af de følgende handlinger:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Brug rullebjælken, som normalt vises til højre for terminalvinduet.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Tryk på <keycombo><keycap>Skift</keycap><keycap>Page Up</keycap></keycombo>, <keycombo><keycap>Skift</keycap><keycap>Page Down</keycap></keycombo>, <keycombo><keycap>Skift</keycap><keycap>Home</keycap></keycombo>, eller <keycombo><keycap>Skift</keycap><keycap>End</keycap></keycombo>-tastekombinationen.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Antallet af linjer, du kan rulle tilbage i terminalvinduet, bestemmes af indstillingen <guilabel>Tilbagerulning</guilabel> i fanebladet <guilabel>Rulning</guilabel> i vinduet <guilabel>Redigerer profil</guilabel>. Du kan også rulle op eller ned en linje ad gangen ved at trykke <keycombo><keycap>Ctrl</keycap><keycap>Skift</keycap><keycap>Op</keycap></keycombo> eller <keycombo><keycap>Ctrl</keycap><keycap>Skift</keycap><keycap>Ned</keycap></keycombo>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Markér og kopiér tekst:</term> 
+             <listitem> 
+                <para>Du kan markere tekst på enhver af de følgende måder:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Vil du markere et enkelt tegn ad gangen, så klik på det første tegn du vil markere, og træk så musen til det sidste tegn, du vil markere.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Vil du markere et ord ad gangen, så dobbeltklik på det første ord du vil markere og træk så musen til det sidste ord, du vil markere. Symboler markeres individuelt.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Vil du vælge en linje ad gangen, så tripelklik på den første linje, du vil markere og træk så musen til den sidste linje, du vil markere.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Disse handlinger vælger al tekst mellem første og sidste element. For enhver tekstmarkering vil <application>GNOME-terminal</application> kopiere den markerede tekst til klippebordet, når du slipper musetasten. Hvis du eksplicit vil kopiere den markerede tekst, så vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Kopiér</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Indsæt tekst i en terminal:</term> 
+             <listitem> 
+                <para>Hvis du tidligere har kopieret tekst til klippebordet, kan du indsætte denne tekst i en terminal ved at udføre en af følgende handlinger:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>For at indsætte tekst som du har kopieret kun ved markering, så mellemklik i kommandoprompten. Hvis du ikke har en midtermusetast, så se X-serverdokumentationen for informationer om hvordan mellemklik emuleres.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Indsæt</guimenuitem></menuchoice> for at indsætte tekst som du eksplicit har kopieret.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Træk et filnavn ind i et terminalvindue:</term> 
+             <listitem> 
+                <para>Du kan trække et filnavn ind i en terminal fra et andet program såsom et filhåndteringsprogram. Terminalen viser stien samt filens fulde navn.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Tilgå et link:</term> 
+             <listitem> 
+                <para>Udfør følgende trin for at tilgå en Uniform Ressourcelokator (URL) som bliver vist i terminalen:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Flyt musemarkøren hen over URL'en indtil URL'en er understreget.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Højreklik på URL'en for at åbne en pop op-menu.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Vælg <guimenuitem>Åbn adresse</guimenuitem> for at starte et linkprogram og vise filen placeret på den pågældende URL.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-shortcuts"> 
+        <title>Vis indstillinger for tastaturgenveje</title> 
+        <para>Du kan se indstillingerne for tastaturgenveje defineret for <application>GNOME-terminal</application> ved at vælge <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Tastaturgenveje</guimenuitem></menuchoice>. Vinduet <guilabel>Tastaturgenveje</guilabel> indeholder følgende elementer:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term><guilabel>Deaktivér alle menugenvejstaster (såsom Alt+f for at åbne Fil-menuen)</guilabel></term> 
+             <listitem> 
+                <para>Fravælg denne indstilling for at deaktivere genvejstasterne, der er defineret til at lade dig bruge tastaturet frem for musen til at vælge menuelementer. Hver genvejstast er identificeret ved et understreget tegn i en menu eller et tilsvarende element. I visse tilfælde skal du trykke <keycap>Alt</keycap>-tasten i forbindelse med genvejstasten for at udføre handlingen.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Deaktivér menugenvejstast (F10 som standard)</guilabel></term> 
+             <listitem> 
+                <para>Fravælg denne indstilling for at deaktivere genvejstasten der er defineret til at lade dig tilgå <application>GNOME-terminal</application>-menuerne. Standardgenvejstasten til at tilgå menuerne er <keycap>F10</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Genvejstaster</guilabel></term> 
+             <listitem> 
+                <para>Afsnittet <guilabel>Genvejstaster</guilabel> i vinduet anfører genvejstasterne som er defineret for hvert menuelement.</para>
+                <note><para>Ikke alle taster kan bruges som genvejstaster, herunder f.eks. <keycap>Tabulatortast</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="gnome-terminal-resize">
+	<title>Tekststørrelse</title>
+	<para>Du kan ændre tekststørrelsen i GNOME-terminalvinduet på følgende måder:</para>
+		<itemizedlist>
+			<listitem><para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Zoom ind</guimenuitem></menuchoice> for at forstørre teksten.</para>
+			</listitem>
+			<listitem><para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Zoom ud</guimenuitem></menuchoice> for at formindske teksten.</para>
+			</listitem>
+			<listitem><para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Normal størrelse</guimenuitem></menuchoice> for at vise teksten i normal størrelse.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-title"> 
+        <title>Ændr terminaltitlen</title> 
+        <para>Udfør følgende trin for at ændre titlen for den nuværende terminal:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Sæt titel</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Skriv den nye titel i <guilabel>Titel</guilabel>-tekstfeltet. <application>GNOME-terminal</application> anvender ændringen omgående.</para>
+          </listitem>
+          <listitem>
+            <para>Klik på <guibutton>Luk</guibutton> for at lukke <guilabel>Sæt titel</guilabel>-vinduet.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="gnome-terminal-encoding"> 
+        <title>Ændr tegnkodning</title> 
+        <para>Vil du ændre tegnkodning, så vælg <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Sæt tegnkodning</guisubmenu></menuchoice>, og vælg så den ønskede tegnkodning.</para>
+
+     <sect3 id="gnome-terminal-encoding-add"> 
+        <title>Ændr listen af tegnkodninger</title> 
+        <para>Udfør følgende trin for at ændre i listen af tegnkodninger som vises i <guisubmenu>Sæt tegnkodning</guisubmenu>-menuen:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Sæt tegnkodning</guisubmenu><guimenuitem>Tilføj eller fjern</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Vil du tilføje en tegnkodning til <guisubmenu>Sæt tegnkodning</guisubmenu>-menuen, så vælg tegnkodningen i listen <guilabel>Tilgængelige kodninger</guilabel> og klik den højre pileknap.</para>
+          </listitem>
+          <listitem>
+            <para>Vil du fjerne en tegnkodning fra <guisubmenu>Sæt tegnkodning</guisubmenu>-menuen, så vælg tegnkodningen i <guilabel>Kodninger der vises i menu:</guilabel>-listen, og klik så venstre pileknap.</para>
+          </listitem>
+          <listitem>
+            <para>Klik <guibutton>Luk</guibutton> for at lukke <guilabel>Tilføj eller fjern terminalkodninger</guilabel>-vinduet.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-reset"> 
+        <title>Genskab din terminal</title> 
+        <para>Dette afsnit indeholder råd i tilfælde af problemer med terminaler.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Nulstil terminalens tilstand:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Nulstil</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Nulstil terminalen og ryd skærmen:</term> 
+             <listitem> 
+                <para>Vælg <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Nulstil og ryd</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="gnome-terminal-prefs"> 
+     <title>Indstillinger</title> 
+     <para>For at konfigurere <application>GNOME-terminal</application> skal du vælge <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Nuværende profil</guimenuitem></menuchoice>. For at konfigurere en anden profil som du har oprettet, så vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Profiler</guimenuitem></menuchoice>, vælg profilen du vil redigere, og klik så <guibutton>Redigér</guibutton>.</para>
+     <para>Vinduet <guilabel>Redigerer profil</guilabel> indeholder følgende faneblade, som du kan bruge til at indstille <application>GNOME-terminal</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="gnome-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="gnome-terminal-prefs-general"> 
+        <title>Generelt</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Profilnavn</guilabel> </term> 
+             <listitem> 
+                <para>Brug dette tekstfelt til at angive navnet på den nuværende profil.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Brug systemets fastbreddeskrifttype</guilabel> </term>
+             <listitem> 
+                <para>Vælg denne indstilling for at bruge den forvalgte fastbreddeskrifttype som er angivet i <guilabel>Skrifttype</guilabel>-fanebladet af <application>Udseende</application>-indstillingsværktøjet.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Skrifttype</guilabel> </term> 
+             <listitem> 
+                <para>Klik på denne knap for at vælge en skrifttype og skriftstørrelse for terminalen. Denne knap er kun aktiveret hvis <guilabel>Brug systemets terminalskrifttype</guilabel> ikke er afkrydset.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Tillad fed tekst</guilabel> </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at aktivere fed tekst i terminalen.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Vis som standard menulinjen i nye terminaler</guilabel>
+                </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at vise menulinjen i nye terminalvinduer.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Terminalbip</guilabel> </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at aktivere terminalbippet.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Ordvælgningstegn</guilabel> </term> 
+             <listitem> 
+                <para>Brug dette tekstfelt til at angive tegn eller grupper af tegn som <application>GNOME-terminal</application> regner for at være ord, når du markerer tekst efter ord. Se <xref linked="gnome-terminal-contents"/> for yderligere information om hvordan tekst markeres efter ord.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-title"> 
+        <title>Titel og kommando</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Starttitel</guilabel> </term> 
+             <listitem> 
+                <para>Brug dette tekstfelt til at angive starttitlen for terminaler som bruger profilen. Nye terminaler som startes fra den nuværende profil har den nye starttitel.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Når terminalkommandoer sætter deres egne titler</guilabel> </term>
+             <listitem> 
+                <para>Brug denne rullegardinsliste til at angive hvordan dynamisk indstillede titler håndteres, hvorved forstås terminaltitler som sættes af kommandoer, der køres i terminalen.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Kør kommando som en logindskal</guilabel> </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at tvinge kommandoen der nu kører inden i terminalen til at køre som en logindskal. Hvis kommandoen ikke er en skal, har denne indstilling ingen effekt.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Opdatér log ind-opførsler når kommando køres</guilabel> </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at indsætte en ny post i logind-fortegnelserne når en ny skal åbnes.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Kør en brugerdefineret kommando i stedet for kommandoskallen</guilabel>
+                </term> 
+             <listitem> 
+                <para>Vælg denne indstilling for at køre en angivet kommando, frem for den normale skal, i terminalen. Angiv den brugertilpassede kommando i <guilabel>Brugerdefineret kommando</guilabel>-tekstfeltet.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Når kommando slutter</guilabel> </term> 
+             <listitem> 
+                <para>Brug denne rullegardinsliste til at angive den handling, der skal udføres når kommandoen afslutter.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-colors"> 
+        <title>Farver</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term> 
+                <guilabel>Forgrund og baggrund</guilabel>
+                </term> 
+             <listitem> 
+                <para>Vælg indstillingen <guilabel>Benyt farver fra systemtemaet</guilabel> for at bruge farver som er angivet i GNOME-skrivebordstemaet.  Temaet vælges i <guilabel>Tema</guilabel>-fanebladet i indstillingsværktøjet <ulink type="help" url="ghelp:user-guide?prefs-theme"><application>Udseende</application></ulink>.</para>
+                <para>Brug rullegardinslisten <guilabel>Indbyggede skemaer</guilabel> til at angive forgrunds- og baggrundsfarverne for terminalen. <application>GNOME-terminal</application> understøtter følgende forgrunds- og baggrundsfarvekombinationer:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Sort på lysegul</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para>
+                        <guilabel>Sort på hvid</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Grå på sort</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Grøn på sort</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Hvid på sort</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Brugertilpasset</guilabel> 
+                     </para>
+                     <para>Denne indstilling lader dig vælge farver, som ikke er i det valgte farveskema.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Det faktiske udseende af forgrunds- og baggrundsfarverne kan variere afhængigt af det farveskema, du vælger. Hvis du eksempelvis vælger <guilabel>Hvid på sort</guilabel> med farveskemaet <guilabel>Linux console</guilabel>, vil programmet vise forgrunds- og baggrundsfarverne som lysegrå på sort. Rullegardinslisten <guilabel>Indbyggede skemaer</guilabel> er kun aktiveret, hvis <guilabel>Benyt farver fra systemtemaet</guilabel> ikke er krydset af.</para>
+                <para>Klik på knappen <guibutton>Tekstfarve</guibutton> for at vise vinduet <guilabel>Vælg tekstfarve</guilabel>. Brug farvehjulet eller rulleknapperne til at tilpasse farven, du ønsker at anvende til teksten, og klik så på <guibutton>O.k.</guibutton>. Knappen <guibutton>Tekstfarve</guibutton> er kun aktiveret hvis <guilabel>Benyt farver fra systemtemaet</guilabel> ikke er afkrydset.</para>
+                <para>Klik på knappen <guibutton>Baggrundsfarve</guibutton> for at vise vinduet <guilabel>Vælg baggrundsfarve</guilabel>. Brug farvehjulet eller rulleknapperne til at tilpasse den farve, du ønsker at anvende som baggrund, og klik så <guibutton>O.k.</guibutton>. Knappen <guibutton>Baggrundsfarve</guibutton> er kun aktiveret, hvis <guilabel>Benyt farver fra systemtemaet</guilabel> er afkrydset.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Farvepalet</guilabel></term> 
+             <listitem> 
+                <para>Terminalemulatoren kan kun anvende 16 farver ad gangen til at tegne tekst. Farvepaletten angiver disse 16 farver. Programmer, der kører i terminalen, kan bruge et indekseringstal til at angive en farve fra denne palet.</para>
+               <para>Brug rullegardinsmenuen <guilabel>Indbyggede skemaer</guilabel> til at vælge et prædefineret farvetema. Farvepaletten herunder og indholdet af terminalvinduet vil begge blive opdateret til at vise skemaet.</para>
+               <para>Brug <guilabel>Farvepalet</guilabel>ten til at tilpasse de 16 standardfarver i farvetilpasningspaletten. Klik på en farve for at tilpasse den, hvilket vil vise vinduet <guilabel>Vælg paletfarve</guilabel>. Brug farvehjulet eller rulleknapperne til at tilpasse farven, og klik så <guibutton>O.k.</guibutton>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-effects"> 
+        <title>Effekter</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Baggrund</guilabel> </term> 
+             <listitem> 
+                <para>Vælg en baggrund for terminalvinduet. Der er følgende muligheder:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Ensfarvet</guilabel>
+                     </para>
+                     <para>Vælg denne indstilling for at bruge baggrundsfarven som er angivet i fanebladet <guilabel>Farver</guilabel> som baggrundsfarve for terminalen.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Baggrundsbillede</guilabel> 
+                     </para>
+                     <para>Vælg denne indstilling for at benytte en billedfil som baggrund for terminalen. Brug rullegardinskombinationsfeltet <guilabel>Billedfil</guilabel> til at angive placeringen og navnet på billedfilen. Alternativt kan du klikke på <guibutton>Gennemse</guibutton> for at søge efter billedfilen.</para>
+                     <para>Vælg <guilabel>Baggrundsbillede ruller</guilabel> for at lade baggrundsbilledet rulle med teksten når du ruller gennem terminalen. Hvis du ikke aktiverer denne indstilling, vil baggrundsbilledet forblive fastholdt i terminalbaggrunden og kun teksten ruller. Denne indstilling aktiveres kun hvis du anvender <guilabel>Baggrundsbillede</guilabel>-indstillingen.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Gennemsigtig baggrund</guilabel> 
+                     </para>
+                     <para>Vælg denne indstilling for at bruge en gennemsigtig baggrund for terminalen.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Gør gennemsigtige og billedbaggrunde mørkere</guilabel>
+                </term> 
+             <listitem> 
+                <para>Brug denne skyder til at formørke eller dæmpe terminalbaggrunden. Denne indstilling aktiveres kun hvis du vælger enten <guilabel>Baggrundsbillede</guilabel>- eller <guilabel>Gennemsigtig baggrund</guilabel>-indstillingen.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-prefs-scrolling">
+    <title>Rulning</title>
+     <variablelist>
+     <varlistentry> 
+             <term> 
+                <guilabel>Rullebjælke er</guilabel> </term> 
+             <listitem> 
+                <para>Brug denne rullegardinsliste til at angive positionen af rullebjælken i terminalvinduet.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Tilbagerulning: ... linjer</guilabel> </term> 
+             <listitem> 
+                <para>Brug denne rulleknap til at angive antallet af linjer, du kan rulle tilbage ved hjælp af rullebjælken. Hvis du eksempelvis angiver 100, kan du rulle tilbage gennem de første 100 linjer vist i terminalen.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term> 
+                <guilabel>Rul ned ved uddata</guilabel> </term> 
+             <listitem> 
+                <para>Fravælg denne indstilling for at lade dig rulle gennem uddata i terminalvinduet mens terminalen fortsætter med at vise flere uddata fra en kommando.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Rul ned ved tastetryk</guilabel> </term> 
+             <listitem> 
+                <para>Afkryds denne indstilling for at lade dig trykke på en hvilken som helst tast på tastaturet for at rulle terminalvinduet ned til kommandoprompten. Denne handling gælder kun hvis du har rullet terminalvinduet op og ønsker at vende tilbage til kommandoprompten.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="gnome-terminal-prefs-compatibility"> 
+        <title>Kompatibilitet</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Slet-tilbage genererer</guilabel> </term> 
+             <listitem> 
+                <para>Brug rullegardinslisten til at vælge den funktion, du ønsker at <keycap>Slet-tilbage</keycap> skal udføre.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Slettetast genererer</guilabel> </term> 
+             <listitem> 
+                <para>Brug rullegardinslisten til at vælge den funktion, du ønsker at <keycap>Slettetast</keycap> skal udføre.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guibutton>Nulstil kompatibilitetsindstillinger til standardværdier</guibutton> </term> 
+             <listitem> 
+                <para>Klik på denne knap for at nulstille indstillingerne i fanebladet <guilabel>Kompatibilitet</guilabel> til standardindstillingerne.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

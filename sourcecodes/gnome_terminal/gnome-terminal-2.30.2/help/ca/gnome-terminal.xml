@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "GNOME Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="ca"> 
+  <articleinfo> 
+     <title>Manual del terminal del GNOME</title> 
+     <abstract role="description">
+       <para>
+	 The Terminal gives users the power to communicate with their system using
+text-based commands through a shell such as Bash.
+       </para>
+     </abstract>
+     <copyright> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright>
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright><copyright><year>2007-2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>	 
+     <publisher> 
+        <publishername>Projecte de documentació del GNOME</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+          <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+ 
+         <para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+ 
+         <para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+                 <listitem>
+                   <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+                 </listitem>
+                 <listitem>
+                   <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author> 
+          <firstname>Sun</firstname> 
+          <surname>Equip de documentació del GNOME</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>Projecte de documentació del GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>Projecte de documentació del GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>Projecte de documentació del GNOME</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>Projecte de documentació del GNOME</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision> 
+          <revnumber>GNOME Terminal Manual V2.9</revnumber> 
+          <date>January 2010</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler
+		<email>pcutler@gnome.org</email> </para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+	<revision> 
+          <revnumber>Manual del terminal del GNOME v2.8</revnumber> 
+          <date>March 2009</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual del terminal del GNOME v2.7</revnumber> 
+          <date>Novembre de 2003</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual del terminal del GNOME v2.6</revnumber> 
+          <date>Setembre de 2003</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Manual del terminal del GNOME v2.5</revnumber> 
+          <date>Maig de 2003</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+			<revision> 
+          <revnumber>Manual del terminal del GNOME v2.4</revnumber> 
+          <date>Gener de 2003</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual del terminal del GNOME v2.3</revnumber> 
+          <date>Agost de 2002</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual del terminal del GNOME v2.2</revnumber> 
+          <date>Agost de 2002</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual del terminal del GNOME v2.1</revnumber> 
+          <date>Agost de 2002</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Manual del terminal del GNOME v2.0</revnumber> 
+          <date>Abril de 2002</date> 
+          <revdescription> 
+             <para role="author">Equip de documentació del GNOME Sun</para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Guia d'usuari del terminal del GNOME</revnumber> 
+          <date>Maig de 2000</date> 
+          <revdescription> 
+             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email></para>
+             <para role="publisher">Projecte de documentació del GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo> This manual describes version 2.30 of GNOME Terminal.
+        </releaseinfo> 
+     <legalnotice> 
+        <title>Commentaris</title> 
+        <para>Per a informar d'un error o fer algun suggeriment quant al <application>terminal del GNOME</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:gnome-feedback" type="help">Pàgina de comentaris del GNOME</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+     <primary>Terminal del GNOME</primary> 
+  </indexterm> 
+  <indexterm> 
+     <primary>aplicació del terminal</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-terminal-introduction"> 
+     <title>Introducció</title> 
+     <para>El <application>terminal del GNOME</application> és una aplicació d'emulació del terminal que podeu utilitzar per a realitzar les tasques següents:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Accedir a l'intèrpret d'ordres de UNIX en l'entorn del GNOME</term> 
+          <listitem> 
+             <para>Un intèrpret d'ordres és un programa que interpreta i executa les ordres que introduïu en un indicador de línia d'ordres. Quan inicieu el <application>terminal del GNOME</application>, l'aplicació iniciarà l'intèrpret d'ordres que està especificat per defecte en el vostre compte del sistema. Podeu canviar a un altre intèrpret d'ordres en qualsevol moment.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Executeu qualsevol aplicació que estigui dissenyada per a ser executada en terminals VT102, VT220 i <application>xterm</application></term> 
+          <listitem> 
+             <para>El <application>terminal del GNOME</application> emula l'aplicació <application>xterm</application> desenvolupat per el X Consortium. Al seu torn, l'aplicació <application>xterm</application> emula el terminal DEC VT102 i també admet les seqüències d'escapada del DEC VT220. Una seqüència d'escapada és una serie de caràcters que s'inicien amb el caràcter <keycap>Esc</keycap>. El <application>terminal del GNOME</application> accepta totes les seqüències d'escapada que els terminals VT102 i VT220 utilitzen en funcions com ara situar el cursor i netejar la pantalla.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="gnome-terminal-get-started"> 
+     <title>Inici</title> 
+     <para>Les seccions següents descriuen com iniciar el <application>terminal del GNOME</application>.</para>
+     <sect2 id="gnome-terminal-to-start"> 
+        <title>Iniciant el terminal del GNOME</title> 
+        <para>Podeu iniciar el <application>terminal del GNOME</application> de les maneres següents:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Menú <guimenu>Aplicacions</guimenu></term> 
+             <listitem>
+                <para>Trieu <menuchoice><guimenu>Accessoris</guimenu><guimenuitem>Terminal</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>Línia d'ordres</term> 
+             <listitem> 
+                <para>Executeu l'ordre següent: <command>gnome-terminal</command></para>
+                <para>Podeu utilitzar les opcions de la línia d'ordres per a modificar la manera en què s'executa el <application>terminal del GNOME</application>. Per a visualitzar les opcions de la línia d'ordres, executeu l'ordre següent: <command>gnome-terminal --help</command></para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-first-start"> 
+        <title>Quan inicieu per primer cop el terminal del GNOME</title> 
+        <para>Quan inicieu el <application>terminal del GNOME</application> per primer cop, l'aplicació obre una finestra del terminal amb un grup de paràmetres per defecte. El grup de paràmetres per defectes s'anomena perfil predeterminat. El nom del perfil apareix en la barra del títol de la finestra del <application>terminal del GNOME</application>.</para>
+        <figure id="gnome-terminal_default"> 
+          <title>Exemple d'una finestra del terminal del GNOME predeterminada</title> 
+          <screenshot> 
+             <screeninfo>Finestra del terminal del GNOME predeterminada</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Finestra del terminal del GNOME predeterminada</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>La finestra del terminal mostra un indicador d'ordres on podeu introduir ordres UNIX. L'indicador d'ordres pot ser %, #, &gt;, $ o qualsevol altre caràcter especial. El cursor està situat a l'indicador d'ordres. Quan introduïu una ordre UNIX i premeu <keycap>Retorn</keycap>, l'ordinador executarà l'ordre. Per defecte, el <application>terminal del GNOME</application> utilitza l'intèrpret d'ordres predeterminat especificat per l'usuari que inicia l'aplicació.</para>
+        <para>El <application>terminal del GNOME</application> també estableix les variables següents de l'entorn:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Establert per defecte a <literal>xterm</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Establert per defecte a <literal>gnome-terminal</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Establert per defecte a l'identificador de finestres X11.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="gnome-terminal-profiles"> 
+        <title>Perfils del terminal</title> 
+        <para>Podeu crear un perfil nou i aplicar el perfil nou al terminal actual per a modificar les característiques, com ara el tipus de lletra, color i efectes, comportament del desplaçament, títol de la finestra i compatibilitat. També podeu especificar una ordre que s'executi automàticament quan inicieu el <application>terminal del GNOME</application> en el perfil.</para>
+          <para>Podeu definir cada perfil del terminal en el diàleg <guilabel>Edició del perfil</guilabel>, al qual podeu accedir des del menú <guimenu>Edita</guimenu>. Podeu definir tants perfils com necessiteu. Quan inicieu un terminal, podeu triar el perfil que voleu utilitzar en el terminal. També podeu canviar el perfil del terminal mentre utilitzeu el terminal. Per a especificar un perfil inicial pel terminal quan inicieu l'aplicació des d'un línia d'ordres, utilitzeu l'ordre següent:</para>
+        <para>
+          <command>gnome-terminal --window-with-profile=<replaceable>nom del perfil</replaceable></command> 
+        </para>
+        <para>El nom del perfil actual apareix en la barra del títol del <application>terminal del GNOME</application>, si no heu especificat un nom diferent a la barra del títol en el diàleg <guilabel>Edició del perfil</guilabel>.</para>
+        <para>Vegeu <xref linkend="gnome-terminal-manage-profiles"/> per a més informació quant a com definir i utilitzar un perfil del terminal nou.</para>
+     </sect2> 
+     <sect2 id="gnome-terminal-more-windows"> 
+        <title>Treballant amb múltiples terminals</title> 
+        <para>El <application>terminal del GNOME</application> proporciona una característica de pestanya que us permet obrir diferents terminals en una sola finestra. Cada terminal s'obra en una pestanya diferent. Cliqueu en la pestanya apropiada per a mostrar el terminal en la finestra. Cada pestanya de terminal en la finestra és un subprocés separat, de manera que podeu utilitzar cada terminal per a diferents tasques. Podeu aplicar diferents perfils a cada pestanya de terminal en la finestra.</para>
+       <para>La barra del títol de la finestra del terminal mostra el nom del perfil actual o el nom especificat pel perfil actual. <xref linkend="gnome-terminal-tabbed"/> mostra una finestra del <application>terminal del GNOME</application> amb quatre pestanyes. En aquest cas, cada una de les quatre pestanyes té un perfil diferent. El nom del perfil en la pestanya activa, Perfil 1, apareix en la barra del títol.</para>
+        <figure id="gnome-terminal-tabbed"> 
+          <title>Exemple d'una finestra del terminal amb pestanyes</title> 
+          <screenshot> 
+             <screeninfo>Finestra del terminal del GNOME predeterminada</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Finestra del terminal del GNOME predeterminada</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Vegeu <xref linkend="gnome-terminal-windows"/> per a més informació quant a com obrir una pestanya de terminal nova.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="gnome-terminal-usage"> 
+     <title>Utilització</title> 
+
+     <sect2 id="gnome-terminal-windows"> 
+        <title>Obrint i tancant terminals</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a obrir una finestra del terminal nova:</term> 
+             <listitem> 
+                <para>Trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Obre un terminal</guimenuitem></menuchoice>.</para>
+                <para>El terminal nou hereta els paràmetres de l'aplicació i de l'intèrpret d'ordres predeterminat del terminal pare.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a tancar una finestra del terminal:</term> 
+             <listitem> 
+                <para>Trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Tanca la finestra</guimenuitem></menuchoice>.</para>
+                <para>Aquesta acció tanca el terminal i qualsevol subprocés que hàgiu obert des del terminal. Si tanqueu l'última finestra del terminal, l'aplicació <application>terminal del GNOME</application> finalitzarà.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a afegir una pestanya de terminal nova a una finestra:</term> 
+             <listitem> 
+                <para>Escolliu <menuchoice><guimenu>Fitxer</guimenu><guisubmenu>Obre una pestanya</guisubmenu><guimenuitem>Predeterminat</guimenuitem></menuchoice> o només <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Obre una pestanya</guimenuitem></menuchoice> si no hi ha cap submenú.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a mostrar una pestanya de terminal:</term> 
+             <listitem> 
+                <para>Cliqueu en la pestanya de la pestanya de terminal que voleu mostrar, o seleccioneu el títol d'una pestanya del menú <guimenu>Pestanyes</guimenu>.</para>
+                <para>D'altra manera, trieu <menuchoice><guimenu>Pestanyes</guimenu><guimenuitem>Pestanya següent</guimenuitem></menuchoice> o <menuchoice><guimenu>Pestanyes</guimenu><guimenuitem>Pestanya anterior</guimenuitem></menuchoice> per a navegar entre pestanyes.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a tancar una pestanya de terminal:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Mostreu la pestanya de terminal que voleu tancar.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Tanca la pestanya</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-manage-profiles"> 
+        <title>Gestionant els perfils</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a afegir un perfil nou:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Perfil nou</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Perfil nou</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Introduïu el nom del perfil nou en el quadre de text <guilabel>Nom del perfil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Utilitzeu la llista desplegable <guilabel>Basat en</guilabel> per a seleccionar el perfil en què voleu basar el perfil nou.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Cliqueu <guibutton>Crea</guibutton> per a mostrar del diàleg <guilabel>Edició del perfil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Cliqueu <guibutton>Tanca</guibutton>. El <application>terminal del GNOME</application> afegirà el perfil al submenú <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Canvia de perfil</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a canviar el perfil d'una pestanya de terminal:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Cliqueu en la pestanya de la pestanya de terminal a la que voleu canviar el perfil.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Trieu <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Canvia de perfil</guisubmenu><guimenuitem><replaceable>nom del perfil</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a editar un perfil:</term> 
+             <listitem> 
+                <para>Editeu els perfiles en el diàleg <guilabel>Edició del perfil</guilabel>. Podeu accedit al diàleg <guilabel>Edició del perfil</guilabel> de les maneres següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Trieu <menuchoice><guimenu>Edita</guimenu><guisubmenu>Perfil actual</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Premeu el botó dret del ratolí en la finestra del terminal, després trieu <guimenuitem>Edita el perfila actual</guimenuitem> en el menú emergent.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Trieu <menuchoice><guimenu>Edita</guimenu><guisubmenu>Perfils</guisubmenu>, seleccioneu el perfil que voleu editar i cliqueu a <guibutton>Edita</guibutton>. Per a més informació de les opcions que podeu establir en els perfils, vegeu <xref linkend="gnome-terminal-prefs"/>.</menuchoice></para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a suprimir un perfil:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Trieu <menuchoice><guimenu>Edita</guimenu><guisubmenu>Perfils</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Seleccioneu el nom del perfil que voleu suprimir en la llista de <guilabel>Perfils</guilabel>, després cliqueu <guibutton>Suprimeix</guibutton>. Es mostrarà el diàleg <guilabel>Elimina el perfil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Cliqueu <guibutton>Suprimeix</guibutton> per a confirmar.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Cliqueu <guibutton>Tanca</guibutton> per a tancar el diàleg <guilabel>Perfils</guilabel>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-tabs"> 
+        <title>Modificant una finestra del terminal</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a ocultar la barra del menú:</term> 
+             <listitem> 
+                <para>Trieu <menuchoice><guimenu>Visualitza</guimenu><guisubmenu>Mostra la barra del menú</guisubmenu></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a mostrar la barra del menú:</term> 
+             <listitem> 
+                <para>Premeu el botó dret del ratolí en la finestra del terminal, després trieu <guimenuitem>Mostra la barra del menú</guimenuitem> en el menú emergent.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Per a mostrar la finestra del <application>terminal del GNOME</application> en mode pantalla completa:</term>
+            <listitem>
+              <para>Trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Pantalla completa</guimenuitem></menuchoice>. El mode pantalla completa mostra el text en una finestra que omple tota la pantalla. La finestra no conté ni marc de finestra ni barra del títol. Per a sortir d'aquest mode, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Pantalla completa</guimenuitem></menuchoice> un altre cop.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Per a canviar l'aparença de la finestra del terminal:</term> 
+             <listitem> 
+                <para>Vegeu <xref linkend="gnome-terminal-prefs"/> per a més informació quant a les opcions que podeu triar en el diàleg <guilabel>Edició del perfil</guilabel> per a canviar l'aparença de la finestra del terminal. Per exemple, podeu canviar el color de fons o la ubicació de la barra de desplaçament.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-contents"> 
+        <title>Treballant amb el contingut de les finestres del terminal</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a desplaçar-vos a través d'ordres i text anteriors:</term> 
+             <listitem> 
+                <para>Realitzeu una de les accions següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Utilitzeu la barra de desplaçament, que normalment es mostra a la dreta de la finestra del terminal.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Premeu les tecles <keycombo><keycap>Majúscules</keycap><keycap>Retrocedir pàgina</keycap></keycombo>, <keycombo><keycap>Majúscules</keycap><keycap>Avançar pàgina</keycap></keycombo>, <keycombo><keycap>Majúscules</keycap><keycap>Inici</keycap></keycombo> o <keycombo><keycap>Majúscules</keycap><keycap>Final</keycap></keycombo>.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <guilabel>Scrollback</guilabel> setting in the <guilabel>Scrolling</guilabel> tabbed section of the <guilabel>Editing Profile</guilabel> dialog.  You can also scroll up or down one line at a time by pressing <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Up</keycap></keycombo> or <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Down</keycap></keycombo>. </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a seleccionar i copiar un text:</term> 
+             <listitem> 
+                <para>Podeu seleccionar text en qualsevol de les maneres següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Per a seleccionar els caràcters d'un en un, cliqueu en el primer caràcter que voleu seleccionar i arrossegueu el ratolí fins a l'últim caràcter que voleu seleccionar.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per a seleccionar les paraules d'una en una, feu un doble clic en la primera paraula que voleu seleccionar i arrossegueu el ratolí fins a l'última paraula que voleu seleccionar. Els símbols són seleccionats individualment.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per a seleccionar les línies d'una en una, feu un triple clic en la primera línia que voleu seleccionar i arrossegueu el ratolí fins a l'última línia que voleu seleccionar.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Aquestes accions seleccionen tot el text entre el primer i l'últim element. En totes les seleccions de text, el <application>terminal del GNOME</application> copia el text seleccionat en el porta-retalls en el moment en què deixeu de prémer el botó del ratolí. Per a copiar explícitament el text seleccionat, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Copia</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a enganxar en un terminal:</term> 
+             <listitem> 
+                <para>Si heu copiat anteriorment el text en el porta-retalls, podeu enganxar el text en un terminal realitzant una de les accions següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Per a enganxar el text que heu copiat només seleccionant-lo, premeu el botó central del ratolí a l'indicador d'ordres. Si no teniu un ratolí amb botó central, consulteu la documentació del servidor X per a més informació quant a com emular el botó central del ratolí.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per a enganxar el text que heu copiat explícitament, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Enganxa</guimenuitem></menuchoice>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a arrossegar un nom de fitxer en una finestra del terminal:</term> 
+             <listitem> 
+                <para>Podeu arrossegar un nom de fitxer a un terminal des d'una altra aplicació com ara un gestor de fitxers. El terminal mostrarà la ruta i el nom complet del fitxer.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per a accedir a un enllaç:</term> 
+             <listitem> 
+                <para>Per a accedir a un URL (Uniform Resource Locator) mostrat en un terminal, realitzeu els passos següents:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Moveu el ratolí per sobre del URL fins que aquest estigui subratllat.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Premeu el botó dret del ratolí en el URL per a obrir un menú emergent.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Trieu <guimenuitem>Obre l'enllaç</guimenuitem> per a iniciar una aplicació d'enllaç i mostrar el fitxer ubicat en la URL.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-shortcuts"> 
+        <title>Visualitzant els paràmetres de les dreceres de teclat</title> 
+        <para>Per a visualitzar els paràmetres de les dreceres de teclat que estan definits per al <application>terminal del GNOME</application>, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Dreceres de teclat</guimenuitem></menuchoice>. El diàleg <guilabel>Dreceres de teclat</guilabel> conté els elements següents:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term><guilabel>Inhabilita totes les tecles d'accés dels menús (com ara Alt+f per obrir el menú Fitxer)</guilabel></term> 
+             <listitem> 
+                <para>Anul·leu la selecció d'aquesta opció per a inhabilitar les tecles d'accés definides per a utilitzar el teclat enlloc del ratolí per a seleccionar un element del menú. Cada tecla d'accés està identificada per una lletra subratllada en una opció del menú o del diàleg. En alguns casos, heu de prémer la tecla <keycap>Alt</keycap> en combinació amb la tecla d'accés per a realitzar l'acció.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Inhabilita la tecla d'accés al menú (F10 per defecte)</guilabel></term> 
+             <listitem> 
+                <para>Anul·leu la selecció d'aquesta opció per a inhabilitar la tecla de drecera definida per a accedir als menús del <application>terminal del GNOME</application>. Per defecte la tecla de drecera per a accedir als menús és <keycap>F10</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Tecles de drecera</guilabel></term> 
+             <listitem> 
+                <para>La secció <guilabel>Dreceres</guilabel> del diàleg llista les tecles de drecera que estan definides per a cada element del menú.</para>
+                <note><para>No totes les tecles es poden utilitzar com a tecles de drecera, com ara la tecla <keycap>Tab</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="gnome-terminal-resize">
+	<title>Mida del text</title>
+	<para>Podeu utilitzar els mètodes següents per a canviar la mida del text en la finestra del terminal del GNOME:</para>
+		<itemizedlist>
+			<listitem><para>Per a incrementar la mida del text, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Amplia</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Per a reduir la mida del text, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Redueix</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Per a visualitzar el text en la mida actual, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Mida normal</guimenuitem></menuchoice>.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-title"> 
+        <title>Per a canviar el títol del terminal</title> 
+        <para>Per a canviar el títol del terminal mostrat actualment, realitzeu els passos següents:</para>
+        <orderedlist>
+          <listitem>
+            <para>Trieu <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Estableix el títol</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Introduïu el títol nou en el quadre de text <guilabel>Títol</guilabel>. El <application>terminal del GNOME</application> aplicarà el canvi immediatament.</para>
+          </listitem>
+          <listitem>
+            <para>Cliqueu <guibutton>Tanca</guibutton> per a tancar el diàleg <guilabel>Estableix el títol</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="gnome-terminal-encoding"> 
+        <title>Per a canviar la codificació dels caràcters</title> 
+        <para>Per a canviar la codificació de caràcters, trieu <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Estableix la codificació dels caràcters</guisubmenu></menuchoice> i seleccioneu la codificació apropiada.</para>
+
+     <sect3 id="gnome-terminal-encoding-add"> 
+        <title>Per a canviar la llista de codificacions dels caràcters</title> 
+        <para>Per a canviar la llista de codificacions dels caràcters mostrada en el menú <guisubmenu>Estableix la codificació dels caràcters</guisubmenu>, realitzeu els passos següents:</para>
+        <orderedlist>
+          <listitem>
+            <para>Trieu <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Estableix la codificació dels caràcters</guisubmenu><guimenuitem>Afegeix o elimina</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Per a afegir una codificació al menú <guisubmenu>Estableix la codificació des caràcters</guisubmenu>, seleccioneu la codificació en el quadre de llista <guilabel>Codificacions disponibles</guilabel> i feu clic al botó de fletxa dreta.</para>
+          </listitem>
+          <listitem>
+            <para>Per a suprimir una codificació del menú <guisubmenu>Estableix la codificació dels caràcters</guisubmenu>, seleccioneu la codificació en el quadre de llista <guilabel>Codificacions disponibles</guilabel> i feu clic al botó de fletxa esquerra.</para>
+          </listitem>
+          <listitem>
+            <para>Cliqueu <guibutton>Tanca</guibutton> per a tancar el diàleg <guilabel>Afegeix o suprimeix codificacions del terminal</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-reset"> 
+        <title>Per a recuperar el terminal</title> 
+        <para>Aquesta secció facilita algun consell si teniu problemes amb els terminals.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a reiniciar l'estat del terminal:</term> 
+             <listitem> 
+                <para>Trieu <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Reinicia</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per a reiniciar el terminal i netejar la pantalla:</term> 
+             <listitem> 
+                <para>Trieu <menuchoice><guimenu>Terminal</guimenu><guimenuitem>Reinicia i neteja</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="gnome-terminal-prefs"> 
+     <title>Preferències</title> 
+     <para>Per a configurar el <application>terminal del GNOME</application>, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Perfil actual</guimenuitem></menuchoice>. Per a configurar un altre perfil que heu creat trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Perfils</guimenuitem></menuchoice>, seleccioneu el perfil que voleu editar i cliqueu <guibutton>Edita</guibutton>.</para>
+     <para>El diàleg <guilabel>Edició del perfil</guilabel> conté les següents pestanyes, que podeu utilitzar per a configurar el <application>terminal del GNOME</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="gnome-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="gnome-terminal-prefs-general"> 
+        <title>General</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Nom del perfil</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquest quadre de text per a especificar el nom del perfil actual.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Utilitza el tipus de lletra d'amplada fixa del sistema</guilabel> </term>
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a utilitzar el tipus de lletra d'amplada fixa estàndard, la qual s'especifica a la pestanya <guilabel>Tipus de lletra</guilabel> de l'eina de preferències <application>Aparença</application>.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Tipus de lletra</guilabel> </term> 
+             <listitem> 
+                <para>Cliqueu en aquest botó per a seleccionat el tipus de lletra i la mida d'aquesta per al terminal. Aquest botó només està habilitat si l'opció <guilabel>Empra el tipus de lletra del terminal del sistema</guilabel> està deshabilitada.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Permet text en negreta</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a habilitar el terminal a mostrar text en negreta.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Mostra la barra del menú per defecte</guilabel>
+                </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a mostrar la barra de menú en les finestres del terminal noves.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Avís sonor del terminal</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a habilitar l'avís sonor del terminal.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Caràcters de selecció per paraula</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquest quadre de text per a especificar caràcters o grups de caràcters que el <application>terminal del GNOME</application> consideri com a paraules quan seleccioneu text per paraules. Vegeu <xref linkend="gnome-terminal-contents"/> per a més informació quant a com seleccionar text per paraules.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-title"> 
+        <title>Títol i ordre</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Títol inicial</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquest quadre de text per a especificar el títol inicial dels terminals que utilitzen el perfil. Els terminals nous que s'inicien des del terminal actual tindran aquest títol inicial.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Quan les ordres del terminal estableixin el seu propi títol</guilabel> </term>
+             <listitem> 
+                <para>Utilitzeu aquesta llista desplegable per a especificar com gestionar la manera d'establir dinàmicament el títol, és a dir, com establir el títol del terminal en funció de les ordres que s'executin en aquest.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Executa una ordre com a entrada a l'intèrpret d'ordres</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a forçar que l'ordre que s'està executant dins del terminal pugui executar-se com a entrada a l'intèrpret d'ordres. Si l'ordre no és un intèrpret d'ordres, el paràmetre no té cap efecte.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Actualitza els registres d'entrada quan s'executi l'ordre</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a inserir una entrada nova als registres d'entrada quan s'obri un intèrpret d'ordres nou.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Executa una ordre personalitzada en comptes del meu intèrpret d'ordres</guilabel>
+                </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a executar una ordre específica, diferent que la de l'intèrpret d'ordres normal, en el terminal. Especifiqueu l'ordre personalitzada en el quadre de text <guilabel>Ordre personalitzada</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Quan l'ordre surt</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquesta llista desplegable per a especificar quina acció s'ha de realitzar quan l'ordre finalitzi.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-colors"> 
+        <title>Colors</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term> 
+                <guilabel>Primer pla i fons</guilabel>
+                </term> 
+             <listitem> 
+                <para>Seleccioneu l'opció <guilabel>Empra els colors del tema del sistema</guilabel> per a utilitzar els colors especificats en el tema de l'escriptori del GNOME que s'hagin seleccionat a la pestanya <guilabel>Tema</guilabel> de l'<ulink type="help" url="ghelp:user-guide?prefs-theme">eina de preferències <application>Aparença</application></ulink>.</para>
+                <para>Utilitzeu la llista desplegable <guilabel>Esquemes integrats</guilabel> per a especificar els colors de primer pla i de fons del terminal. El <application>terminal del GNOME</application> admet les combinacions de color de primer pla i de fons següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Negre sobre groc clar</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para>
+                        <guilabel>Negre sobre blanc</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Gris sobre negre</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Verd sobre negre</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Blanc sobre negre</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Personalitzat</guilabel> 
+                     </para>
+                     <para>Aquesta opció us permet seleccionar els colors que no es troben en l'esquema de color seleccionat.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>La visualització actual dels colors de primer pla i de fons pot variar depenent de l'esquema de color que trieu. Per exemple, si trieu <guilabel>Blanc sobre negre</guilabel> i l'esquema de color <guilabel>Consola Linux</guilabel>, l'aplicació mostrarà els colors de primer pla i de fons com a gris suau sobre negre. La llista desplegable <guilabel>Esquemes integrats</guilabel> només està activada si l'opció <guilabel>Empra els colors del tema del sistema</guilabel> no està seleccionada.</para>
+                <para>Premeu el botó <guibutton>Color del text</guibutton> per a visualitzar el diàleg <guilabel>Trieu el color del text del terminal</guilabel>. Utilitzeu la roda de color o els quadres de selecció per a personalitzar el color que voleu utilitzar com a color del text, després premeu <guibutton>D'acord</guibutton>. El botó <guibutton>Color del text</guibutton> només està activat si l'opció <guilabel>Empra els colors del tema del sistema</guilabel> no està seleccionada.</para>
+                <para>Premeu el botó <guibutton>Color del fons</guibutton> per a visualitzar el diàleg <guilabel>Trieu el color de fons del terminal</guilabel>. Utilitzeu la roda de color o els quadres de selecció per a personalitzar el color que voleu utilitzar com a color de fons, després premeu <guibutton>D'acord</guibutton>. El botó <guibutton>Color del fons</guibutton> només està activat si l'opció <guilabel>Empra els colors del tema del sistema</guilabel> no està seleccionada.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Paleta</guilabel></term> 
+             <listitem> 
+                <para>L'emulació del terminal només pot utilitzar 16 colors a la vegada per a dibuixar text. La paleta de colors especifica aquests 16 colors. Les aplicacions que s'executen en el terminal utilitzen un número d'índex per a especificar un color d'aquesta paleta.</para>
+               <para>Utilitzeu la llista desplegable <guilabel>Esquemes integrats</guilabel> per a triar un esquema de colors predefinit. La paleta de colors inferior i el contingut de la finestra del terminal s'actualitzaran per a mostrar l'esquema.</para>
+               <para>Utilitzeu la <guilabel>Paleta de colors</guilabel> per a personalitzar els 16 colors predefinits en la paleta personalitzada de colors. Per a personalitzar un color, cliqueu en aquest color per a visualitzar el diàleg <guilabel>Entrada de la paleta</guilabel>. Utilitzeu la roda de color o els quadres de selecció per a personalitzar el color i cliqueu <guibutton>D'acord</guibutton>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-effects"> 
+        <title>Efectes</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Fons</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu un fons per a la finestra del terminal. Les opcions són les següents:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Color sòlid</guilabel>
+                     </para>
+                     <para>Seleccioneu aquesta opció per a utilitzar el color de fons que s'ha especificat en la pestanya <guilabel>Colors</guilabel> com a color de fons per al terminal.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Imatge del fons</guilabel> 
+                     </para>
+                     <para>Seleccioneu aquesta opció per a utilitzar un fitxer d'imatge com a fons del terminal. Utilitzeu el quadre desplegable <guilabel>Fitxer d'imatge</guilabel> per a especificar la ubicació i el nom del fitxer d'imatge. També podeu fer clic a <guibutton>Cerca</guibutton> per a cercar i seleccionar el fitxer d'imatge.</para>
+                     <para>Seleccioneu l'opció <guilabel>La imatge del fons es desplaça</guilabel> per habilitar que la imatge del fons es desplaci amb el text quan us desplaceu pel terminal. Si no seleccioneu aquesta opció, la imatge del fons es manté fixa en el fons del terminal i només es desplaça el text. Aquesta opció només s'habilita si seleccioneu l'opció <guilabel>Imatge del fons</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Fons transparent</guilabel> 
+                     </para>
+                     <para>Seleccioneu aquesta opció per a utilitzar un fons transparent per al terminal.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Enfosqueix la transparència o imatge de fons</guilabel>
+                </term> 
+             <listitem> 
+                <para>Utilitzeu aquest lliscador per a enfosquir o atenuar el fons del terminal. Aquesta opció només està habilitada si heu selecionat l'opció <guilabel>Imatge del fons</guilabel> o <guilabel>Fons transparent</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-prefs-scrolling">
+    <title>Desplaçament</title>
+     <variablelist>
+     <varlistentry> 
+             <term> 
+                <guilabel>La barra de desplaçament és</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquesta llista desplegable per a especificar la situació de la barra de desplaçament en la finestra del terminal.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Desplaçament cap enrere ... línies</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu aquest quadre de selecció per a especificar el número de línies que podeu desplaçar-vos cap enrere utilitzant la barra de desplaçament. Per exemple, si especifiqueu 100 llavors podreu desplaçar-vos cap enrere les últimes 100 línies mostrades en el terminal.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term> 
+                <guilabel>Desplaçament en sortida</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a poder desplaçar-vos per la sortida del terminal mentre el terminal continua mostrant més sortida d'una ordre.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Desplaçament en prémer una tecla</guilabel> </term> 
+             <listitem> 
+                <para>Seleccioneu aquesta opció per a desplaçar-vos a l'indicador d'ordres de la finestra del terminal en prémer una tecla del teclat. Aquesta acció només s'aplica si us heu desplaçat en el finestra del terminal i voleu tornar a l'indicador d'ordres.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="gnome-terminal-prefs-compatibility"> 
+        <title>Compatibilitat</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>La tecla de retrocés genera</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu la llista desplegable per a seleccionar quina funció voleu que realitzi la tecla <keycap>Retrocés</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>La tecla de suprimir genera</guilabel> </term> 
+             <listitem> 
+                <para>Utilitzeu la llista desplegable per a seleccionar quina funció voleu que realitzi la tecla <keycap>Supressió</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guibutton>Reinicia les opcions de compatibilitat a aquelles per defecte</guibutton> </term> 
+             <listitem> 
+                <para>Cliqueu en aquest botó per a reiniciar les opcions de la pestanya <guilabel>Compatibilitat</guilabel> als seus paràmetres per defecte.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

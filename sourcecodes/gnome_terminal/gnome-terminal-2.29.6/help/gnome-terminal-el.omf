@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>(Sun Ομάδα τεκμηρίωσης GNOME)</creator>
+    <creator>(Miguel de Icaza)</creator>
+    <creator>(Michael Zucchi)</creator>
+    <creator>(Alexander Kirillov)</creator>
+    <maintainer>(GNOME Documentation Project)</maintainer>
+    <title>Εγχειρίδιο του Τερματικού του GNOME</title>
+    <date>Μάιος 2000</date>
+    <version identifier="Οδηγός χρήστη του Τερματικού του GNOME" date="Μάιος 2000"/>
+    <subject category="GNOME|Applications|System Tools"/>
+    <description>
+       Το Τερματικό επιτρέπει στους χρήστες να επικοινωνούν με το σύστημά τους χρησιμοποιώντας εντολές κειμένου και ένα κέλυφος όπως το Bash.
+     </description>
+    <type>user's guide</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/local/share/gnome/help/gnome-terminal/el/gnome-terminal.xml"/>
+    <language code="el"/>
+    <relation seriesid="d7834910-40e7-11d6-87e4-aa5f78e530ae"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
+  </resource>
+</omf>

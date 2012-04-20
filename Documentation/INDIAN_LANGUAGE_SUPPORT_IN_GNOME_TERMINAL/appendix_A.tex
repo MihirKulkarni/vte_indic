@@ -1,0 +1,22 @@
+\chapter{GNOME Terminal Architecture}
+\section{Introduction}
+GNOME Terminal is the most widely and commonly used terminal in the GNU/Linux community. It is a terminal emulation application designed to access UNIX shell from GNOME environment and also to run any application that is designed to run on xterm, VT102, VT220 terminals. Xterm is the terminal emulator for X window system. VT102 and VT220 are the video terminals designed by Digital Equipment Corporation.
+
+\section{Study of GNOME Terminal source code}
+GNOME Terminal is fully written in C language. \textit{GIMP Tool Kit(GTK)} libraries, \textit{VTE} (Virtual Terminal Emulator) library are used to write GNOME-terminal. It is completely written using object oriented approach. It follows the factory method design pattern. GNOME Terminal has many features like it supports multiple tabs, multiple profiles, mouse-events(limited), wide range of background options, colored text and URL detection. Due to these  high level features that GNOME Terminal can support the source code has become very complex.
+
+\section{Design Pattern}
+In Software Engineering, There are many commonly occurring problems in software design. These problems are solved using a template or the generalized solution. This generalized solution or template is called Design Pattern. This Design pattern can be considered as the pathway to solve complex software design problems.
+
+There are many types of design patterns like Creational patterns, Structural patterns, Behavioral patterns, Concurrency patterns etc. GNOME Terminal uses Factory method which is the Creational pattern.
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=factory_pattern.eps}}
+\caption{Description of Factory Pattern} \label{Gnome Terminal13}
+\end{figure}
+
+\section{Factory Method Design Pattern}
+As the name suggests the Factory method design pattern can be thought as factory that produces required objects as per requirements. In object-oriented terms Factory can be considered as the interface that creates objects. 
+
+Factory Method is a creational design pattern. It is used in situations where the application may not know which object of the class needs to be instantiated at that time. In this we model the interface which handles this problem. This interface allows the subclasses to decide which class need to be instantiated at that situation.

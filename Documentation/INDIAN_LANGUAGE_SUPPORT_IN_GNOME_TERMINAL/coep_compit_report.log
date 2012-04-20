@@ -1,0 +1,216 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.8)  9 MAY 2011 19:40
+entering extended mode
+ %&-line parsing enabled.
+**coep_compit_report
+(./coep_compit_report.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(./coep_compit_report.aux)
+\openout1 = `coep_compit_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+ (./titlepage.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 13.
+File: coeplogo.eps Graphic file (type eps)
+ <coeplogo.eps> [1
+
+])
+(./acknowledgement.tex) (./certi.tex [1]) (./abstract.tex [2] [1])
+(./coep_compit_report.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [1
+
+] [2])
+\tf@toc=\write3
+\openout3 = `coep_compit_report.toc'.
+
+ [1] (./coep_compit_report.lof)
+\tf@lof=\write4
+\openout4 = `coep_compit_report.lof'.
+
+ [2
+
+] [3]
+(./chapter_1.tex
+Chapter 1.
+[1
+
+]) (./chapter_2.tex [2]
+Chapter 2.
+[3
+
+]
+File: renderingofcharacter.eps Graphic file (type eps)
+ <renderingofcharacter.eps> [4]
+File: secondexample.eps Graphic file (type eps)
+ <secondexample.eps> [5]
+File: thirdexample.eps Graphic file (type eps)
+ <thirdexample.eps>
+File: text_input_1.eps Graphic file (type eps)
+
+<text_input_1.eps>
+File: text_input_2.eps Graphic file (type eps)
+ <text_input_2.eps> [6]) (./chapter_3.tex [7]
+Chapter 3.
+File: fig_3.1.eps Graphic file (type eps)
+<fig_3.1.eps> [8
+
+] [9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+
+[10]) (./chapter_4.tex [11]
+Chapter 4.
+File: flow1.eps Graphic file (type eps)
+<flow1.eps> [12
+
+] [13] [14]
+File: flow2.eps Graphic file (type eps)
+ <flow2.eps> [15] [16] [17] [18] [19])
+(./chapter_5.tex [20]
+Chapter 5.
+[21
+
+] [22]
+File: fig_5.1.eps Graphic file (type eps)
+ <fig_5.1.eps> [23]
+File: fig_5.2.eps Graphic file (type eps)
+ <fig_5.2.eps>
+File: fig_5.3.eps Graphic file (type eps)
+ <fig_5.3.eps>) (./chapter_6.tex
+[24] [25]
+Chapter 6.
+File: fig_6.1.eps Graphic file (type eps)
+<fig_6.1.eps> [26
+
+]) (./chapter_7.tex [27]
+Chapter 7.
+) (./appendix_A.tex [28
+
+]
+Appendix A.
+[29
+
+]
+File: factory_pattern.eps Graphic file (type eps)
+ <factory_pattern.eps>) (./appendix_B.tex [30] [31]
+Appendix B.
+[32
+
+] [33]) (./appendix_C.tex [34]
+Appendix C.
+File: diacritics.eps Graphic file (type eps)
+<diacritics.eps>
+File: glyphs.eps Graphic file (type eps)
+ <glyphs.eps> [35
+
+]
+File: zero_width.eps Graphic file (type eps)
+ <zero_width.eps>
+File: non_zero_width.eps Graphic file (type eps)
+ <non_zero_width.eps>
+File: conjunct.eps Graphic file (type eps)
+
+<conjunct.eps> [36]) (./coep_compit_report.bbl [37] [38
+
+]) [39]
+(./coep_compit_report.aux) ) 
+Here is how much of TeX's memory you used:
+ 942 strings out of 493849
+ 12300 string characters out of 1152847
+ 58782 words of memory out of 3000000
+ 4183 multiletter control sequences out of 15000+50000
+ 14221 words of font info for 41 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 30i,10n,21p,1122b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on coep_compit_report.dvi (48 pages, 92048 bytes).

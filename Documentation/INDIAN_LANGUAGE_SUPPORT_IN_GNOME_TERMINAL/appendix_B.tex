@@ -1,0 +1,23 @@
+\chapter{Virtual Terminal Emulator}
+\section{Introduction}
+\textit{VTE} library provides API for terminal emulation and GNOME-terminal is written using this \textit{VTE} library. \textit{VTE} is written in C language and GNOME Tool Kit(GTK) libraries. The widget management, widget behavior, handling of input etc is done by \textit{VTE}.
+
+\section{Creation of widget}
+The main function in file \textit{vteapp.c} is responsible for creating the Gtk widget of the emulator.
+The command line options given while running the code are parsed before creating the widget and handled accordingly. A \textit{GoptionContext} structure is used which defines which options are accepted by the command-line option parser. The various properties and policies such shape of cursor, scroll bar policy are also defined here. 
+
+A top level Gtk window is created which which contains all other widgets such as a screen widget, a scrolled window. Thereafter a Terminal widget is created and is added to scrolling window.
+
+The Terminal widget is then connected to signals indicating various events related to window manipulation such as character size has changed, window title has changed, maximize window, font increase etc. 
+
+The color maps and screen properties such as opacity are set in this function itself Depending upon the option a connection to console is created, or shell is used or a new child  process is started under a newly allocated pseudo-terminal. The widget is then realized and all the widget on the top-level window are shown. A signal is connected to the window for delete-event i.e when the window is deleted. Until the signal for delete is called the code remains in the main loop.
+
+\section{Event handlers and methods}
+In the function \textit{vte\_terminal\_class\_init()} in \textit{vte.c} file a number of event handlers are initialized for the terminal widget such as key press, key release, button press, button release, expose event, scroll event etc. Depending upon the event the corresponding event handler will be called. The methods for the event handlers are also defined in \textit{vte.c}. The signals  to be emitted for the various events, stated in the \textit{main()} part are also defined and initialized here.
+
+\section{Key press event}
+When a key is pressed the event handler for key press calls the respective function i.e \textit{vte\_terminal\_key\_press} in \textit{vte.c}. The function reads and handles the key press event. Firstly it is checked if the key does anything to Gtk widgets behavior, then it is handled accordingly. If the key press is not related to widget behavior then it is checked for other possibilities i.e modifier key, characters to be displayed etc. If the key is just a  modifier key such as Alt, Shift etc then a note that a modifier key is pressed is made.
+
+Now a input method filter which determines if the key press can be handled by the input method. The input method can handle the keys which are related to typing of characters. If yes then the input method takes the key press and handles it. A commit signal is emitted to indicate the input method to send the data to child. If the input method filter returns false then look for other possibilities.
+
+The key is mapped to sequence names such as backspace, delete, insert, up, down  etc. If the mapping is possible then it is handled appropriately. If key is not handled by above means then try mapping it to a literal or capability name. Then the keys are to be sent to child to do further processing.

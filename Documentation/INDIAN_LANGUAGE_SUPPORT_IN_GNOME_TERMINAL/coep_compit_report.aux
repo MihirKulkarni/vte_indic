@@ -1,0 +1,150 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{iii}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Overview}{1}}
+\citation{wiki1}
+\citation{wiki2}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Objective}{2}}
+\citation{wiki3}
+\citation{wiki4}
+\citation{internet1}
+\citation{internet2}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Literature Study}{3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Internationalization and Localization}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Unicode Standards for Uniformity}{3}}
+\citation{wiki5}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Rendering the Text on Computer}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Flow for rendering of Character in VTE}}{5}}
+\newlabel{Gnome Terminal1}{{2.1}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Complex Scripts}{5}}
+\@writefile{toc}{\contentsline {subparagraph}{1. Bi-directional Text:}{5}}
+\@writefile{toc}{\contentsline {subparagraph}{2. Context sensitive shaping:}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of context sensitive shaping}}{5}}
+\newlabel{Gnome Terminal2}{{2.2}{5}}
+\citation{internet4}
+\citation{internet3}
+\citation{internet5}
+\citation{wiki6}
+\@writefile{toc}{\contentsline {subparagraph}{3. Ordering:}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of ordering}}{6}}
+\newlabel{Gnome Terminal3}{{2.3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Example}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Text Input}}{6}}
+\newlabel{Gnome Terminal4}{{2.4}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Perfect Text Output}}{6}}
+\newlabel{Gnome Terminal5}{{2.5}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Rendering Engine}{6}}
+\citation{internet6}
+\citation{internet7}
+\citation{internet8}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Cairo Library}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Other Indic Language Computing Project}{7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Problem Definition}{8}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Programming Environment Requirements}{8}}
+\@writefile{toc}{\contentsline {subparagraph}{Operating System:}{8}}
+\@writefile{toc}{\contentsline {subparagraph}{Programming Languages:}{8}}
+\@writefile{toc}{\contentsline {subparagraph}{Tools:}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Complex script (Devanagari) rendering problems in \textit  {VTE}}{8}}
+\citation{bug1}
+\citation{bug2}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Devanagari script rendering in \textit  {GNOME-terminal}}}{9}}
+\newlabel{Gnome Terminal6}{{3.1}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Problem Identification}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Limitations of VTE library in rendering Devanagari script}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Approaches}{10}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Understanding VTE}{12}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Working of VTE}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 1st flow for rendering in VTE}}{13}}
+\newlabel{Gnome Terminal7}{{4.1}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}vte\_terminal\_process\_incoming}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}\_vte\_terminal\_insert\_char}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces 2nd flow for rendering in VTE}}{16}}
+\newlabel{Gnome Terminal8}{{4.2}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}vte\_expose\_event}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}vte\_terminal\_expose}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}vte\_terminal\_paint}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}vte\_terminal\_paint\_area}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.7}vte\_terminal\_draw\_rows}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.8}vte\_terminal\_draw\_cells}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.9}\_vte\_draw\_text}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.10}\_vte\_draw\_text\_internal}{18}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Solution of the Problem}{21}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Handling of non-zero width diacritics and conjuncts}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Solution to the above problems}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Problems after handling non-zero width diacritics and conjuncts}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Non zero width diacritics rendered with uneven space }}{23}}
+\newlabel{Gnome Terminal9}{{5.1}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}VTE with Devanagari support}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Devanagari script rendering}}{25}}
+\newlabel{Gnome Terminal10}{{5.2}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Rendering of conjuncts}}{25}}
+\newlabel{Gnome Terminal11}{{5.3}{25}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Testing Methodology and Test Plans}{26}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Working Module}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Working Module of the Project}}{26}}
+\newlabel{Gnome Terminal12}{{6.1}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Test Plan}{27}}
+\citation{sourcecode}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Summary}{28}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}GNOME Terminal Architecture}{29}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Introduction}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Study of GNOME Terminal source code}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Design Pattern}{30}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Factory Method Design Pattern}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Description of Factory Pattern}}{31}}
+\newlabel{Gnome Terminal13}{{A.1}{31}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Virtual Terminal Emulator}{32}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Introduction}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}Creation of widget}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}Event handlers and methods}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.4}Key press event}{33}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Glossary}{35}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Example of diacritics}}{35}}
+\newlabel{Gnome Terminal15}{{C.1}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Example of glyph}}{35}}
+\newlabel{Gnome Terminal19}{{C.2}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Example of zero-width character}}{36}}
+\newlabel{Gnome Terminal16}{{C.3}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Example of non-zero-width character}}{36}}
+\newlabel{Gnome Terminal17}{{C.4}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Example of conjunct}}{36}}
+\newlabel{Gnome Terminal18}{{C.5}{36}}
+\bibstyle{plain}
+\bibdata{coep_compit_report}
+\bibcite{wiki5}{1}
+\bibcite{bug2}{2}
+\bibcite{internet6}{3}
+\bibcite{internet2}{4}
+\bibcite{wiki3}{5}
+\bibcite{internet5}{6}
+\bibcite{internet4}{7}
+\bibcite{internet1}{8}
+\bibcite{internet7}{9}
+\bibcite{internet3}{10}
+\bibcite{sourcecode}{11}
+\bibcite{internet8}{12}
+\bibcite{bug1}{13}
+\bibcite{wiki1}{14}
+\bibcite{wiki2}{15}
+\bibcite{wiki6}{16}
+\bibcite{wiki4}{17}

@@ -1,0 +1,96 @@
+	%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Main Report
+% Sun Apr 1 20:40:00 IST 2011
+% 
+%_____________________________________________________________________________________________ 
+
+\documentclass[a4paper,onecolumn]{report}
+
+%_____________________________________________________________________________________________ 
+% Inclusion of Required Packages
+%_____________________________________________________________________________________________ 
+\usepackage[dvips]{graphics}
+\usepackage{color}
+\usepackage{epsfig}
+
+
+%_____________________________________________________________________________________________ 
+% Page Layout
+%_____________________________________________________________________________________________ 
+\setlength{\textwidth}{6.27in}
+\setlength{\textheight}{9.69in}
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.0in}			% Customisable
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\topskip}{0.0in}
+%_____________________________________________________________________________________________ 
+% Font Definition
+%_____________________________________________________________________________________________ 
+\fontencoding{T1}		% Font specification : Times New Roman, Bold, Normal, 18
+\fontfamily{cmr}		% Roman
+\fontseries{m}			% Medium
+\fontshape{n}			% Upright
+\fontsize{14pt}{5}		
+\linespread{1.5}		% Vertical spacing between lines
+\selectfont			% Select the specified font
+%_____________________________________________________________________________________________ 
+% Main report starts here
+%_____________________________________________________________________________________________ 
+\begin{document}	% Start of Report
+%_____________________________________________________________________________________________ 
+\pagestyle{empty}
+\input{titlepage.tex}
+%\maketitle			% *Generate* the defined title. No definition - no gereration
+
+\input{acknowledgement.tex}
+\pagebreak
+\input{certi.tex}		% Certificate page will come here. But its been typeset 
+				% independently in certi.tex
+
+\input{abstract.tex}		% Absract: Independently typeset in file abstract.tex
+
+\thispagestyle{empty}
+\tableofcontents		% *Generate* the table of contents. No content - no table
+				% LATEX needs to run 2-3 times over source to get this correct
+
+\pagenumbering{roman}		% Lowercase roman numbering for prelim sections
+%\listoftables
+%\addcontentsline{toc}{chapter}{List of Tables}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+%\chapter*{List of Symbols}
+%\addcontentsline{toc}{chapter}{List of Symbols}
+
+\newpage
+\pagenumbering{arabic}		% Change to Arabic numbers for main chapters.
+
+\input{chapter_1.tex}		% Add each chapter here in this fashion.
+				% No need to write all font and page specs in the chapter
+				% files. There only typesetting tags are required.
+\input{chapter_2.tex}
+\input{chapter_3.tex}
+\input{chapter_4.tex}
+\input{chapter_5.tex}
+\input{chapter_6.tex}
+\input{chapter_7.tex}
+%\input{test.tex}
+%\input{chapter_n.tex}		
+
+\appendix
+\input{appendix_A.tex}
+\input{appendix_B.tex}
+\input{appendix_C.tex}
+%\input{appendix_D.tex}
+%\chapter{Algorithm for Lighting}
+%\chapter{Flow Chart for Making Popcorn}
+
+\bibliographystyle{plain}  	  % You can change the style of writing bibliography.
+\bibliography{coep_compit_report} % Instead of a .bib file, you can just write it in 
+				  % a text file with \bibitem entries.
+				  
+%_____________________________________________________________________________________________ 
+\end{document}			% End of Report

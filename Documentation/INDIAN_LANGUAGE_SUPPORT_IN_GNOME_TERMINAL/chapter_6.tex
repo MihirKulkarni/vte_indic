@@ -1,0 +1,50 @@
+%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Sample Chapter
+% Sun Mar 27 10:25:35 IST 2011
+%
+% Note: Itemization, enumeration and other things not shown. A sample figure is included.
+%_____________________________________________________________________________________________ 
+
+\chapter{Testing Methodology and Test Plans}
+\section{Working Module}
+		
+Output
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=fig_6.1.eps}}
+\caption{Working Module of the Project} \label{Gnome Terminal12}
+\end{figure}
+
+Above screen-shot shows the working module of the project. We have taken a paragraph in Devanagari Language and rendered it on the \textit{VTE}. It is clear from the screen-shot that complex script is successfully rendered in \textit{VTE}.
+
+Above test case covers all the modules to be tested. The paragraph covers all simple Devanagari characters, Conjuncts, Diacritics, complex ligatures.
+
+\section{Test Plan}
+The implementation has been tested by taking number of test cases and testing the application rigorously. During testing we have tried increasing the accuracy, minimizing the errors, applying engineering corrections, etc. We have discovered some unhandled functionalities in the implementation which have been listed below.
+
+\begin{enumerate}
+\item Handling of Backspace and delete keys
+
+When these keys are pressed we should get the desired functionality i.e for the Backspace key the previous character should get deleted and the cursor position be updated depending upon the width of previous character and similarly for delete key.
+
+\item Rendering the formatted data received from process output
+
+The formatted data received from process has to be rendered on the screen. However the data has been formatted considering a column to be equivalent of the character width hence the formatting of data is not appropriate.
+
+\item Handling of navigation keys
+
+In similar to the Backspace key the navigation keys need to handled so as to navigate through the non-uniform cell structure taking into consideration the width of the different characters.
+\end{enumerate}
+
+
+%\begin{figure}[htbp]			 Sample figure 
+%\begin{center}
+%\input{fig1.latex}			 Be sure to have the input file in the directory
+%\caption{A simple figure: Square}	 This will appear in the list of figures
+%\label{circle}
+%\end{center}
+%\end{figure}
+
+%_____________________________________________________________________________________________ 

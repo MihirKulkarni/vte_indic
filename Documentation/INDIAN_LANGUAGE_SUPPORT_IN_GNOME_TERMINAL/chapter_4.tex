@@ -1,0 +1,123 @@
+%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Sample Chapter
+% Sun Mar 27 10:25:35 IST 2011
+%
+% Note: Itemization, enumeration and other things not shown. A sample figure is included.
+%_____________________________________________________________________________________________ 
+
+\chapter{Understanding VTE}
+
+For us to get to the exact cause of the problem, it is necessary to get a proper understanding of the working of \textit{VTE}. \textit{VTE} implements a logical cell structure of the screen used for rendering. This cell structure is uniform i.e each cell has same dimensions. Each character is rendered in a particular cell. As a result of this the screen is composed of rows and columns of cells containing characters. 
+
+There are different paths through which the code progresses.Below, is a detailed explanation of the working of the \textit{VTE}.
+
+\section{Working of VTE}
+
+The processing of the characters starts once it is typed on the window and a \\\textit{key\_pressed\_event} is triggered which reads the input and decides what is to be done with it. Simultaneously a process timeout is set. The variable used for this is \\\textit{VTE\_DISPLAY\_TIMEOUT}. It is by default set to 10ms. Once the timeout is up the static function \textit{``gboolean  process\_timeout''} is called. The overall flow keeps coming to this function as and when the timeout is up.
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=flow1.eps}}
+\caption{1st flow for rendering in VTE} \label{Gnome Terminal7}
+\end{figure}
+
+It is from the function \textit{``process\_timeout''} that the subsequent calls are made. This includes call to the function \textit{``vte\_terminal\_process\_incoming''}. Most of the processing of the character is done in this function. The detailed explanation of the working of \textit{``vte\_terminal\_process\_incoming''} is as follows:	
+
+\subsection{vte\_terminal\_process\_incoming}
+This function primarily processes the incoming data. It is a two step process:
+
+\begin{enumerate}
+\item In the first step the incoming characters are first converted to Unicode characters.
+\item In the second step the characters are checked to process the control sequences.
+\end{enumerate}
+
+The input to this function is the structure \textit{VteTerminal} which is itself an instance of type defined structure \textit{\_VteTerminal}. This structure has all the metric and sizing data like dimensions of character cells, important character details like ascent and descent and the dimensions of the window.
+
+First and foremost, it saves the current cursor position. Following this it converts the characters into Unicode format. It does this process chunk by chunk converting each chunk of data into Unicode characters.
+
+Then it computes the number of converted characters. The point to notice here is that the control sequences are still not separated. They are still a part of the converted Unicode characters. Then after the conversion is over, it checks for presence of any control sequences. This is done by issuing a call for the function \textit{``\_vte\_matcher\_match''}. The subsequent flow is not related to our work. The result of this leads to the occurrence of one of the three situations related to control sequences which are again not important to our work.
+
+What is important to the rendering process is a call to the function \\\textit{``\_vte\_terminal\_insert\_char''} where the next process is done. Here some pre-processing is done before we make an actual call to the rendering function.
+	
+The details of the function \textit{``\_vte\_terminal\_insert\_char''} is as follows.
+
+\subsection{\_vte\_terminal\_insert\_char}
+This function is perhaps the most important function as regards to character processing before actual rendering is done. A lot of parameters are checked before moving ahead. Some of the checking that is done here is to check whether the character is meant to displayed on the status line or whether it is auto-wrapped or calculate how much columns the character will occupy.
+
+The most important function that is carried out here is the handling of zero-width characters. Initially there was no support for zero width characters like the vector sign, etc in \textit{VTE}. But it was added later and the change was made in this function. As far as our project is concerned, we have made changes in this function to solve our problem.
+
+Multiple cell interaction is handled in this function. Now what is multiple cell interaction? In this, the rendering of the next character depends on the previous character. In case we have a zero-width character as the next one, its rendering is done on the preceding cell itself and not on the next cell. This enables us to achieve multi-cell interaction and hence characters like the vector-sign can be rendered perfectly.
+
+Also before the rendering is done, it checks whether we have enough cells to render this data. When a text is actually added a note of this is made in the \textit{text\_inserted\_flag} which is made TRUE. After this function the process moves ahead and rendering is done on the window.
+
+A very important point must be noted here. This function doesn't call any other function to render the text. The function call right from ``process\_timeout=10ms'' are done as and when the \textit{VTE\_DISPLAY\_TIMEOUT} expires. So this set of functions is repeated after every 10ms.
+
+For the rendering of the text another flow is simultaneously being executed in parallel to this one.
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=flow2.eps}}
+\caption{2nd flow for rendering in VTE} \label{Gnome Terminal8}
+\end{figure}
+
+Now other than the process that is being carried on in the above execution thread, another thread is simultaneously running. The execution path is as shown in the figure below.
+\pagebreak
+
+\subsection{vte\_expose\_event}
+The event of terminal getting exposed is handled by an \textit{expose\_event} which calls the function \textit{vte\_terminal\_expose}.
+
+\subsection{vte\_terminal\_expose}
+This function takes arguments as  the widget for which the event is set and a GdkEventExpose event. In this function region to be painted is determined from the GdkEventExpose event. The region to be updated is appended to a list called \textit{terminal\->pvt\->update\_regions} and a call to a function \textit{vte\_terminal\_paint} is made.
+
+\subsection{vte\_terminal\_paint}
+In this function it is asserted that the widget has been realized and a window has been created in that widget. A cairo context \textit{\_vte\_draw} is set for that window. The region to be painted is calculated in terms of a bounding Gdk rectangle which is then passed on to the function \textit{vte\_terminal\_paint\_area}. A call to \textit{vte\_terminal\_paint\_cursor} is made to paint the cursor.
+
+\subsection{vte\_terminal\_paint\_area}
+In this function the Gdk rectangle is converted to appropriate number of rows and columns depending upon the character width and height and also considering the adjustments for the borders of the window.
+
+The start row, column and end row, column calculated are then passed to the function \textit{vte\_terminal\_draw\_rows}.
+
+\subsection{vte\_terminal\_draw\_rows}
+In this function the characters from the rows and columns are scanned and to determine the  number of columns required and various attributes of the character such as boldness etc. 
+
+The characters to be drawn are grouped in an array of data structure \\\textit{\_vte\_draw\_text\_request} which contains the unistr value for the character and the appropriate x and y co-ordintaes of the position where the character is to be rendered. This data structure is then passed on to the function  \textit{vte\_terminal\_draw\_cells}.
+
+\subsection{vte\_terminal\_draw\_cells}
+In this function the x and y co-ordinates of the characters in the array mentioned above are adjusted for the window borders and then passed on to the function \textit{\_vte\_draw\_text}.
+
+
+\subsection{\_vte\_draw\_text}
+In this function the array of characters to be drawn is passed to the function \\\textit{\_vte\_draw\_text\_internal}. Here the characters of fonts lacking bold property are handled by double striking and then passed on to function \textit{\_vte\_draw\_text\_internal}.
+
+\subsection{\_vte\_draw\_text\_internal}
+This function contains the rendering calls of pango and cairo. Depending upon the font information, one of the three rendering coverage available are used. The three coverages available are:
+\pagebreak
+\begin{enumerate}
+\item COVERAGE\_USE\_CAIRO\_GLYPH
+
+In this coverage information about single glyph index and a cairo scaled-font is kept. Glyph index is the index for a particular glyph in the font and cario scaled-font is technique of caching the font metrics i.e information about the rendering of a particular font on a particular screen. This is the fastest way to draw text as it bypasses ``pango'' completely and allows for stuffing multiple glyphs into a single \textit{cairo\_show\_glyphs()} request. The \textit{cairo\_show\_glyphs()} call accepts an array of glyphs to be drawn .The array contain the font-index for the glyph and the x, y co-ordinates of the position where the glyph is to be rendered. This method is used if the glyphs used for the Vteunistr as determined by pango consists of a single regular glyph. Vteunistr is a gunichar-compatible way to store strings. A string consisting of a single unichar c is represented as the same value as c itself.  In this case, gunichars can be readily used as Vteunistrs. Longer strings can be built by appending a unichar to an already existing string.
+
+\item COVERAGE\_USE\_PANGO\_GLYPH\_STRING
+
+In this coverage a pango glyphstring and a pango font information is kept. Pango glyphstring is a string of glyphs needed for a particular character. This is slower than the previous case as drawing each glyph goes through pango separately and causes a separate \textit{cairo\_show\_glyphs()} call, instead of making a single call to render multiple glyphs. In this coverage pango takes care of laying out the glyphs. This method is used when the previous method cannot be used but the glyphs for the character all use a single font.
+
+Example: A single regular glyph like 'a','b','c',... are rendered using the \textit{COVERAGE\_USE\_CAIRO\_GLYPH} coverage. This coverage is used when there are more glyphs to be rendered for a single Vteunistr like Devanagari character along with a conjunct. So \textit{VTE} converts multiple glyphs into a single glyph string and renders using this coverage.
+
+\item COVERAGE\_USE\_PANGO\_LAYOUT\_LINE
+
+In this coverage, information about a complete pango layout line is kept. The pango layout line stores a complete line from the text. This method is used only in the very exceptional case that a single Vteunistr uses more than one font to be drawn. This happens for example if some diacritics is not available in the font chosen for the base character.
+
+\end{enumerate}
+
+
+
+%\begin{figure}[htbp]			 Sample figure 
+%\begin{center}
+%\input{fig1.latex}			 Be sure to have the input file in the directory
+%\caption{A simple figure: Square}	 This will appear in the list of figures
+%\label{circle}
+%\end{center}
+%\end{figure}
+
+%_____________________________________________________________________________________________ 

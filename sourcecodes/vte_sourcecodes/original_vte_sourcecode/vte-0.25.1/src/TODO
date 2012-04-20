@@ -1,0 +1,7 @@
+- gzip with full flush for chunk management
+- html / text logger
+- save history text & html
+- html clipboard
+- text & html dnd
+- incremental search (regexp, text, caseinsensitive)
+- rewrap lines

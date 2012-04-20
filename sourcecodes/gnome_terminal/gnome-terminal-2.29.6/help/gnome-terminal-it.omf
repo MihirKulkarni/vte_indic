@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>(Sun GNOME Documentation Team)</creator>
+    <creator>(Miguel de Icaza)</creator>
+    <creator>(Michael Zucchi)</creator>
+    <creator>(Alexander Kirillov)</creator>
+    <maintainer>(GNOME Documentation Project)</maintainer>
+    <title>Manuale del Terminale GNOME</title>
+    <date>Maggio 2000</date>
+    <version identifier="Manuale utente del Terminale GNOME" date="Maggio 2000"/>
+    <subject category="GNOME|Applications|System Tools"/>
+    <description>
+       Il terminale fornisce agli utenti la possibilità di comandare il sistema sistema utilizzando un'interfaccia testuale attraverso una shell come Bash.
+     </description>
+    <type>user's guide</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/local/share/gnome/help/gnome-terminal/it/gnome-terminal.xml"/>
+    <language code="it"/>
+    <relation seriesid="d7834910-40e7-11d6-87e4-aa5f78e530ae"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
+  </resource>
+</omf>

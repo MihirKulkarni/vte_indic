@@ -1,0 +1,99 @@
+%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Sample Chapter
+% Sun Mar 27 10:25:35 IST 2011
+%
+% Note: Itemization, enumeration and other things not shown. A sample figure is included.
+%_____________________________________________________________________________________________ 
+
+\chapter{Literature Study}
+\section{Internationalization and Localization}
+
+Internationalization and localization \cite{wiki3} is the adaption of computer software to different languages. Localization is not to to make any engineering changes to the software but to adapt it to local languages by translating the text or making the appropriate changes to make that software to be understood in local languages.    
+
+At present a lot of work is being done for translations in Marathi and Hindi as well as other Indic languages. We can render complex scripts like Marathi on commonly used GNU/Linux applications like \textit{Gedit}, \textit{Open Office}, etc. The rendering is perfect and it needs no improvement on these software. \textit{GTK (GIMP Tool Kit)} supports complex scripts by default. So the applications that use \textit{GTK} for development have complex script support enabled.			
+						
+\section{Unicode Standards for Uniformity}
+
+Important aspect of the work is that all software which are available in the market do not use a common coding scheme like Unicode \cite{wiki4}. The Unicode Standard \cite{internet1} , the latest version of Unicode consists of a repertoire of more than 109,000 characters covering 93 scripts, a set of code charts for visual reference, an encoding methodology and set of standard character encodings, and many more such utilities. UTF-8 \cite{internet2} which is a commonly used encoding uses one byte for any ASCII character provided they have the same code values in both UTF-8 and ASCII but up to four bytes for other characters.
+
+If all the software make use of Unicode based data, uniformity will be achieved. This is because Unicode can support a very large number of characters (almost all which are used in this world) which is not the case with the use of ASCII (American Standard Code for Information Interchange) \cite{wiki5} .
+		
+\section{Rendering the Text on Computer}
+When the key of the keyboard is pressed character gets displayed onto the screen. It is not as  simple as it looks. There are number of internal processing steps involved to do this. When the  key is pressed or released, interrupt is raised and kernel records the key that is pressed. After this keyboard controller comes into picture. Keyboard controller is a computer hardware that interfaces the keyboard and computer. Signal is sent to the kernel for handling.
+
+Each key is associated with its particular key value. This key value is then associated with the number which might be ASCII or Unicode, that is assigned as per the keyboard layout or input method. Font technology maps this Unicode value with appropriate font character image. There are various libraries like \textit{GDK}, \textit{cairo} that are used for defining the surface or defining the area on which that character image is to be rendered. And thus, character gets displayed on to the screen.
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=renderingofcharacter.eps}}
+\caption{Flow for rendering of Character in VTE} \label{Gnome Terminal1}
+\end{figure}
+
+\section{Complex Scripts}
+Indian languages are categorized as complex script language. Complex text requires complex transformations between text input and text display for proper rendering on screen. Rendering of the characters is not straight forward as rendering of Latin characters. Complex text has some characteristics:
+
+\subparagraph{1. Bi-directional Text:}
+Characters can be written in both right-to-left or left-to-right direction.
+
+Example: Arabic language is written from left to right.
+
+\subparagraph{2. Context sensitive shaping:}
+Rendering of the characters depends on the location and/or  surrounding characters.
+
+Example:
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=secondexample.eps}}
+\caption{Example of context sensitive shaping} \label{Gnome Terminal2}
+\end{figure}
+
+
+\subparagraph{3. Ordering:}
+Displayed order of characters is not same as the logical order.
+
+Example:
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=thirdexample.eps}}
+\caption{Example of ordering} \label{Gnome Terminal3}
+\end{figure}
+
+\subsection{Example}
+For Latin alphabets there are no complex transformations involved between text input and text display. These characters are displayed straight forward. But in case of Devanagari, there are conjuncts, \textit{virama(halant)}, conjuncts which needs the complex transformations.
+
+Suppose text input is:
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=text_input_1.eps}}
+\caption{Text Input} \label{Gnome Terminal4}
+\end{figure}
+
+This text input needs to be processed before displaying. There are complex transformations involved for text display as per language rules. This Text input must be displayed as:
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=text_input_2.eps}}
+\caption{Perfect Text Output} \label{Gnome Terminal5}
+\end{figure}
+
+\section{Rendering Engine}
+
+Complex script rendering requires the complex transformations between text input and text display. Rendering Engine takes care of all these transformations, and makes the complex script rendering perfect. There are different rendering engines for different desktop environments. GNOME desktop environment has ``pango'' \cite{internet4} \cite{internet3} as rendering engine. K-Desktop environment \cite{internet5} has ``Qt'' \cite{wiki6} rendering engine. The implementation we are doing in our project is for the GNOME desktop environment and pango rendering engine. 
+
+\section{Cairo Library}
+Cairo library\cite{internet6} provides device independent, vector-graphics based API. It also provides the primitives for two dimensional drawing across different back-ends. Pango and Cairo \cite{internet7} together are used for complex script rendering in various applications.
+
+\section{Other Indic Language Computing Project}
+Silpa (Swathanthra Indian Language Computing Project) \cite{internet8} is a major project that is being done to host the free software language processing applications easily. It can be used as a python library or as a web service from other applications. It is a platform for porting existing and upcoming language processing applications to the web.
+
+%\begin{figure}[htbp]			 Sample figure 
+%\begin{center}
+%\input{fig1.latex}			 Be sure to have the input file in the directory
+%\caption{A simple figure: Square}	 This will appear in the list of figures
+%\label{circle}
+%\end{center}
+%\end{figure}
+
+%_____________________________________________________________________________________________ 

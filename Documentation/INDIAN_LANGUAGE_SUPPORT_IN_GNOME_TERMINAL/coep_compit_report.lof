@@ -1,0 +1,28 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Flow for rendering of Character in VTE}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of context sensitive shaping}}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of ordering}}{6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Text Input}}{6}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Perfect Text Output}}{6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Devanagari script rendering in \textit {GNOME-terminal}}}{9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 1st flow for rendering in VTE}}{13}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 2nd flow for rendering in VTE}}{16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Non zero width diacritics rendered with uneven space }}{23}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Devanagari script rendering}}{25}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Rendering of conjuncts}}{25}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Working Module of the Project}}{26}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Description of Factory Pattern}}{31}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Example of diacritics}}{35}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Example of glyph}}{35}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Example of zero-width character}}{36}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Example of non-zero-width character}}{36}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Example of conjunct}}{36}

@@ -1,0 +1,149 @@
+<!-- ##### SECTION Title ##### -->
+Vte PTY
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM VtePtyFlags ##### -->
+<para>
+
+</para>
+
+@VTE_PTY_NO_LASTLOG: 
+@VTE_PTY_NO_UTMP: 
+@VTE_PTY_NO_WTMP: 
+@VTE_PTY_NO_HELPER: 
+@VTE_PTY_NO_FALLBACK: 
+@VTE_PTY_DEFAULT: 
+
+<!-- ##### ENUM VtePtyError ##### -->
+<para>
+
+</para>
+
+@VTE_PTY_ERROR_PTY_HELPER_FAILED: 
+@VTE_PTY_ERROR_PTY98_FAILED: 
+
+<!-- ##### STRUCT VtePty ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG VtePty:fd ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG VtePty:flags ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG VtePty:term ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION vte_pty_new ##### -->
+<para>
+
+</para>
+
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_pty_new_foreign ##### -->
+<para>
+
+</para>
+
+@fd: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_pty_close ##### -->
+<para>
+
+</para>
+
+@pty: 
+
+
+<!-- ##### FUNCTION vte_pty_child_setup ##### -->
+<para>
+
+</para>
+
+@pty: 
+
+
+<!-- ##### FUNCTION vte_pty_get_fd ##### -->
+<para>
+
+</para>
+
+@pty: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_pty_set_size ##### -->
+<para>
+
+</para>
+
+@pty: 
+@rows: 
+@columns: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_pty_get_size ##### -->
+<para>
+
+</para>
+
+@pty: 
+@rows: 
+@columns: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_pty_set_term ##### -->
+<para>
+
+</para>
+
+@pty: 
+@emulation: 
+
+
+<!-- ##### FUNCTION vte_pty_set_utf8 ##### -->
+<para>
+
+</para>
+
+@pty: 
+@utf8: 
+@error: 
+@Returns: 
+
+

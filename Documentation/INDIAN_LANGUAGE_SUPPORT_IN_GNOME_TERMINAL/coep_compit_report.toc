@@ -1,0 +1,57 @@
+\contentsline {chapter}{List of Figures}{iii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Overview}{1}
+\contentsline {section}{\numberline {1.2}Objective}{2}
+\contentsline {chapter}{\numberline {2}Literature Study}{3}
+\contentsline {section}{\numberline {2.1}Internationalization and Localization}{3}
+\contentsline {section}{\numberline {2.2}Unicode Standards for Uniformity}{3}
+\contentsline {section}{\numberline {2.3}Rendering the Text on Computer}{4}
+\contentsline {section}{\numberline {2.4}Complex Scripts}{5}
+\contentsline {subparagraph}{1. Bi-directional Text:}{5}
+\contentsline {subparagraph}{2. Context sensitive shaping:}{5}
+\contentsline {subparagraph}{3. Ordering:}{6}
+\contentsline {subsection}{\numberline {2.4.1}Example}{6}
+\contentsline {section}{\numberline {2.5}Rendering Engine}{6}
+\contentsline {section}{\numberline {2.6}Cairo Library}{7}
+\contentsline {section}{\numberline {2.7}Other Indic Language Computing Project}{7}
+\contentsline {chapter}{\numberline {3}Problem Definition}{8}
+\contentsline {section}{\numberline {3.1}Programming Environment Requirements}{8}
+\contentsline {subparagraph}{Operating System:}{8}
+\contentsline {subparagraph}{Programming Languages:}{8}
+\contentsline {subparagraph}{Tools:}{8}
+\contentsline {section}{\numberline {3.2}Complex script (Devanagari) rendering problems in \textit {VTE}}{8}
+\contentsline {section}{\numberline {3.3}Problem Identification}{9}
+\contentsline {section}{\numberline {3.4}Limitations of VTE library in rendering Devanagari script}{10}
+\contentsline {section}{\numberline {3.5}Approaches}{10}
+\contentsline {chapter}{\numberline {4}Understanding VTE}{12}
+\contentsline {section}{\numberline {4.1}Working of VTE}{12}
+\contentsline {subsection}{\numberline {4.1.1}vte\_terminal\_process\_incoming}{13}
+\contentsline {subsection}{\numberline {4.1.2}\_vte\_terminal\_insert\_char}{14}
+\contentsline {subsection}{\numberline {4.1.3}vte\_expose\_event}{17}
+\contentsline {subsection}{\numberline {4.1.4}vte\_terminal\_expose}{17}
+\contentsline {subsection}{\numberline {4.1.5}vte\_terminal\_paint}{17}
+\contentsline {subsection}{\numberline {4.1.6}vte\_terminal\_paint\_area}{17}
+\contentsline {subsection}{\numberline {4.1.7}vte\_terminal\_draw\_rows}{18}
+\contentsline {subsection}{\numberline {4.1.8}vte\_terminal\_draw\_cells}{18}
+\contentsline {subsection}{\numberline {4.1.9}\_vte\_draw\_text}{18}
+\contentsline {subsection}{\numberline {4.1.10}\_vte\_draw\_text\_internal}{18}
+\contentsline {chapter}{\numberline {5}Solution of the Problem}{21}
+\contentsline {section}{\numberline {5.1}Handling of non-zero width diacritics and conjuncts}{21}
+\contentsline {subsection}{\numberline {5.1.1}Solution to the above problems}{22}
+\contentsline {subsection}{\numberline {5.1.2}Problems after handling non-zero width diacritics and conjuncts}{23}
+\contentsline {section}{\numberline {5.2}VTE with Devanagari support}{24}
+\contentsline {chapter}{\numberline {6}Testing Methodology and Test Plans}{26}
+\contentsline {section}{\numberline {6.1}Working Module}{26}
+\contentsline {section}{\numberline {6.2}Test Plan}{27}
+\contentsline {chapter}{\numberline {7}Summary}{28}
+\contentsline {chapter}{\numberline {A}GNOME Terminal Architecture}{29}
+\contentsline {section}{\numberline {A.1}Introduction}{29}
+\contentsline {section}{\numberline {A.2}Study of GNOME Terminal source code}{29}
+\contentsline {section}{\numberline {A.3}Design Pattern}{30}
+\contentsline {section}{\numberline {A.4}Factory Method Design Pattern}{30}
+\contentsline {chapter}{\numberline {B}Virtual Terminal Emulator}{32}
+\contentsline {section}{\numberline {B.1}Introduction}{32}
+\contentsline {section}{\numberline {B.2}Creation of widget}{32}
+\contentsline {section}{\numberline {B.3}Event handlers and methods}{33}
+\contentsline {section}{\numberline {B.4}Key press event}{33}
+\contentsline {chapter}{\numberline {C}Glossary}{35}

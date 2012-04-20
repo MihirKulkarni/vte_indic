@@ -1,0 +1,70 @@
+%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Sample Chapter
+% Sun Mar 27 10:25:35 IST 2011
+%
+% Note: Itemization, enumeration and other things not shown. A sample figure is included.
+%_____________________________________________________________________________________________ 
+
+\chapter{Problem Definition}
+
+\section{Programming Environment Requirements}
+\subparagraph{Operating System:}
+GNU/Linux
+
+\subparagraph{Programming Languages:}
+C, \textit{GTK}-programming, etc.
+
+\subparagraph{Tools:}
+\textit{gcc}(compiler), \textit{gdb}(debugger), \textit{libtool}(for creating portable compiled libraries)
+
+\section{Complex script (Devanagari) rendering problems in \textit{VTE}}
+
+In Devanagari the diacritics are of zero-width as well as of non-zero width. The non-zero width diacritics are not rendered properly. The diacritics are rendered differently from basic character in adjacent area as shown in figure below.
+
+In Devanagari in addition to the diacritics, the characters can be combined to form conjuncts. These conjuncts are also not properly rendered as a combined character instead they are rendered separately as shown in figure below. 
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=fig_3.1.eps}}
+\caption{Devanagari script rendering in \textit{GNOME-terminal}} \label{Gnome Terminal6}
+\end{figure}
+
+\pagebreak
+\section{Problem Identification}
+As per our objective, providing complex script rendering support in \textit{GNOME-terminal} we started our work with understanding source code of \textit{GNOME-terminal}. We gone through design architecture, internal processing and working of \textit{GNOME-terminal}. We came to know that \textit{GNOME-terminal} uses the \textit{VTE} (Virtual Terminal Emulator) library for processing. \textit{VTE} library provides API for terminal emulation and \textit{GNOME-terminal} is written using this \textit{VTE} library.
+
+Hence, basic problem of no support for complex script rendering lies in \textit{VTE} library itself. So we focused our work on \textit{VTE}. We gone through \textit{VTE} source code. We understood all aspects of \textit{VTE} and started working on it.
+
+\section{Limitations of VTE library in rendering Devanagari script}
+After the Identification of problem, we started exploring the problem. \textit{VTE} is written for fast rendering. It uses primitive calls for rendering completely bypassing the pango rendering engine. After going through bug reports \cite{bug1} \cite{bug2} and explanation by upstream authors, we got idea of the problem in more precise way. 
+
+In \textit{Gedit} -a popular text editor on GNOME desktop environment, the whole text is rendered as a single unit. So, the rendering engine is able interact between adjacent character cells, including reordering and composing conjuncts so as to produce exact characters as required by Indic and other complex scripts. 
+
+Terminals, on the other hand, are display grid, where individual characters are put in grid. And the grid cells are independent of one another. That's how it works from the beginning. This is fine for Latin and CJK- Chinese Japanese Korean, and probably for Thai-Lao with typewriter convention applied. But it needs a tremendous change to support complex text like Indic and Arabic, where adjacent display cells must interact with one another. So, such deep structural change is not an easy task. It even deserves a redesign, that's why this problem is unsolved by anyone else.
+
+
+\section{Approaches}
+We followed the different approaches to solve the problem such as:
+
+\begin{itemize}
+\item Replacing the primitive rendering call with high level pango call.
+
+Pango helps in layout and rendering of internationalized text. So we thought that using pango rendering calls would help in dealing with rendering of complex scripts. However pango just helps in laying out the glyphs properly and not ordering the glyphs and forming the combined characters. It also did not help in adjusting the rendering widths of the characters due to the cell structure of \textit{VTE}.
+
+\item Doing the inter cell interaction with allocating widths of the characters dynamically and variably.
+
+We have implemented this approach to handle the rendering of Devanagari script.In this approach we perform inter-cell interaction where in we take into previous characters while forming combined characters or using non-zero-width diacritics. Due to variable nature of the script in terms of the width of characters we allocate different rendering widths to different characters.
+
+\end{itemize}
+
+
+%\begin{figure}[htbp]			 Sample figure 
+%\begin{center}
+%\input{fig1.latex}			 Be sure to have the input file in the directory
+%\caption{A simple figure: Square}	 This will appear in the list of figures
+%\label{circle}
+%\end{center}
+%\end{figure}
+
+%_____________________________________________________________________________________________ 

@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{wiki5}
+American standard code for information interchange.
+\newblock \\http://en.wikipedia.org/wiki/ASCII.
+
+\bibitem{bug2}
+Arabic, hebrew: character alignment not working properly.
+\newblock \\http://bugzilla.gnome.org/show\_bug.cgi?id=321490.
+
+\bibitem{internet6}
+Cairo graphics documentation, manual and tutorials on the official
+  cairographics site.
+\newblock http://www.cairographics.org/documentation/.
+
+\bibitem{internet2}
+Faqs for unicode and utf-8.
+\newblock http://unicode.org/faq/utf\_bom.html.
+
+\bibitem{wiki3}
+Internationalization and localization.
+\newblock
+  \\http://en.wikipedia.org/wiki/Internationalization\_and\_localization.
+
+\bibitem{internet5}
+Official kde web site.
+\newblock http://www.kde.org/.
+
+\bibitem{internet4}
+Official pango web site.
+\newblock http://www.pango.org/.
+
+\bibitem{internet1}
+Official website of unicode consortium and unicode standard.
+\newblock http://unicode.org/.
+
+\bibitem{internet7}
+Pango cairo rendering at gnome developer site.
+\newblock \\http://developer.gnome.org/pango/stable/pango-Cairo-Rendering.html.
+
+\bibitem{internet3}
+Pango reference manuat at gnome.
+\newblock http://developer.gnome.org/pango/stable/.
+
+\bibitem{sourcecode}
+Sourceforge link of our project.
+\newblock \\http://sourceforge.net/p/vteindic/home/.
+
+\bibitem{internet8}
+Swathanthra indian language computing project or silpa.
+\newblock \\http://silpa.org.in/.
+
+\bibitem{bug1}
+(vtecomplex) gnome-terminal doesn't handle unicode complex text rendering.
+\newblock \\http://bugzilla.gnome.org/show\_bug.cgi?id=584160.
+
+\bibitem{wiki1}
+Wikipedia definition of devanagari.
+\newblock http://en.wikipedia.org/wiki/Devanagari.
+
+\bibitem{wiki2}
+Wikipedia details of complex scripts or complex script layout.
+\newblock \\http://en.wikipedia.org/wiki/Complex text layout.
+
+\bibitem{wiki6}
+Wikipedia details of qt framework.
+\newblock http://en.wikipedia.org/wiki/Qt\_(framework).
+
+\bibitem{wiki4}
+Wikipedia details on unicode.
+\newblock http://en.wikipedia.org/wiki/Unicode.
+
+\end{thebibliography}

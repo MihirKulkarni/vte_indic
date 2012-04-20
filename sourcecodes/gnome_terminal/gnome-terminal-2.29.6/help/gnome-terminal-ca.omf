@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>(Sun Equip de documentació del GNOME)</creator>
+    <creator>(Miguel de Icaza)</creator>
+    <creator>(Michael Zucchi)</creator>
+    <creator>(Alexander Kirillov)</creator>
+    <maintainer>(Projecte de documentació del GNOME)</maintainer>
+    <title>Manual del terminal del GNOME</title>
+    <date>Maig de 2000</date>
+    <version identifier="Guia d'usuari del terminal del GNOME" date="Maig de 2000"/>
+    <subject category="GNOME|Applications|System Tools"/>
+    <description>
+       
+	 The Terminal gives users the power to communicate with their system using
+text-based commands through a shell such as Bash.
+       
+     </description>
+    <type>user's guide</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/local/share/gnome/help/gnome-terminal/ca/gnome-terminal.xml"/>
+    <language code="ca"/>
+    <relation seriesid="d7834910-40e7-11d6-87e4-aa5f78e530ae"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
+  </resource>
+</omf>

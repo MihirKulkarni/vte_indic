@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "GNOME Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="ru"> 
+  <articleinfo> 
+     <title>Руководство по Терминалу среды GNOME</title> 
+     <abstract role="description">
+       <para>
+	 The Terminal gives users the power to communicate with their system using
+text-based commands through a shell such as Bash.
+       </para>
+     </abstract>
+     <copyright> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright>
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright><copyright><year>sergo@bk.ru, 2007</year><holder>Сергей В. Миронов</holder></copyright>	 
+     <publisher> 
+        <publishername>Проект документации GNOME</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Следующим разрешается копировать и/или модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной Фондом свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type="help" url="ghelp:fdl">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+          <para>Этот документ является частью документации GNOME, распространяемой под лицензией GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+ 
+         <para>Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в любой части документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+ 
+         <para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ ПОД ЛИЦЕНЗИЕЙ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО <orderedlist>
+                 <listitem>
+                   <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ "КАК ЕСТЬ", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+                 </listitem>
+                 <listitem>
+                   <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ ИЛИ ПОМОЩНИКИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЕ, КОСВЕННОЕ, СПЕЦИАЛЬНОЕ, СЛУЧАЙНОЕ ИЛИ ПРЕДНАМЕРЕННОЕ ПОВРЕЖДЕНИЕ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ БЕЗ ОГРАНИЧЕНИЯ ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ НЕПРАВИЛЬНОЕ ВЗАИМОДЕЙСТВИЕ, ВМЕСТЕ ИЛИ ПО-ОТДЕЛЬНОСТИ. НИКАКИЕ ПОВРЕЖДЕНИЯ И ПОТЕРИ НЕ МОГУТ БЫТЬ ВОЗЛОЖЕНЫ НА АВТОРА ДОКУМЕНТА ИЛИ МОДИФИЦИРОВАННОЙ ВЕРСИИ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА ПРОИНФОРМИРОВАНА О ВОЗМОЖНОСТИ ТАКИХ ПОВРЕЖДЕНИЙ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author> 
+          <firstname>Sun</firstname> 
+          <surname>Команда документирования GNOME</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>Проект документации GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>Проект документации GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>Проект документации GNOME</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>Проект документации GNOME</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision> 
+          <revnumber>GNOME Terminal Manual V2.9</revnumber> 
+          <date>January 2010</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler
+		<email>pcutler@gnome.org</email> </para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision> 
+	<revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.8</revnumber> 
+          <date>March 2009</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.7</revnumber> 
+          <date>Ноябрь 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.6</revnumber> 
+          <date>Сентябрь 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.5</revnumber> 
+          <date>Май 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+			<revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.4</revnumber> 
+          <date>Январь 2003</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.3</revnumber> 
+          <date>Август 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.2</revnumber> 
+          <date>Август 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.1</revnumber> 
+          <date>Август 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Руководство терминала среды GNOME, вер. 2.0</revnumber> 
+          <date>Апрель 2002</date> 
+          <revdescription> 
+             <para role="author">Sun GNOME Documentation Team</para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Руководство пользователя по Терминалу среды GNOME</revnumber> 
+          <date>Май 2000</date> 
+          <revdescription> 
+             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email></para>
+             <para role="publisher">Проект документации GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo> This manual describes version 2.30 of GNOME Terminal.
+        </releaseinfo> 
+     <legalnotice> 
+        <title>Обратная связь</title> 
+        <para>Чтобы сообщить об ошибке или внести предложение относительно Терминала среды GNOME или данного руководства следуйте ссылке <ulink url="ghelp:user-guide?feedback" type="help"> Обратная связь с GNOME</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+     <primary>Терминал среды GNOME</primary> 
+  </indexterm> 
+  <indexterm> 
+     <primary>программа терминал</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-terminal-introduction"> 
+     <title>Введение</title> 
+     <para><application>Терминал среды GNOME</application> - это программа эмуляции терминала, которую вы можете использовать для выполнения следующих задач:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Доступ к интерпретатору командной строки UNIX в окружении GNOME</term> 
+          <listitem> 
+             <para>Интерпретатор командной строки исполняет команды, которые вы набираете в командной строке. Когда вы запускаете <application>Терминал среды GNOME</application>, приложение запускает интерпретатор по умолчанию, который указана в вашей учётной записи. Вы можете перейти к использованию другого интерпретатора в любое время.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Запустить любое приложение, спроектированное для запуска на терминалах VT102, VT220 и <application>xterm</application>.</term> 
+          <listitem> 
+             <para><application>Терминал среды GNOME</application> эмулирует программу <application>xterm</application>, разрабатываемую X Consortium. В свою очередь, программа <application>xterm</application> эмулирует терминал DEC VT102 и также поддерживает управляющие последовательности DEC VT220. Управляющие последовательности (ESC-последовательности) - это серия символов, которая начинается с символа <keycap>Esc</keycap> (комбинация символов, обычно используемая для задания неотображаемых символов и символов, имеющих специальное значение). <application>Терминал среды GNOME</application> допускает все управляющие последовательности, которые используют терминалы VT102 и VT220 для функций, таких, как положение курсора и очистка экрана.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="gnome-terminal-get-started"> 
+     <title>Приступая к работе</title> 
+     <para>Следующие разделы описывают как запустить <application>Терминал среды GNOME</application>.</para>
+     <sect2 id="gnome-terminal-to-start"> 
+        <title>Запуск Терминала среды GNOME</title> 
+        <para>Вы можете запустить <application>Терминал среды GNOME</application> следующими способами:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Меню <guimenu>Приложения</guimenu></term> 
+             <listitem>
+                <para>Выберите <menuchoice><guimenu>Стандартные</guimenu><guimenuitem>Терминал</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>Командная строка</term> 
+             <listitem> 
+                <para>Выполните следующую команду: <command>gnome-terminal</command></para>
+                <para>Вы можете использовать параметры командной строки, чтобы изменить способ запуска <application>Терминала среды GNOME</application>. Чтобы просмотреть параметры командной строки, выполните следующую команду: <command>gnome-terminal --help</command></para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-first-start"> 
+        <title>Ваш первый запуск Терминала среды GNOME</title> 
+        <para>Когда вы запускаете <application>Терминал среды GNOME</application> в первый раз, приложение открывает терминальное окно с группой установок по умолчанию. Группа установок по умолчанию называется Профилем по умолчанию. Название профиля появляется в строке заголовка окна <application>Терминала среды GNOME</application>.</para>
+        <figure id="gnome-terminal_default"> 
+          <title>Пример окна по умолчанию Терминала среды GNOME</title> 
+          <screenshot> 
+             <screeninfo>Окно по умолчанию Терминала среды GNOME</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Окно по умолчанию Терминала среды GNOME</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Окно терминала отображает приглашение на ввод команды, в котором вы можете набирать команды UNIX. Приглашение на ввод команды может быть в виде %, #, &gt;, $ или любых других специальных символов. Около приглашения на ввод расположен курсор. Когда вы набираете команду UNIX и нажимаете <keycap>Enter</keycap> компьютер выполняет команду. По умолчанию, <application>Терминал среды GNOME</application> использует интерпретатор командной строки пользователя, запустившего приложение.</para>
+        <para><application>Терминал среды GNOME</application> также устанавливает следующие переменные окружения:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Устанавливается по умолчанию к <literal>xterm</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Устанавливается по умолчанию к <literal>gnome-terminal</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Устанавливается к оконному идентификатору X11 по умолчанию.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="gnome-terminal-profiles"> 
+        <title>Профили Терминала</title> 
+        <para>Вы можете создавать новые профили и применять новые профили к терминалу, чтобы изменить такие характеристики, как шрифт, цвета и эффекты, вид полос прокрутки, заголовка окна, совместимости. В профиле вы также можете определить команду, которая запускается автоматически при запуске <application>Терминала среды GNOME</application>.</para>
+          <para>Вы определяете каждый профиль терминала в диалоге <guilabel>Изменить профиль</guilabel>, который доступен из меню <guimenu>Правка</guimenu>. Вы можете определить сколько профилей, сколько вам требуется. При запуске терминала вы можете выбрать профиль, который вы хотите использовать для терминала. С другой стороны, вы можете изменить профиль терминала во время его использования. Чтобы определить первоначальный профиль для терминала когда вы запускаете приложение из командной строки, используйте следующие комагды:</para>
+        <para>
+          <command>gnome-terminal --window-with-profile=<replaceable>название профиля</replaceable></command> 
+        </para>
+        <para>Название текущего профиля появится в строке заголовка <application>Терминала среды GNOME</application>, если вы не определили другое название заголовка в диалоге <guilabel>Изменение профиля</guilabel>.</para>
+        <para>Смотрите <xref linkend="gnome-terminal-manage-profiles"/> для информации о том, как определить и использовать новый профиль терминала.</para>
+     </sect2> 
+     <sect2 id="gnome-terminal-more-windows"> 
+        <title>Работа с несколькими терминалами</title> 
+        <para>Особенностью <application>Терминала среды GNOME</application> являются вкладки, которые дают возможность вам открывать несколько терминалов в одном окне. Каждый терминал открывается в отдельной вкладке. Клик мышью на соответствующей вкладке отображает окно терминала. Каждая вкладка терминала в общем окне - это отдельный подпроцесс, так что вы можете использовать каждый терминал для различных задач. Вы можете применять различные профили к каждой вкладке терминала в общем окне.</para>
+       <para>Заголовок окна терминала отображает или имя текущего профиля, или название, присвоенное текущему профилю. <xref linkend="gnome-terminal-tabbed"/> показывает окно <application>Терминала среды GNOME</application> с четырьмя вкладками. В этом случае каждая из четырёх вкладок имеет свой профиль. Название профиля активной вкладки, Profile 1, появляется в строке заголовка.</para>
+        <figure id="gnome-terminal-tabbed"> 
+          <title>Пример окна терминала с вкладками</title> 
+          <screenshot> 
+             <screeninfo>Окно по умолчанию Терминала среды GNOME</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Окно по умолчанию Терминала среды GNOME</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Смотрите <xref linkend="gnome-terminal-windows"/> чтобы получить информацию о том, как открывать новые терминалы-вкладки.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="gnome-terminal-usage"> 
+     <title>Применение</title> 
+
+     <sect2 id="gnome-terminal-windows"> 
+        <title>Открытие и закрытие терминалов</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы открыть новое окно терминала:</term> 
+             <listitem> 
+                <para>Выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Открыть терминал</guimenuitem></menuchoice>.</para>
+                <para>Новый терминал наследует установки программы и интерпретатор командной строки по умолчанию из родительского терминала.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы закрыть окно терминала:</term> 
+             <listitem> 
+                <para>Выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрыть окно</guimenuitem></menuchoice>.</para>
+                <para>Это действие закроет терминал и все подпроцессы, которые вы запустили из терминала. Если вы закроете последнее окно терминала, <application>Терминал среды GNOME</application> завершает работу.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы добавить новый терминал-вкладку:</term> 
+             <listitem> 
+                <para>
+                  Choose <menuchoice><guimenu>File</guimenu><guisubmenu>Open Tab</guisubmenu><guimenuitem>Default</guimenuitem></menuchoice> or just <menuchoice><guimenu>File</guimenu><guimenuitem>Open Tab</guimenuitem></menuchoice> if there is no submenu.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы отобразить терминал со вкладками:</term> 
+             <listitem> 
+                <para>Нажмите мышью на вкладке терминала, который вы хотите отобразить, или выберите название вкладки из меню <guimenu>Вкладки</guimenu>.</para>
+                <para>Другим способом, выберите <menuchoice><guimenu>Вкладки</guimenu><guimenuitem>Следующая вкладка</guimenuitem></menuchoice> или <menuchoice><guimenu>Вкладки</guimenu><guimenuitem>Предыдущая вкладка</guimenuitem></menuchoice> чтобы переместиться между вкладками.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы закрыть терминал с вкладками:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Отобразите вкладку терминала, которую хотите закрыть.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрыть вкладку</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-manage-profiles"> 
+        <title>Управление профилями</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы добавить новый профиль:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Новый профиль</guimenuitem></menuchoice> для отображения диалога <guilabel>Новый профиль</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Наберите имя нового профиля в текстовом поле <guilabel>Имя профиля</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Используйте выпадающий список <guilabel>Основать новый профиль на</guilabel> для выбора профиля, на котором вы хотите основать новый профиль.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Нажмите <guibutton>Создать</guibutton> для отображения диалога <guilabel>Изменение профиля</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Нажмите <guibutton>Закрыть</guibutton>. <application>Терминал среды GNOME</application> добавит новый профиль к подменю <menuchoice><guimenu>Терминал</guimenu><guisubmenu>Использовать профиль</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы изменить профиль терминала-вкладки:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Щёлкните на вкладке терминала, профиль для которого вы хотите изменить.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Выберите <menuchoice><guimenu>Терминал</guimenu><guisubmenu>Изменить профиль</guisubmenu><guimenuitem><replaceable>имя профиля</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы редактировать профиль:</term> 
+             <listitem> 
+                <para>Вы редактируете профили в диалоге <guilabel>Изменение профиля</guilabel>. Вы можете получить доступ к диалогу <guilabel>Изменение профиля</guilabel> следующими способами:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Выберите <menuchoice><guimenu>Правка</guimenu><guisubmenu>Текущий профиль</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Щёлкнув правой кнопкой в окне терминала, выберите <guimenuitem>Изменить текущий профиль</guimenuitem> из контекстного меню.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Выберите <menuchoice><guimenu>Правка</guimenu><guisubmenu>Профили</guisubmenu></menuchoice>, выберите профиль, который вы хотите изменить, затем щёлкните <guibutton>Правка</guibutton>. Для информации о параметрах, которые вы можете установить в профиле, смотрите <xref linkend="gnome-terminal-prefs"/>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы удалить профиль:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Профили</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Выберите название профиля, который вы хотите удалить в списке <guilabel>Профили</guilabel>, затем щёлкните <guibutton>Удалить</guibutton>. Появится диалог <guilabel>Удаление профиля</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Нажмите <guibutton>Удалить</guibutton> чтобы подтвердить удаление.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Нажмите <guibutton>Закрыть</guibutton>, чтобы закрыть диалог <guilabel>Профили</guilabel>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-tabs"> 
+        <title>Изменение окна терминала</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы скрыть строку меню:</term> 
+             <listitem> 
+                <para>Выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Показать строку меню</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы отобразить скрытую строку меню:</term> 
+             <listitem> 
+                <para>Щёлкните правой кнопкой на окне терминала, затем выберите <guimenuitem>Показать меню</guimenuitem> из контекстного меню.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Чтобы отобразить окно <application>Терминала среды GNOME</application> в полноэкранном режиме:</term>
+            <listitem>
+              <para>Выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Развернуть на полный экран</guimenuitem></menuchoice>. Полноэкранный режим отображает текст в окне, которое заполняет весь экран. Окно не содержит рамки окна или заголовка. Чтобы выйти из этого режима, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Развернуть на полный экран</guimenuitem></menuchoice> снова.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Чтобы изменить внешний вид окна терминала:</term> 
+             <listitem> 
+                <para>Смотрите <xref linkend="gnome-terminal-prefs"/> для информации о параметрах, которые вы можете выбрать в диалоге <guilabel>Изменение профиля</guilabel> чтобы изменить внешний вид окна терминала. Для примера, вы можете изменить цвет фона или размещение полосы проктурки.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-contents"> 
+        <title>Работа с содержимым окон терминала</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы просмотреть предыдущие команды и информацию о результатах их запуска:</term> 
+             <listitem> 
+                <para>Выполните одно из следующих действий:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Используйте прокрутку, которая обычно отображается в правой части терминального окна.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Нажмите кнопки <keycombo><keycap>Shift</keycap><keycap>Page Up</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Page Down</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Home</keycap></keycombo>, or <keycombo><keycap>Shift</keycap><keycap>End</keycap></keycombo>.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <guilabel>Scrollback</guilabel> setting in the <guilabel>Scrolling</guilabel> tabbed section of the <guilabel>Editing Profile</guilabel> dialog.  You can also scroll up or down one line at a time by pressing <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Up</keycap></keycombo> or <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Down</keycap></keycombo>. </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы выделить и копировать текст:</term> 
+             <listitem> 
+                <para>Вы можете выделить текст одним из следующих способов:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Чтобы выделить посимвольно, щёлкните на первом символе, который вы хотите выделить, и тяните мышь до последнего символа, который вы хотите выделить.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Чтобы выделить по словам, дважды щёлкните на первом слове, которое вы хотите выделить, и тяните мышь до последнего слова, которое вы хотите выделить. Символы выделяются индивидуально.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Чтобы выделить по строкам, трижды щёлкните на первой строке, которую вы хотите выделить, и тяните мышь до последней строки, которую вы хотите выделить.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Эти действия выделяют весь текст от первого до последнего знака. Для выделения всего текста <application>Терминал среды GNOME</application> копирует выделенный текст в буфер обмена когда вы отпускаете кнопку мыши. Для копирования явным образом выделенного текста выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Копировать</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы вставить текст в терминал:</term> 
+             <listitem> 
+                <para>Если вы предварительно скопировали текст в буфер обмена вы можете вставить текст в терминал, выполнив одно из следующих действий:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Чтобы вставить текст, который вы копировали только выделением, щёлкните средней кнопкой мыши в приглашении на ввод команды. Если ваша мышь не имеет средней кнопки, обратитесь к документации X-сервера для информации от том, как эмулировать среднюю кнопку мыши.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Чтобы вставить копированный явным образом текст, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставить</guimenuitem></menuchoice>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы перетащить название файла в окно терминала:</term> 
+             <listitem> 
+                <para>Вы можете перетащить название файла в терминал из другого приложения. такого, как файловый менеджер. Терминал отобразит путь и полное имя файла.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Чтобы получить доступ к ссылке:</term> 
+             <listitem> 
+                <para>Чтобы получить доступ к Uniform Resource Locator (URL), который отображается в терминале, выполните следующие шаги:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Передвингайте мышь над URL до тех пор, пока URL не будет подчёркнута.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Щёлкните правой кнопкой на URL чтобы открыть контекстное меню.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Выберите <guimenuitem>Открыть ссылку</guimenuitem> для запуска приложения, на которое указывает ссылка, и отобразить файл, размещённый по  URL.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-shortcuts"> 
+        <title>Просмотр установленных комбинаций клавиш</title> 
+        <para>Чтобы просмотреть установки комбинаций клавиш, которые определены для <application>Терминала среды GNOME</application>, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Комбинации клавиш</guimenuitem></menuchoice>. Диалог <guilabel>Комбинации клавиш</guilabel> содержит следующие пункты:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term><guilabel>Отключить все клавиши для доступа в меню (такие, как Alt+Ф для меню "Файл")</guilabel></term> 
+             <listitem> 
+                <para>
+                  Deselect this option to disable the access keys that are defined to enable you to use the keyboard instead of the mouse to select a menu item. Each access key is identified by an underlined letter on a menu or dialog option. In some cases, you must press the <keycap>Alt</keycap> key in combination with the access key to perform the action.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Отключить клавишу для доступа в меню (F10 по умолчанию)</guilabel></term> 
+             <listitem> 
+                <para>
+                  Deselect this option to disable the shortcut key that is defined to enable you to access the <application>GNOME Terminal</application> menus. The default shortcut key to access the menus is <keycap>F10</keycap>.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Комбинации клавиш:</guilabel></term> 
+             <listitem> 
+                <para>Секция диалога <guilabel>Комбинации клавиш</guilabel> отражает комбинации клавиш, которые определены для каждого пункта меню.</para>
+                <note><para>Не все клавиши могут быть использованы в комбинациях клавиш, например <keycap>Tab</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="gnome-terminal-resize">
+	<title>Размер текста</title>
+	<para>Вы можете использовать следующие способы изменить размер текста в окне Терминала среды GNOME:</para>
+		<itemizedlist>
+			<listitem><para>Чтобы увеличить размер текста, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Увеличить</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Чтобы уменьшить размер текста, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Уменьшить</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Чтобы отобразить текст в обычном размере, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Обычный размер</guimenuitem></menuchoice>.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-title"> 
+        <title>Смена заголовка терминала</title> 
+        <para>Чтобы изменить заголовок отображаемого в данный момент терминала, выполните следующие шаги:</para>
+        <orderedlist>
+          <listitem>
+            <para>Выберите <menuchoice><guimenu>Терминал</guimenu><guimenuitem>Установить заголовок</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Введите новый заголовок в текстовом поле <guilabel>Заголовок</guilabel>. Изменения в <application>Терминале среды GNOME</application> встуаят в силу немедленно.</para>
+          </listitem>
+          <listitem>
+            <para>Щёлкните <guibutton>Закрыть</guibutton>, чтобы закрыть диалог <guilabel>Установить заголовок</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="gnome-terminal-encoding"> 
+        <title>Смена кодировки символов</title> 
+        <para>Чтобы изменить кодировку символов, выберите <menuchoice><guimenu>Терминал</guimenu><guisubmenu>Установить кодировку символов</guisubmenu></menuchoice>, затем выберите подходящую кодировку.</para>
+
+     <sect3 id="gnome-terminal-encoding-add"> 
+        <title>Изменение списка кодировок символов</title> 
+        <para>Чтобы изменить список кодировок символов, отображаемых в меню <guisubmenu>Установить кодировку символов</guisubmenu>, выполните следующие шаги:</para>
+        <orderedlist>
+          <listitem>
+            <para>Выберите <menuchoice><guimenu>Терминал</guimenu><guisubmenu>Установить кодировку символов</guisubmenu><guimenuitem>Добавить или удалить</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>To add an encoding to the <guisubmenu>Set Character Encoding</guisubmenu> menu, select the encoding in the <guilabel>Available encodings</guilabel> list box, then click the right arrow button.
+            </para>
+          </listitem>
+          <listitem>
+            <para>To remove an encoding from the <guisubmenu>Set Character Encoding</guisubmenu> menu, select the encoding in the <guilabel>Encodings shown in menu</guilabel> list box, then click the left arrow button.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Нажмите <guibutton>Закрыть</guibutton>, чтобы закрыть диалог <guilabel>Добавить или удалить кодировки терминала</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-reset"> 
+        <title>Восстановление вашего терминала</title> 
+        <para>Эта часть даёт некоторые советы при возникновении у вас проблем с терминалами.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы сбросить терминал в первоначальное состояние:</term> 
+             <listitem> 
+                <para>Выберите <menuchoice><guimenu>Терминал</guimenu><guimenuitem>Сброс</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Чтобы сбросить терминал и очистить экран:</term> 
+             <listitem> 
+                <para>Выберите <menuchoice><guimenu>Терминал</guimenu><guimenuitem>Сброс и очистка</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="gnome-terminal-prefs"> 
+     <title>Параметры</title> 
+     <para>Чтобы настроить <application>Терминал среды GNOME</application>, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Текущий профиль</guimenuitem></menuchoice>. Чтобы настроить другой профиль, который вы установили, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Профили</guimenuitem></menuchoice>, выберите профиль, который вы хотите редактировать, затем щёлкните <guibutton>Правка</guibutton>.</para>
+     <para>Диалог <guilabel>Изменение профиля</guilabel> содержит следующие страницы, которые вы можете использовать для настройки <application>Терминала среды GNOME</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="gnome-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="gnome-terminal-prefs-general"> 
+        <title>Общие</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Имя профиля</guilabel> </term> 
+             <listitem> 
+                <para>Используйте это текстовое поле для установки имени текущего профиля.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Use the system fixed width font</guilabel> </term>
+             <listitem> 
+                <para>
+                  Select this option to use the standard fixed width font that is specified in the <guilabel>Font</guilabel> tab of the <application>Appearance</application> preference tool.
+                </para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Шрифт</guilabel> </term> 
+             <listitem> 
+                <para>Нажмите эту кнопку чтобы выбрать тип и размер шрифта для терминала. Эта кнопка доступна в том случае, если не выбран параметр <guilabel>Использовать системный терминальный шрифт</guilabel>.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Разрешать полужирный текст</guilabel> </term> 
+             <listitem> 
+                <para>Выберите этот параметр для возможности отображения терминалом полужирного текста.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Показывать в новых терминалах строку меню</guilabel>
+                </term> 
+             <listitem> 
+                <para>Выберите этот параметр, чтобы в новых окнах терминала отображалась строка меню.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Подавать гудок</guilabel> </term> 
+             <listitem> 
+                <para>
+                  Select this option to enable the terminal bell.
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Выбирающие слово символы</guilabel> </term> 
+             <listitem> 
+                <para>Используйте это текстовое поле чтобы определить символы или группы символов, которые рассматриваются <application>Терминалом среды GNOME</application> как слова, когда вы выбираете текст по словам. Смотрите <xref linkend="gnome-terminal-contents"/> для подробной информации о том, как выбрать текст по словам.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-title"> 
+        <title>Заголовок и команда</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Исходный заголовок</guilabel> </term> 
+             <listitem> 
+                <para>Используйте это текствое поле для определения исходного заголовка терминалов, которые используют профиль. Новые терминалы, которые были запущены из текущего терминала, получат новый исходный заголовок.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>When terminal commands set their own titles</guilabel> </term>
+             <listitem> 
+                <para>Используйте этот выпадающий список, чтобы установить, как обходиться с динамически устанавливаемыми заголовками, то есть, заголовками терминала, устанавливаемыми командами, запущенными в терминале.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Запускать команду как команду входа в сеанс</guilabel> </term> 
+             <listitem> 
+                <para>Выберите этот параметр, чтобы заставить команду выполнять действия, нужные для входа в сеанс. Если команда не является интерпретатором командной строки, этот параметр не будет иметь эффекта.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Update login records when command is launched</guilabel> </term> 
+             <listitem> 
+                <para>
+                  Select this option to insert a new entry in the login records when a new shell is opened. 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Запускать другую команду вместо моего интерпретатора командной строки</guilabel>
+                </term> 
+             <listitem> 
+                <para>Выберите этот параметр, чтобы запускать в терминале специфическую команду, отличную от обычного интерпретатора командной строки. Определите пользовательскую команду в текстовом поле <guilabel>Другая команда</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>При выходе из команды</guilabel> </term> 
+             <listitem> 
+                <para>
+                  Use this drop-down list to specify what action to perform when the command exits. 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-colors"> 
+        <title>Цвета</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term> 
+                <guilabel>Текст и фон</guilabel>
+                </term> 
+             <listitem> 
+                <para>
+                  Select the <guilabel>Use colours from system theme</guilabel> option to use the colors that are specified in the GNOME Desktop theme that is selected in the <guilabel>Theme</guilabel> tab of the <ulink type="help" url="ghelp:user-guide?prefs-theme"><application>Appearance</application> preference tool</ulink>.
+                </para>
+                <para>Используйте выпадающий список <guilabel>Встроенные схемы</guilabel> чтобы определить цвета текста и фона для терминала. <application>Терминал среды GNOME</application> поддерживает следующие комбинации цвета текста и фона:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Чёрный на светло-жёлтом</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para>
+                        <guilabel>Чёрный на белом</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Серый на чёрном</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Зелёный на чёрном</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Белый на чёрном</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Другая</guilabel> 
+                     </para>
+                     <para>Этот параметр даёт вам возможность выбрать цвета, которых нет в выбранной цветовой схеме.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Фактическое отображение цветов текста и фона могут различаться в зависимости от цветовой схемы (палитры), которую вы выбрали. Например, если вы выберете <guilabel>Белый на чёрном</guilabel> и цветовую схему (палитру) <guilabel>Консоль ОС Linux</guilabel>, приложение отобразит цвета текста и фона как светло-серые на чёрном. Выпадающий список <guilabel>Встроенные схемы</guilabel> доступен, если только не выбран параметр <guilabel>Использовать цвета из системной темы</guilabel>.</para>
+                <para>Нажмите кнопку <guibutton>Цвет текста</guibutton> чтобы отобразить диалог <guilabel>Выбрать цвет текста терминала</guilabel>. Используйте цветной круг или треугольник чтобы выбрать цвет, который вы хотите использовать в качестве цвета текста, затем щёлкните <guibutton>OK</guibutton>. Кнопка <guibutton>Цвет текста</guibutton> доступна только если не выбран параметр <guilabel>Использовать цвета из системной темы</guilabel>.</para>
+                <para>Нажмите кнопку <guibutton>Цвет фона</guibutton> чтобы отобразить диалог <guilabel>Выбрать цвет фона терминала</guilabel>. Используйте цветной круг или треугольник чтобы выбрать цвет, который вы хотите использовать в качестве цвета фона, затем щёлкните <guibutton>OK</guibutton>. Кнопка <guibutton>Цвет фона</guibutton> доступна если только не выбран параметр <guilabel>Использовать цвета из системной темы</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Палитра</guilabel></term> 
+             <listitem> 
+                <para>При эмуляции терминала можно использовать сразу только 16 цветов для прорисовки текста. Цветовая палитра определяет эти 16 цветов. Приложения, которые запускаются в терминале, используют индексный номер, определяющий цвет из этой палитры.</para>
+               <para>Используйте выпадающий список <guilabel>Встроенные схемы</guilabel> для того, чтобы выбрать предустановленные цветовые схемы. Нижняя цветовая палитра обновляется совместно с содержанием окна терминала, чтобы отобразить схему.</para>
+               <para>Используйте <guilabel>Палитру</guilabel> чтобы установить 16 цветов, используемых по умолчанию, для собственной цветовой палитры. Чтобы установить цвет, щёлкните на цвете для появления диалога <guilabel>Изменить цвет палитры</guilabel>. Используйте цветной круг или треугольник для установки цвета, затем нажмите <guibutton>OK</guibutton>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-effects"> 
+        <title>Эффекты</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Фон</guilabel> </term> 
+             <listitem> 
+                <para>Выберите фон для окна терминала. Доступны варианты:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Solid color</guilabel>
+                     </para>
+                     <para>
+                        Select this option to use the background color that is specified in the <guilabel>Colors</guilabel> tabbed section as the background color for the terminal.
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Фоновое изображение</guilabel> 
+                     </para>
+                     <para>Выберите этот параметр, чтобы использовать файл рисунка в качестве фона для терминала. Используйте комбинированное окно диалога <guilabel>Фоновое изображение</guilabel> для определения места нахождения и имени файла рисунка. Иначе, щёлкните <guibutton>Обзор</guibutton> для поиска и выбора файла рисунка.</para>
+                     <para>Выберите параметр <guilabel>Прокручивать изображение фона</guilabel> для того, чтобы фоновое изображение прокручивалось вместе с текстом, когда вы прокручиваете его в терминале. Если вы не выберете этот пункт, изображение фона останется зафиксированным на фоне терминала и прокручивается только текст. Этот параметр доступен, если только будет выбран вариант <guilabel>Фоновое изображение</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Прозрачный фон</guilabel> 
+                     </para>
+                     <para>Выберите этот пункт чтобы использовать прозрачный фон для терминала.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Затемнять прозрачность или изображение фона</guilabel>
+                </term> 
+             <listitem> 
+                <para>Используйте этот ползунок чтобы затемнить или замутнить фон терминала. Этот параметр доступен, если только будет выбран вариант <guilabel>Фоновое изображение</guilabel> или <guilabel>Прозрачный фон</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-prefs-scrolling">
+    <title>Прокрутка</title>
+     <variablelist>
+     <varlistentry> 
+             <term> 
+                <guilabel>Полоса прокрутки:</guilabel> </term> 
+             <listitem> 
+                <para>Используйте этот выпадающий список для установки положения полосы прокрутки в окне терминала.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Обратная прокрутка ... линий</guilabel> </term> 
+             <listitem> 
+                <para>Используйте этот прокручиваемый список для установки количества линий, которое вы сможете прокрутить назад, используя прокрутку. Например, если вы установите 100, вы сможете прокрутить назад последние 100 линий, отображённых в терминале.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term> 
+                <guilabel>Прокручивать при выводе</guilabel> </term> 
+             <listitem> 
+                <para>Выберите этот параметр для возможности прокручивать при выводе терминалом информации, когда терминал продолжает выводить дальнейшую информацию выполняющейся команды.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Прокручивать при нажатии клавиши</guilabel> </term> 
+             <listitem> 
+                <para>Выберите этот параметр для возможности при нажатии любой клавиши на клавиатуре прокручивать текст в окне терминала вниз, до приглашения на выполнение команды. Это действие применимо, если вы прокрутили вверх текст в окне терминала и хотите вернуться к запросу на выполнение команды.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="gnome-terminal-prefs-compatibility"> 
+        <title>Совместимость</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Клавиша "Backspace" генерирует:</guilabel> </term> 
+             <listitem> 
+                <para>Используйте этот выпадающий список для выбора функции, которую бы вы хотели, чтобы выполняла клавиша <keycap>Backspace</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Клавиша "Delete" генерирует:</guilabel> </term> 
+             <listitem> 
+                <para>Используйте этот выпадающий список для выбора функции, которую бы вы хотели, чтобы выполняла клавиша <keycap>Delete</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guibutton>Восстановить параметры совместимости по умолчанию</guibutton> </term> 
+             <listitem> 
+                <para>Нажмите на эту кнопку для сброса параметров во вкладке <guilabel>Совместимость</guilabel> к установкам по умолчанию.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

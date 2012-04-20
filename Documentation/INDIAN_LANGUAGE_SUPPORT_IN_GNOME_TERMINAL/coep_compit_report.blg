@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: coep_compit_report.aux
+The style file: plain.bst
+Database file #1: coep_compit_report.bib
+Warning--to sort, need author or key in wiki1
+Warning--to sort, need author or key in wiki2
+Warning--to sort, need author or key in wiki3
+Warning--to sort, need author or key in wiki4
+Warning--to sort, need author or key in internet1
+Warning--to sort, need author or key in internet2
+Warning--to sort, need author or key in wiki5
+Warning--to sort, need author or key in internet4
+Warning--to sort, need author or key in internet3
+Warning--to sort, need author or key in internet5
+Warning--to sort, need author or key in wiki6
+Warning--to sort, need author or key in internet6
+Warning--to sort, need author or key in internet7
+Warning--to sort, need author or key in internet8
+Warning--to sort, need author or key in bug1
+Warning--to sort, need author or key in bug2
+Warning--to sort, need author or key in sourcecode
+You've used 17 entries,
+            2118 wiz_defined-function locations,
+            547 strings with 5562 characters,
+and the built_in function-call counts, 2691 in all, are:
+= -- 238
+> -- 17
+< -- 0
++ -- 17
+- -- 0
+* -- 87
+:= -- 283
+add.period$ -- 34
+call.type$ -- 17
+change.case$ -- 51
+chr.to.int$ -- 0
+cite$ -- 34
+duplicate$ -- 119
+empty$ -- 392
+format.name$ -- 0
+if$ -- 664
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 0
+newline$ -- 71
+num.names$ -- 0
+pop$ -- 187
+preamble$ -- 1
+purify$ -- 34
+quote$ -- 0
+skip$ -- 101
+stack$ -- 0
+substring$ -- 85
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 17
+while$ -- 0
+width$ -- 19
+write$ -- 121
+(There were 17 warnings)

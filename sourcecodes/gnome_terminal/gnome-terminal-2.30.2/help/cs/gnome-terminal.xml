@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "GNOME Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="cs"> 
+  <articleinfo> 
+     <title>Příručka Terminálu GNOME</title> 
+     <abstract role="description">
+       <para>Terminál dává uživateli do rukou mocný nástroj na komunikaci se svým systémem pomocí textových příkazů v shellu (jako je například Bash).</para>
+     </abstract>
+     <copyright> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright>
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright><copyright><year>2008, 2009, 2010.</year><holder>Lucas Lommer (llommer@svn.gnome.org)</holder></copyright>	 
+     <publisher> 
+        <publishername>Dokumentační projekt GNOME</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License (GFDL), verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopii licence GFDL naleznete pod <ulink type="help" url="ghelp:fdl">tímto odkazem</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+          <para>Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte přiložit kopii licence dle popisu v oddíle 6 dané licence.</para>
+ 
+         <para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+ 
+         <para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+                 </listitem>
+                 <listitem>
+                   <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author> 
+          <firstname>Sun</firstname> 
+          <surname>Dokumentační tým GNOME</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>Dokumentační projekt GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>Dokumentační projekt GNOME</orgname> 
+          </affiliation> 
+        </author> 
+        <author> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>Dokumentační projekt GNOME</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>Dokumentační projekt GNOME</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.9</revnumber> 
+          <date>Leden 2010</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler <email>pcutler@gnome.org</email></para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision> 
+	<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.8</revnumber> 
+          <date>Březen 2009</date> 
+          <revdescription> 
+             <para role="author">Paul Cutler</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.7</revnumber> 
+          <date>Listopad 2003</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.6</revnumber> 
+          <date>Září 2003</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+	<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.5</revnumber> 
+          <date>Květen 2003</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+			<revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.4</revnumber> 
+          <date>Leden 2003</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.3</revnumber> 
+          <date>Srpen 2002</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.2</revnumber> 
+          <date>Srpen 2002</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.1</revnumber> 
+          <date>Srpen 2002</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision>
+        <revision> 
+          <revnumber>Příručka Terminálu GNOME verze 2.0</revnumber> 
+          <date>Duben 2002</date> 
+          <revdescription> 
+             <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision> 
+        <revision> 
+          <revnumber>Uživatelská příručka Terminálu GNOME</revnumber> 
+          <date>Květen 2000</date> 
+          <revdescription> 
+             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email></para>
+             <para role="publisher">Dokumentační projekt GNOME</para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo>Tato příručka popisuje Terminál GNOME ve verzi 2.30.</releaseinfo> 
+     <legalnotice> 
+        <title>Ohlasy</title> 
+        <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci Terminál GNOME nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm> 
+     <primary>Terminál GNOME</primary> 
+  </indexterm> 
+  <indexterm> 
+     <primary>terminálová aplikace</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-terminal-introduction"> 
+     <title>Úvod</title> 
+     <para><application>Terminál GNOME</application> je aplikace emulující terminál, která vám umožňuje provádět následující věci:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Přistupovat k shellu UNIXU z prostředí GNOME</term> 
+          <listitem> 
+             <para>Shell je program, který interpretuje a vykonává příkazy, které napíšete do výzvy příkazového řádku. Při startu <application>Terminálu GNOME</application> spustí aplikace výchozí shell vašeho účtu v systému. Shell můžete kdykoliv změnit.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Spouštět jakoukoliv aplikaci, která je navržena tak, aby běžela na terminálech VT102, VT220 a xterm.</term> 
+          <listitem> 
+             <para><application>Terminál GNOME</application> emuluje aplikaci <application>xterm</application>, která byla vyvinuta společností X Consortium. Aplikace <application>xterm</application> emuluje terminál DEC VT102 a také podporuje escape sekvence DEC VT220. Escape sekvence je série znaků začínající znakem <keycap>Esc</keycap>. <application>Terminál GNOME</application> akceptuje všechny escape sekvence, které používají terminály VT102 a VT220, například pro umisťování kurzoru nebo mazání obrazovky.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="gnome-terminal-get-started"> 
+     <title>Začínáme</title> 
+     <para>Následující části popisují způsoby spuštění <application>Terminálu GNOME</application>.</para>
+     <sect2 id="gnome-terminal-to-start"> 
+        <title>Spuštění Terminálu GNOME</title> 
+        <para><application>Terminál GNOME</application> lze spustit následujícími způsoby:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Nabídka <guimenu>Aplikace</guimenu></term> 
+             <listitem>
+                <para>Zvolte <menuchoice><guimenu>Příslušenství</guimenu><guimenuitem>Terminál</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>Příkazová řádka</term> 
+             <listitem> 
+                <para>Spusťte následující příkaz: <command>gnome-terminal</command></para>
+                <para>Můžete použít přepínače příkazové řádky k ovlivnění způsobu spouštění <application>Terminálu GNOME</application>. Možnosti parametrů příkazu zobrazíte spuštěním příkazu: <command>gnome-terminal --help</command></para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-first-start"> 
+        <title>Když poprvé spustíte Terminál GNOME</title> 
+        <para>Když spustíte <application>Terminál GNOME</application> úplně poprvé, aplikace otevře okno terminálu s výchozím nastavením. Výchozímu nastavení se říká Výchozí profil. Název profilu je zobrazen v titulku okna <application>Terminálu GNOME</application>.</para>
+        <figure id="gnome-terminal_default"> 
+          <title>Příklad typického okna Terminálu GNOME</title> 
+          <screenshot> 
+             <screeninfo>Výchozí okno Terminálu GNOME</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Výchozí okno Terminálu GNOME</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Okno terminálu zobrazuje výzvu příkazového řádku, kam můžete psát UNIXové příkazy. Výzva může být označena jako %, #, &gt;, $ nebo jiným speciálním znakem. Kurzor je na pozici výzvy příkazového řádku. Když napíšete UNIXový příkaz a stisknete <keycap>Enter</keycap>, počítač příkaz spustí. Výchozí shell, který <application>Terminál GNOME</application> používá, je výchozí shell uživatele, který spustil aplikaci.</para>
+        <para><application>Terminál GNOME</application> také nastavuje následující proměnné prostředí:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Výchozí hodnota je <literal>xterm</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Výchozí hodnota je <literal>gnome-terminal</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Výchozí hodnota je identifikátor okna systému X11.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="gnome-terminal-profiles"> 
+        <title>Profily terminálu</title> 
+        <para>Můžete vytvořit nový profil a ten použít pro úpravu vlastností terminálu jako písma, barvy a efektů, rolování výstupu, titulku okna nebo kompatibility. Také můžete určit příkaz, který se spustí při startu <application>Terminálu GNOME</application> s tímto profilem.</para>
+          <para>Profily lze vytvářet v okně <guilabel>Profily</guilabel>, které je dostupné z nabídky <guimenu>Upravit</guimenu>. Můžete vytvořit tolik různých profilů, kolik chcete. Při startu terminálu pak můžete vybrat profil, který se má použít, nebo jej můžete profil měnit během používání terminálu. Zvolit profil při startu aplikace z příkazové řádky můžete za použití následujícího příkazu:</para>
+        <para>
+          <command>gnome-terminal --window-with-profile=<replaceable>jméno_profilu</replaceable></command> 
+        </para>
+        <para>Jméno aktuálního profilu se zobrazuje v titulku <application>Terminálu GNOME</application>, pokud nezměníte jméno titulku v okně <guilabel>Úpravy profilu</guilabel>.</para>
+        <para><xref linkend="gnome-terminal-manage-profiles"/> popisuje, jak nastavit a používat nový profil terminálu.</para>
+     </sect2> 
+     <sect2 id="gnome-terminal-more-windows"> 
+        <title>Práce s více terminály</title> 
+        <para><application>Terminál GNOME</application> umožňuje používat karty pro otevírání více terminálů v jednom okně. Každý terminál je otevřen v jedné kartě. Klepnutím na kartu terminálu jej zobrazíte v okně. Každý terminál v kartě je samostatný podproces a proto můžete každý z nich použít pro jinou úlohu. U každého terminálu v kartě okna můžete nastavit jiný profil.</para>
+       <para>Titulek okna terminálu zobrazuje buď název aktuálního profilu nebo název v profilu nastavený. <xref linkend="gnome-terminal-tabbed"/> ukazuje <application>Terminál GNOME</application> se čtyřmi kartami. V tomto případě má každá ze čtyř karet vlastní profil. Jméno profilu v aktivní kartě, Profile 1, je zobrazeno v titulku.</para>
+        <figure id="gnome-terminal-tabbed"> 
+          <title>Příklad okna terminálu s kartami</title> 
+          <screenshot> 
+             <screeninfo>Výchozí okno Terminálu GNOME</screeninfo> 
+             <mediaobject> 
+                <imageobject>
+                  <imagedata fileref="figures/gnome-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>Výchozí okno Terminálu GNOME</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para><xref linkend="gnome-terminal-windows"/> obsahuje informace o tom, jak otevřít novou kartu s terminálem.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="gnome-terminal-usage"> 
+     <title>Používání</title> 
+
+     <sect2 id="gnome-terminal-windows"> 
+        <title>Otevření a ukončení terminálu</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Otevření nového okna terminálu:</term> 
+             <listitem> 
+                <para>Zvolte z nabídky <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Otevřít terminál</guimenuitem></menuchoice>.</para>
+                <para>Nový terminál zdědí nastavení a výchozí shell rodičovského terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Uzavření okna terminálu:</term> 
+             <listitem> 
+                <para>Zvolte z nabídky <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Zavřít okno</guimenuitem></menuchoice>.</para>
+                <para>Tato akce ukončí terminál a všechny podprocesy v něm spuštěné. Pokud uzavřete poslední okno terminálu, <application>Terminál GNOME</application> se ukončí.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Přidání nového terminálu v kartě:</term> 
+             <listitem> 
+                <para>Zvolte z nabídky <menuchoice><guimenu>Soubor</guimenu><guisubmenu>Nová karta</guisubmenu><guimenuitem>Výchozí</guimenuitem></menuchoice> nebo jen <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Nová karta</guimenuitem></menuchoice>, pokud dál není žádná nabídka.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Zobrazení terminálu v kartě:</term> 
+             <listitem> 
+                <para>Klepněte na kartu terminálu, který chcete zobrazit, nebo zvolte kartu podle názvu z nabídky <guimenu>Karty</guimenu>.</para>
+                <para>Také lze navigaci mezi kartami provádět zvolením položky <menuchoice><guimenu>Karty</guimenu><guimenuitem>Následující karta</guimenuitem></menuchoice> nebo <menuchoice><guimenu>Karty</guimenu><guimenuitem>Předchozí karta</guimenuitem></menuchoice> z nabídky.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Zavření terminálu v kartě</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Aktivujte terminál, který chcete uzavřít.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Zvolte z nabídky <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Zavřít kartu</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-manage-profiles"> 
+        <title>Správa profilů</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Přidání nového profilu:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Zvolením z nabídky <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Nový profil</guimenuitem></menuchoice> otevřete okno <guilabel>Nový profil</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Do textového políčka <guilabel>Jméno profilu</guilabel> napište pojmenování nového profilu.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Roletový seznam <guilabel>Založen na</guilabel> umožňuje vybrat profil, na kterém bude nový založen.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klepněte na <guibutton>Vytvořit</guibutton> a zobrazí se okno <guilabel>Úprava profilu</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klepněte na <guibutton>Zavřít</guibutton>. <application>Terminál GNOME</application> přidá profil do podnabídky nabídky <menuchoice><guimenu>Terminál</guimenu><guisubmenu>Změnit profil</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Změna profilu terminálu v kartě:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Klepněte na kartu terminálu, jehož profil chcete změnit.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Zvolte z nabídky <menuchoice><guimenu>Terminál</guimenu><guisubmenu>Změnit profil</guisubmenu><guimenuitem><replaceable>jméno_profilu</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Úprava profilu:</term> 
+             <listitem> 
+                <para>Profily se upravuji v okně <guilabel>Úprava profilu</guilabel>. Toto okno lze otevřít následujícími způsoby:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Zvolte z menu <menuchoice><guimenu>Upravit</guimenu><guisubmenu>Aktuální profil</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Klepněte pravým tlačítkem do okna terminálu a zvolte <guimenuitem>Upravit aktuální profil</guimenuitem> z kontextové nabídky.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guisubmenu>Profily</guisubmenu></menuchoice>, zvolte profil, který chcete upravit a klepněte na tlačítko <guibutton>Upravit</guibutton>. Informace o tom, co lze u profilu nastavit, popisuje <xref linkend="gnome-terminal-prefs"/>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Odstranění profilu:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guisubmenu>Profily</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Ze seznamu v okně <guilabel>Profily</guilabel> zvolte profil, který chcete odstranit a klepněte na tlačítko <guibutton>Smazat</guibutton>. Zobrazí se okno <guilabel>Odstranění profilu</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Pokud chcete dotaz na odstranění potvrdit, klepněte na <guibutton>Smazat</guibutton>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Klepnutím na tlačítko <guibutton>Zavřít</guibutton> uzavřete okno <guilabel>Profily</guilabel>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-tabs"> 
+        <title>Úpravy okna terminálu</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Skrytí panelu nabídky:</term> 
+             <listitem> 
+                <para>Zvolte z nabídky <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Zobrazovat panel nabídky</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Zobrazení panelu nabídky:</term> 
+             <listitem> 
+                <para>Klepněte pravým tlačítkem do okna terminálu a zvolte <guimenuitem>Zobrazovat panel nabídky</guimenuitem> z kontextové nabídky.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Zobrazení <application>Terminálu GNOME</application> v režimu celé obrazovky:</term>
+            <listitem>
+              <para>Zvolte z nabídky <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Celá obrazovka</guimenuitem></menuchoice>. V režimu celé obrazovky je zobrazen text terminálu na celou obrazovku a okno neobsahuje titulek ani rámeček. Tento režim ukončíte opětovným zvolením <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Celá obrazovka</guimenuitem></menuchoice> z nabídky.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Změna vzhledu okna terminálu:</term> 
+             <listitem> 
+                <para>Informace o možnostech nastavení vzhledu prostřednictvím okna <guilabel>Úprava profilu</guilabel> popisuje <xref linkend="gnome-terminal-prefs"/>. Například lze změnit barvu pozadí nebo umístění rolovací lišty.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-contents"> 
+        <title>Práce s obsahem okna terminálu</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Procházení předchozích příkazů a výstupů:</term> 
+             <listitem> 
+                <para>Proveďte jednu z následujících operací:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Použijte rolovací lištu, která je obvykle umístěna na pravé straně okna terminálu.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Stiskněte kombinaci kláves <keycombo><keycap>Shift</keycap><keycap>Page Up</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Page Down</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Home</keycap></keycombo>, nebo <keycombo><keycap>Shift</keycap><keycap>End</keycap></keycombo>.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Počet řádek, které můžete procházet zpět v rámci okna terminálu je odvozen od nastavení volby <guilabel>Paměť řádků</guilabel> v kartě <guilabel>Rolování</guilabel> v okně <guilabel>Úprava profilu</guilabel>.Posun nahoru nebo dolů po jednotlivých řádcích můžete také provádět pomocíkombinace kláves <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Nahoru</keycap></keycombo> nebo <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Dolů</keycap></keycombo>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Výběr a kopírování textu:</term> 
+             <listitem> 
+                <para>Text lze vybrat jedním z následujících způsobů:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Pokud chcete vybírat po znacích, klepněte na první znak, který chcete označit a táhněte kurzorem k poslednímu znaku, který chcete označit.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Pokud chcete vybírat po slovech, poklepejte na první slovo, které chcete označit a táhněte kurzorem k poslednímu slovu, které chcete označit. Symboly jsou označovány po jednom.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Pokud chcete vybírat po řádkách, třikrát klepněte na první řádku, kterou chcete označit a táhněte kurzorem na poslední řádek, který chcete označit.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Všechny tyto způsoby kopírují text mezi první a poslední položkou. Všechny výběry v <application>Terminálu GNOME</application> jsou po uvolnění tlačítka myši vložena do schránky. Pokud chcete zvolený text kopírovat klasicky, zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Kopírovat</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Vkládání textu do terminálu:</term> 
+             <listitem> 
+                <para>Pokud máte zkopírovaný text ve schránce, do terminálu jej můžete vložit jedním z následujících úkonů:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Text, který byl zkopírován pouhým označením, vložíte klepnutím prostředního tlačítka za výzvu příkazového řádku. Pokud prostřední tlačítko nemáte, dohledejte si v dokumentaci X serveru informace o emulaci prostředního tlačítka.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Text zkopírovaný klasickou metodou vložíte zvolením <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Vložit</guimenuitem></menuchoice> z nabídky.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Přetažení jména souboru do okna terminálu:</term> 
+             <listitem> 
+                <para>Jméno souboru lze přetáhnout z jiné aplikace, jako například správce souborů. Terminál zobrazí cestu k souboru a celé jméno souboru.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Otevření odkazu:</term> 
+             <listitem> 
+                <para>Pokud chcete otevřít Uniform Resource Locator (adresa URL) z výstupu v terminálu, proveďte následující kroky:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Přesuňte kurzor myši nad URL tak, že adresa je podtržena.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Pravým tlačítkem na adresu URL klepněte a otevřete kontextovou nabídku.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Zvolením položky <guimenuitem>Otevřít odkaz</guimenuitem> spustíte vhodnou aplikaci pro zobrazení souboru na adrese URL.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-shortcuts"> 
+        <title>Prohlížení klávesových zkratek</title> 
+        <para>Pokud chcete prohlížet klávesové zkratky, které jsou definovány pro <application>Terminál GNOME</application>, zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Klávesové zkratky</guimenuitem></menuchoice>. Objeví se okno <guilabel>Klávesové zkratky</guilabel>, které obsahuje tyto volby:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term><guilabel>Povolit klávesové zkratky v hlavní nabídce (např. Alt-S pro otevření nabídky Soubor)</guilabel></term> 
+             <listitem> 
+                <para>Tato volba slouží k (de)aktivaci definovaných akcelerátorů, které umožňují používat klávesnici pro výběr položek nabídky namísto myši. Každý akcelerátor je reprezentován podtrženým písmenem v názvu nabídky nebo volbě okna. V některých případech je nutné zmáčknout kombinaci klávesy <keycap>Alt</keycap> s akcelerátorem, aby byla akce provedena.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Povolit klávesovou zkratku hlavní nabídky (F10 je výchozí)</guilabel></term> 
+             <listitem> 
+                <para>Tato volba slouží k (de)aktivaci klávesové zkratky, která v <application>Terminálu GNOME</application> slouží k přístupu do nabídky. Výchozí klávesová zkratka pro přístup k nabídce je klávesa <keycap>F10</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term><guilabel>Klávesové zkratky</guilabel></term> 
+             <listitem> 
+                <para>Sekce okna <guilabel>Klávesové zkratky</guilabel> obsahuje seznam klávesových zkratek definovaných pro každou položku nabídky.</para>
+                <note><para>Ne všechny klávesy lze použít jako zkratky, příkladem je klávesa <keycap>Tab</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="gnome-terminal-resize">
+	<title>Velikost textu</title>
+	<para>Zvětšit text v okně Terminálu GNOME lze následujícími způsoby:</para>
+		<itemizedlist>
+			<listitem><para>Pokud chcete text zvětšit, zvolte z nabídky <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Zvětšit</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Pokud chcete text zmenšit, zvolte z nabídky <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Zmenšit</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Pokud chcete text zobrazit v normální velikosti, zvolte z nabídky <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Normální velikost</guimenuitem></menuchoice>.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-title"> 
+        <title>Změna titulku terminálu</title> 
+        <para>Pokud chcete změnit titulek aktuálně zobrazeného terminálu, proveďte následující kroky:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte z nabídky <menuchoice><guimenu>Terminál</guimenu><guimenuitem>Nastavit titulek</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Do textového pole <guilabel>Titulek</guilabel> napište jméno nového titulku. Změna se v <application>Terminálu GNOME</application> projeví okamžitě.</para>
+          </listitem>
+          <listitem>
+            <para>Klepnutím na tlačítko <guibutton>Zavřít</guibutton> zavřete okno <guilabel>Nastavit titulek</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="gnome-terminal-encoding"> 
+        <title>Změna kódování znaků</title> 
+        <para>Pokud chcete změnit kódování znaků, zvolte z nabídky menuchoice&gt;<guimenu>Terminál</guimenu><guisubmenu>Nastavit kódování znaků</guisubmenu></para>
+
+     <sect3 id="gnome-terminal-encoding-add"> 
+        <title>Úprava seznamu s kódováními znaků</title> 
+        <para>Pokud chcete změnit seznam kódování znaků v nabídce <guisubmenu>Nastavit kódování znaků</guisubmenu>, proveďte následující kroky:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte z nabídky <menuchoice><guimenu>Terminál</guimenu><guisubmenu>Nastavit kódování znaků</guisubmenu><guimenuitem>Přidat nebo odebrat</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Nové kódování znaků přidáte do nabídky <guisubmenu>Nastavit kódování znaků</guisubmenu>, když jej vyberete v seznamu <guilabel>Dostupná kódování</guilabel> a klepnete na tlačítko s šipkou ukazující vpravo.</para>
+          </listitem>
+          <listitem>
+            <para>Kódování znaků odeberete z nabídky <guisubmenu>Nastavit kódování znaků</guisubmenu>, když jej vyberete v seznamu <guilabel>Kódování zobrazovaná v nabídce</guilabel> a klepnete na tlačítko s šipkou ukazující vlevo.</para>
+          </listitem>
+          <listitem>
+            <para>Okno <guilabel>Přidat nebo odstranit kódování terminálu</guilabel> zavřete klepnutím na tlačítko <guibutton>Zavřít</guibutton>.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="gnome-terminal-reset"> 
+        <title>Obnovení terminálu</title> 
+        <para>Tato sekce obsahuje pár rad, pokud máte problémy s terminály.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Nová inicializace terminálu:</term> 
+             <listitem> 
+                <para>Z nabídky zvolte <menuchoice><guimenu>Terminál</guimenu><guimenuitem>Inicializovat</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Nová inicializace terminálu a vymazání obrazovky:</term> 
+             <listitem> 
+                <para>Z nabídky zvolte <menuchoice><guimenu>Terminál</guimenu><guimenuitem>Inicializovat a vymazat</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="gnome-terminal-prefs"> 
+     <title>Nastavení</title> 
+     <para>Pokud chcete změnit vlastnosti <application>Terminálu GNOME</application>, zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Aktuální profil</guimenuitem></menuchoice>. Pokud chcete upravit vlastnosti jiného vámi vytvořeného profilu, zvolte z nabídky <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Profily</guimenuitem></menuchoice>, ze seznamu zvolte profil, který chcete upravit, a klepněte na tlačítko <guibutton>Upravit</guibutton>.</para>
+     <para>Okno <guilabel>Úprava profilu</guilabel> obsahuje v kartách následující části umožňující nastavit <application>Terminál GNOME</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="gnome-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="gnome-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="gnome-terminal-prefs-general"> 
+        <title>Všeobecné</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Jméno profilu</guilabel> </term> 
+             <listitem> 
+                <para>Použijte textové pole pro zadání názvu profilu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Používat systémové písmo s pevnou šířkou</guilabel> </term>
+             <listitem> 
+                <para>Zaškrtněte tuto volbu, pokud chcete použít výchozí systémové písmo s pevnou šířkou, které lze nastavit v kartě <guilabel>Písma</guilabel> aplikace <application>Nastavení vzhledu</application>.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Písmo</guilabel> </term> 
+             <listitem> 
+                <para>Na toto tlačítko klepněte, pokud chcete změnit typ a velikost písma terminálu. Tlačítko je aktivní pouze, pokud je odškrtnuta volba <guilabel>Používat systémové písmo s pevnou šířkou</guilabel>.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Povolit tučný text</guilabel> </term> 
+             <listitem> 
+                <para>Zaškrtněte tuto volbu, pokud chcete umožnit tučné písmo v terminálu.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term> 
+                <guilabel>Zobrazovat nové terminály s panelem nabídky</guilabel>
+                </term> 
+             <listitem> 
+                <para>Zaškrtněte tuto volbu, pokud chcete zobrazovat panel nabídky v každém novém okně terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Pípání terminálu</guilabel> </term> 
+             <listitem> 
+                <para>Zapnutím této volby povolíte pípání terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Znaky pro výběr slov</guilabel> </term> 
+             <listitem> 
+                <para>Do tohoto textového pole zapište znaky nebo skupiny znaků, podle kterých se <application>Terminál GNOME</application> rozhoduje při výběru po slovech. Více informací o výběru textu po slovech popisuje <xref linkend="gnome-terminal-contents"/>.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-title"> 
+        <title>Titulek a příkaz</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Výchozí titulek</guilabel> </term> 
+             <listitem> 
+                <para>V tomto textovém poli můžete nastavit výchozí titulek okna terminálu pro daný profil. Nové terminály spuštěné z aktuálního terminálu budou mít nový výchozí titulek.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Kdy příkazy v terminálu nastavují vlastní titulek</guilabel> </term>
+             <listitem> 
+                <para>Tento roletový seznamu vám umožňuje nastavit způsob, jakým se pracuje s dynamickým titulkem okna, tj. nastavením titulku příkazem, který běží v terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Spustit příkaz jako přihlašovací shell</guilabel> </term> 
+             <listitem> 
+                <para>Zaškrtněte, pokud chcete, aby právě běžící příkaz terminálu běžel jako přihlašovací shell. Pokud však příkaz není shell, nastavení se mine účinkem.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Při spuštění příkazu aktualizovat záznamy o přihlášení</guilabel> </term> 
+             <listitem> 
+                <para>Zaškrtněte, pokud chcete, aby se při otevření nového shellu vytvořil nový záznam o přihlášení.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Spustit vlastní příkaz místo mého shellu</guilabel>
+                </term> 
+             <listitem> 
+                <para>Zaškrtněte tuto volbu, pokud chcete v terminálu spustit vlastní příkaz namísto shellu. Do textového políčka <guilabel>Vlastní příkaz</guilabel> zadejte vlastní příkaz.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Po skončení příkazu</guilabel> </term> 
+             <listitem> 
+                <para>Z roletového seznamu vyberte akci, která se provede po skončení příkazu.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-colors"> 
+        <title>Barvy</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term> 
+                <guilabel>Popředí a pozadí</guilabel>
+                </term> 
+             <listitem> 
+                <para>Zaškrtněte volbu <guilabel>Používat barvy systémového motivu</guilabel>, pokud chcete použít barvy určené motivem prostředí GNOME. Nastavení vzhledu lze provést na kartě <guilabel>Motiv</guilabel> v <ulink type="help" url="ghelp:user-guide?prefs-theme">nástroji <application>Nastavení vzhledu</application></ulink>.</para>
+                <para>Pomocí rolovacího seznamu <guilabel>Zabudovaná schémata</guilabel> můžete nastavit popředí a pozadí terminálu. <application>Terminál GNOME</application> podporuje tyto barevné kombinace popředí a pozadí:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Černá na světle žlutém</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para>
+                        <guilabel>Černá na bílém</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Šedá na černém</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Zelená na černém</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para>
+                        <guilabel>Bílá na černém</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Vlastní</guilabel> 
+                     </para>
+                     <para>Tato volba vám umožňuje vybrat barvy, které nejsou v barevných schématech.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Samotné zobrazení popředí a pozadí se může lišit v závislosti na vybraném barevném schématu. Například, pokud zvolíte <guilabel>Bílá na černém</guilabel> a paletu <guilabel>Linuxová konzola</guilabel>, aplikace bude zobrazovat text a pozadí jako světle šedou na černé. Rolovací lišta <guilabel>Zabudovaná schémata</guilabel> je dostupná pouze, pokud je odškrtnuta volba <guilabel>Používat barvy systémového motivu</guilabel>.</para>
+                <para>Pokud klepnete na tlačítko <guibutton>Barva textu</guibutton>, zobrazí se okno <guilabel>Vyberte barvu textu terminálu</guilabel>. Použijte barevný kotouč nebo přírůstková pole k nastavení požadované barvy a klepněte na <guibutton>Budiž</guibutton>. Tlačítko výběru barvy textu je dostupné pouze, pokud je odškrtnuta volba <guilabel>Používat barvy systémového motivu</guilabel>.</para>
+                <para>Pokud klepnete na tlačítko <guibutton>Barva pozadí</guibutton>, zobrazí se okno <guilabel>Vyberte barvu pozadí terminálu</guilabel>. Použijte barevný kotouč nebo přírůstková pole k nastavení požadované barvy a klepněte na <guibutton>Budiž</guibutton>. Tlačítko výběru barvy pozadí je dostupné pouze, pokud je odškrtnuta volba <guilabel>Používat barvy systémového motivu</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Paleta</guilabel></term> 
+             <listitem> 
+                <para>Terminálová emulace umožňuje používat pouze 16 barev pro vykreslování textu. Barevná paleta těchto 16 barev určuje. Aplikace bežící v terminálu používají pořadové číslo k určení barvy z palety.</para>
+               <para>Pomocí rolovacího seznamu <guilabel>Zabudovaná schémata</guilabel> můžete nastavit schéma. Barevná paleta pod výběrem a obsah terminálu se sami aktualizují na nový vzhled.</para>
+               <para>Pomocí <guilabel>Palety barev</guilabel> můžete upravit 16 výchozích barev na vlastní paletu. Barvu upravíte klepnutím na tlačítko barvy. V okně <guilabel>Vyberte barvu palety</guilabel> použijte barevný kotouč nebo přírůstková pole k úpravě barvy a klepněte na <guibutton>Budiž</guibutton>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="gnome-terminal-prefs-effects"> 
+        <title>Efekty</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Pozadí</guilabel> </term> 
+             <listitem> 
+                <para>Výběr pozadí okna terminálu. Možnosti jsou následující:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Barevná výplň</guilabel>
+                     </para>
+                     <para>Použijte tuto volbu, pokud chcete mít nastavenou barvu pozadí, kterou máte vybránu na kartě <guilabel>Barvy</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Obrázek na pozadí</guilabel> 
+                     </para>
+                     <para>Tuto volbu použijte, pokud chcete nastavit obrázek jako pozadí terminálu. Pomocí kombinovaného seznamu <guilabel>Soubor s obrázkem</guilabel> nastavte cestu a jméno souboru s obrázkem. Také můžete soubor s obrázkem vyhledat klepnutím na tlačítko <guibutton>Procházet</guibutton>.</para>
+                     <para>Pokud chcete, aby se obrázek na pozadí posouval spolu s textem, zaškrtněte volbu <guilabel>Obrázek na pozadí se posouvá</guilabel>. V opačném případě zůstane obrázek ve stejné poloze a posunuje se pouze text. Tato volba je dostupná pouze, pokud jste zvolili možnost <guilabel>Obrázek na pozadí</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>
+                        <guilabel>Průsvitné pozadí</guilabel> 
+                     </para>
+                     <para>Pokud chcete použít průsvitné pozadí terminálu, vyberte tuto volbu.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term> 
+                <guilabel>Stínované průsvitné pozadí nebo pozadí s obrázkem</guilabel>
+                </term> 
+             <listitem> 
+                <para>Použijte posuvník k určení míry průsvitnosti pozadí terminálu. Toto nastavení je dostupné pouze, pokud je vybrána volba <guilabel>Obrázek na pozadí</guilabel> nebo <guilabel>Průsvitné pozadí</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="gnome-terminal-prefs-scrolling">
+    <title>Rolování</title>
+     <variablelist>
+     <varlistentry> 
+             <term> 
+                <guilabel>Posuvník je</guilabel> </term> 
+             <listitem> 
+                <para>Použijte roletový seznam k určení pozice posuvníku v okně terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Paměť řádků</guilabel> </term> 
+             <listitem> 
+                <para>Použijte toto přírůstkové pole pro určení počtu řádek, které je možné na zpět procházet. Například nastavení na hodnotu 100 způsobí, že můžete rolovat výstup v terminálu nejvýše 100 řádek zpět.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term> 
+                <guilabel>Rolovat při výstupu</guilabel> </term> 
+             <listitem> 
+                <para>Vyberte tuto volbu, pokud chcete umožnit posouvání výstupu terminálu během běžícího zobrazování výstupu příkazu do terminálu.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Rolovat při stisku klávesy</guilabel> </term> 
+             <listitem> 
+                <para>Pokud chcete, aby se při stisku libovolné klávesy posunul pohled na terminál zpět na výzvu příkazového řádku, zaškrtněte tuto volbu. Toto funguje pouze tehdy, pokud jste rolovali v okně terminálu zpět (nahoru) a chcete se vrátit na výzvu příkazového řádku.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="gnome-terminal-prefs-compatibility"> 
+        <title>Kompatibilita</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Klávesa Backspace generuje</guilabel> </term> 
+             <listitem> 
+                <para>Z roletového seznamu zvolte funkci, kterou má klávesa <keycap>Backspace</keycap> provádět.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guilabel>Klávesa Delete generuje</guilabel> </term> 
+             <listitem> 
+                <para>Z roletového seznamu zvolte funkci, kterou má klávesa <keycap>Delete</keycap> provádět.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term> 
+                <guibutton>Obnovit standardní nastavení pro kompatibilitu</guibutton> </term> 
+             <listitem> 
+                <para>Klepnutím na tlačítko obnovíte výchozí nastavení voleb na kartě <guilabel>Kompatibilita</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

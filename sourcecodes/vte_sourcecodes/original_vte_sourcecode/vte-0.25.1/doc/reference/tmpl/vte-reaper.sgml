@@ -1,0 +1,51 @@
+<!-- ##### SECTION Title ##### -->
+VteReaper
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT VteReaper ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL VteReaper::child-exited ##### -->
+<para>
+
+</para>
+
+@vtereaper: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### FUNCTION vte_reaper_add_child ##### -->
+<para>
+
+</para>
+
+@pid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION vte_reaper_get ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+

@@ -1,0 +1,80 @@
+%_____________________________________________________________________________________________ 
+% LATEX Template: Department of Comp/IT BTech Project Reports
+% Sample Chapter
+% Sun Mar 27 10:25:35 IST 2011
+%
+% Note: Itemization, enumeration and other things not shown. A sample figure is included.
+%_____________________________________________________________________________________________ 
+
+\chapter{Solution of the Problem}
+\section{Handling of non-zero width diacritics and conjuncts}
+The \textit{VTE} library was updated to support the rendering of the zero width diacritics . However this did not solve the rendering issue completely for complex scripts like Devanagari, due to the following reasons:
+
+\begin{itemize}
+\item In Devanagari the diacritics are of zero-width as well as of non-zero width. The non-zero width diacritics are not rendered properly.
+
+The reason for this is that, in \textit{VTE} the rendering of a character has been logically done in terms of cells i.e each character is rendered in a fixed size cell. As a result of this the non-zero width characters are rendered in different cell than that of the base character. These diacritics are rendered as dotted circles as shown in the figure.
+\item In Devanagari in addition to the diacritics, the characters can be combined to form conjuncts. These conjuncts are also not properly rendered as a combined character instead they are rendered separately.
+
+The reason for this problem is that, there is no interaction with the characters of previous cell. In order to form a conjunct we need to consider the previous character so that it can be combined with the current one to form a conjunct.
+\end{itemize}
+
+\subsection{Solution to the above problems}
+The above two problems are dealt with referring to the solution of handling zero width characters.
+
+\begin{enumerate}
+\item The non-zero width diacritics are interacted with previous base character. Due to this interaction a combined character is formed which is rendered as a single glyph.
+
+This has been implemented in the code with modifications in the files \textit{vte.c} and \textit{iso2022.c}.
+In the file \textit{iso2022.c} there is function to determine the width for ambiguous width characters. In this file we have an array of non-zero width Devanagari diacritics. This array is used to recognize that the character is a non-zero-width diacritic. There is a function named iscomplex to recognize the non-zero width Devanagari diacritics using the array and return a particular value to the calling function \textit{\_vte\_terminal\_insert\_char} in \textit{vte.c}.
+
+In the function \textit{\_vte\_terminal\_insert\_char} we use the value returned from above iscomplex function to handle a non-zero width diacritic. We append this diacritic to the base character in the previous cell and hence diacritic is rendered along with base character in the same cell.
+
+\item In case of the conjuncts we need to recognize the \textit{halant} character and combine the character after \textit{halant} to the one before \textit{halant} so that we get a single character formed by combining the two characters. This single glyph is then rendered instead of the glyph of first character. Glyphs are available in the font for the combined characters hence they can be rendered as one glyph.
+
+To implement this, modifications have been made to the the function \textit{\\\_vte\_terminal\_insert\_char} in \textit{vte.c}. in the file \textit{vte.c}. We recognize the \textit{halant} character and then set a flag so as to remember the occurrence of \textit{halant} when we get next input character. When a character is to be rendered with \textit{halant} flag set we combine that character with the previous character and from a conjunct which is rendered as a single character.
+\end{enumerate}
+
+\subsection{Problems after handling non-zero width diacritics and conjuncts}
+Although the  non-zero width diacritics and conjuncts were rendered properly there exist a problem of uneven spacing between the characters.
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=fig_5.1.eps}}
+\caption{Non zero width diacritics rendered with uneven space } \label{Gnome Terminal9}
+\end{figure}
+
+In Devanagari the characters are of varying width. So they do not occupy same width when rendered on the terminal. As a result of logical cell structure and varying width, the characters may overlap each other or there may be uneven spaces between characters depending upon the width of characters.
+
+More over the characters formed by handling non-zero width diacritics and conjuncts normally take up more space than the width of the cell, hence they overlap. To avoid this overlap we proposed to use two cells for these characters, however this gave rise to problem of uneven visible space between character cells.
+
+\section{VTE  with Devanagari support}
+All the problems related to the Devanagari script rendering converges at the same problem in \textit{VTE} architecture that all cells are having fixed width and width can be varied in integral multiple of default char-width set at the initialization of the \textit{VTE} widget.
+
+So we took this architectural problem as a solution to the Devanagari script rendering. We went through the all code paths and set the default character width to 1 instead of character width  obtained from font description which was the default earlier. Earlier, when a character was to be rendered, the number of columns required for rendering was 1 and so the width allocated would be (1 * character width). Now, if a character is to be rendered on to the screen, as all Latin alphabets have constant fixed width they are assigned a fixed number of columns where one column occupies one character width. The width allocated for rendering is number of (columns required * character width). The character width in this case is 1.
+
+In case of Devanagari script we have created an array containing the widths of the Devanagari characters. Each time when Devanagari character is to be rendered on to the screen width of that character is looked up in the array and number of columns required is set. A column in this case occupies one character width. This method works perfect for non-zero-width diacritics where we add the width required for the diacritic to the width required for base character. However in case of conjuncts we go on calculating the cell width dynamically, as the characters are kept on adding to the base character and put the cursor accurately after the rendered characters. Here for the base character we consider the half width from the array. We have solved all the issues of variable character widths in Devanagari scripts.
+
+This scheme works perfect for Devanagari script rendering. Here are the screen shots:
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=fig_5.2.eps}}
+\caption{Devanagari script rendering} \label{Gnome Terminal10}
+\end{figure}
+
+\begin{figure}[htbp]
+%place the figure according to your convenience
+\centerline{\epsfig{figure=fig_5.3.eps}}
+\caption{Rendering of conjuncts} \label{Gnome Terminal11}
+\end{figure}
+
+%\begin{figure}[htbp]			 Sample figure 
+%\begin{center}
+%\input{fig1.latex}			 Be sure to have the input file in the directory
+%\caption{A simple figure: Square}	 This will appear in the list of figures
+%\label{circle}
+%\end{center}
+%\end{figure}
+
+%_____________________________________________________________________________________________ 

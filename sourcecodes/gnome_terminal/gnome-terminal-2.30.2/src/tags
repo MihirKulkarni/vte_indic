@@ -1,0 +1,1561 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABOUT_GROUP	terminal-window.c	3648;"	d	file:
+ACCEL_PATH_CLOSE_TAB	terminal-accels.c	54;"	d	file:
+ACCEL_PATH_CLOSE_WINDOW	terminal-accels.c	55;"	d	file:
+ACCEL_PATH_COPY	terminal-accels.c	56;"	d	file:
+ACCEL_PATH_DETACH_TAB	terminal-accels.c	71;"	d	file:
+ACCEL_PATH_FORMAT	terminal-tabs-menu.c	41;"	d	file:
+ACCEL_PATH_FORMAT_LENGTH	terminal-tabs-menu.c	42;"	d	file:
+ACCEL_PATH_FULL_SCREEN	terminal-accels.c	59;"	d	file:
+ACCEL_PATH_HELP	terminal-accels.c	65;"	d	file:
+ACCEL_PATH_MOVE_TAB_LEFT	terminal-accels.c	69;"	d	file:
+ACCEL_PATH_MOVE_TAB_RIGHT	terminal-accels.c	70;"	d	file:
+ACCEL_PATH_NEW_PROFILE	terminal-accels.c	52;"	d	file:
+ACCEL_PATH_NEW_TAB	terminal-accels.c	50;"	d	file:
+ACCEL_PATH_NEW_WINDOW	terminal-accels.c	51;"	d	file:
+ACCEL_PATH_NEXT_TAB	terminal-accels.c	63;"	d	file:
+ACCEL_PATH_PASTE	terminal-accels.c	57;"	d	file:
+ACCEL_PATH_PREV_TAB	terminal-accels.c	62;"	d	file:
+ACCEL_PATH_RESET	terminal-accels.c	60;"	d	file:
+ACCEL_PATH_RESET_AND_CLEAR	terminal-accels.c	61;"	d	file:
+ACCEL_PATH_ROOT	terminal-accels.c	49;"	d	file:
+ACCEL_PATH_SAVE_CONTENTS	terminal-accels.c	53;"	d	file:
+ACCEL_PATH_SET_TERMINAL_TITLE	terminal-accels.c	64;"	d	file:
+ACCEL_PATH_SWITCH_TAB_PREFIX	terminal-accels.c	72;"	d	file:
+ACCEL_PATH_TOGGLE_MENUBAR	terminal-accels.c	58;"	d	file:
+ACCEL_PATH_ZOOM_IN	terminal-accels.c	66;"	d	file:
+ACCEL_PATH_ZOOM_NORMAL	terminal-accels.c	68;"	d	file:
+ACCEL_PATH_ZOOM_OUT	terminal-accels.c	67;"	d	file:
+ACTION_COLUMN	terminal-accels.c	/^  ACTION_COLUMN,$/;"	e	enum:__anon8	file:
+ACTION_VERB_FORMAT	terminal-tabs-menu.c	38;"	d	file:
+ACTION_VERB_FORMAT_BASE	terminal-tabs-menu.c	40;"	d	file:
+ACTION_VERB_FORMAT_LENGTH	terminal-tabs-menu.c	39;"	d	file:
+ACTION_VERB_FORMAT_PREFIX	terminal-tabs-menu.c	36;"	d	file:
+ACTION_VERB_FORMAT_PREFIX_LEN	terminal-tabs-menu.c	37;"	d	file:
+CLOSE_BUTTON_CLICKED	terminal-tab-label.c	/^  CLOSE_BUTTON_CLICKED,$/;"	e	enum:__anon25	file:
+CLOSE_SCREEN	terminal-screen.c	/^  CLOSE_SCREEN,$/;"	e	enum:__anon20	file:
+COLUMN_CHARSET	terminal-encoding.c	/^  COLUMN_CHARSET,$/;"	e	enum:__anon16	file:
+COLUMN_DATA	terminal-encoding.c	/^  COLUMN_DATA,$/;"	e	enum:__anon16	file:
+COLUMN_NAME	terminal-encoding.c	/^  COLUMN_NAME,$/;"	e	enum:__anon16	file:
+COL_PROFILE	terminal-app.c	/^  COL_PROFILE,$/;"	e	enum:__anon11	file:
+CONF_GLOBAL_PREFIX	terminal-app.h	61;"	d
+CONF_HTTP_PROXY_PREFIX	terminal-util.h	32;"	d
+CONF_KEYS_PREFIX	terminal-app.h	63;"	d
+CONF_PREFIX	terminal-app.h	60;"	d
+CONF_PROFILES_PREFIX	terminal-app.h	62;"	d
+CONF_PROXY_PREFIX	terminal-util.h	31;"	d
+CONNECT	profile-editor.c	797;"	d	file:
+CONNECT	profile-editor.c	851;"	d	file:
+CONNECT_WITH_FLAGS	profile-editor.c	796;"	d	file:
+CONNECT_WITH_FLAGS	profile-editor.c	852;"	d	file:
+DATA_KEY	terminal-tabs-menu.c	43;"	d	file:
+DEFAULT_ALLOW_BOLD	terminal-profile.c	129;"	d	file:
+DEFAULT_BACKGROUND_COLOR	terminal-profile.c	130;"	d	file:
+DEFAULT_BACKGROUND_DARKNESS	terminal-profile.c	132;"	d	file:
+DEFAULT_BACKGROUND_IMAGE	terminal-profile.c	134;"	d	file:
+DEFAULT_BACKGROUND_IMAGE_FILE	terminal-profile.c	133;"	d	file:
+DEFAULT_BACKGROUND_TYPE	terminal-profile.c	135;"	d	file:
+DEFAULT_BACKSPACE_BINDING	terminal-profile.c	136;"	d	file:
+DEFAULT_BOLD_COLOR_SAME_AS_FG	terminal-profile.c	131;"	d	file:
+DEFAULT_CURSOR_BLINK_MODE	terminal-profile.c	137;"	d	file:
+DEFAULT_CURSOR_SHAPE	terminal-profile.c	138;"	d	file:
+DEFAULT_CUSTOM_COMMAND	terminal-profile.c	139;"	d	file:
+DEFAULT_DEFAULT_SHOW_MENUBAR	terminal-profile.c	140;"	d	file:
+DEFAULT_DEFAULT_SIZE_COLUMNS	terminal-profile.c	141;"	d	file:
+DEFAULT_DEFAULT_SIZE_ROWS	terminal-profile.c	142;"	d	file:
+DEFAULT_DELETE_BINDING	terminal-profile.c	143;"	d	file:
+DEFAULT_ENABLE_MENU_BAR_ACCEL	terminal-app.c	157;"	d	file:
+DEFAULT_ENABLE_MNEMONICS	terminal-app.c	154;"	d	file:
+DEFAULT_EXIT_ACTION	terminal-profile.c	144;"	d	file:
+DEFAULT_FONT	terminal-profile.c	145;"	d	file:
+DEFAULT_FOREGROUND_COLOR	terminal-profile.c	146;"	d	file:
+DEFAULT_LOGIN_SHELL	terminal-profile.c	147;"	d	file:
+DEFAULT_MONOSPACE_FONT	terminal-app.c	151;"	d	file:
+DEFAULT_NAME	terminal-profile.c	148;"	d	file:
+DEFAULT_PALETTE	terminal-profile.c	149;"	d	file:
+DEFAULT_PROFILE_KEY	terminal-app.c	160;"	d	file:
+DEFAULT_SCROLLBACK_LINES	terminal-profile.c	151;"	d	file:
+DEFAULT_SCROLLBACK_UNLIMITED	terminal-profile.c	152;"	d	file:
+DEFAULT_SCROLLBAR_POSITION	terminal-profile.c	153;"	d	file:
+DEFAULT_SCROLL_BACKGROUND	terminal-profile.c	150;"	d	file:
+DEFAULT_SCROLL_ON_KEYSTROKE	terminal-profile.c	154;"	d	file:
+DEFAULT_SCROLL_ON_OUTPUT	terminal-profile.c	155;"	d	file:
+DEFAULT_SILENT_BELL	terminal-profile.c	156;"	d	file:
+DEFAULT_TITLE	terminal-profile.c	158;"	d	file:
+DEFAULT_TITLE_MODE	terminal-profile.c	157;"	d	file:
+DEFAULT_UPDATE_RECORDS	terminal-profile.c	159;"	d	file:
+DEFAULT_USE_CUSTOM_COMMAND	terminal-profile.c	160;"	d	file:
+DEFAULT_USE_SKEY	terminal-profile.c	161;"	d	file:
+DEFAULT_USE_SYSTEM_FONT	terminal-profile.c	162;"	d	file:
+DEFAULT_USE_THEME_COLORS	terminal-profile.c	163;"	d	file:
+DEFAULT_VISIBLE_NAME	terminal-profile.c	164;"	d	file:
+DEFAULT_WORD_CHARS	terminal-profile.c	165;"	d	file:
+EGG_DESKTOP_FILE_ERROR	eggdesktopfile.h	142;"	d
+EGG_DESKTOP_FILE_ERROR_INVALID	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_ERROR_INVALID,$/;"	e	enum:__anon31
+EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_ERROR_NOT_LAUNCHABLE,$/;"	e	enum:__anon31
+EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_ERROR_UNRECOGNIZED_OPTION$/;"	e	enum:__anon31
+EGG_DESKTOP_FILE_GROUP	eggdesktopfile.h	91;"	d
+EGG_DESKTOP_FILE_KEY_CATEGORIES	eggdesktopfile.h	108;"	d
+EGG_DESKTOP_FILE_KEY_COMMENT	eggdesktopfile.h	98;"	d
+EGG_DESKTOP_FILE_KEY_EXEC	eggdesktopfile.h	104;"	d
+EGG_DESKTOP_FILE_KEY_GENERIC_NAME	eggdesktopfile.h	96;"	d
+EGG_DESKTOP_FILE_KEY_HIDDEN	eggdesktopfile.h	100;"	d
+EGG_DESKTOP_FILE_KEY_ICON	eggdesktopfile.h	99;"	d
+EGG_DESKTOP_FILE_KEY_MIME_TYPE	eggdesktopfile.h	107;"	d
+EGG_DESKTOP_FILE_KEY_NAME	eggdesktopfile.h	95;"	d
+EGG_DESKTOP_FILE_KEY_NOT_SHOW_IN	eggdesktopfile.h	102;"	d
+EGG_DESKTOP_FILE_KEY_NO_DISPLAY	eggdesktopfile.h	97;"	d
+EGG_DESKTOP_FILE_KEY_ONLY_SHOW_IN	eggdesktopfile.h	101;"	d
+EGG_DESKTOP_FILE_KEY_PATH	eggdesktopfile.h	105;"	d
+EGG_DESKTOP_FILE_KEY_STARTUP_NOTIFY	eggdesktopfile.h	109;"	d
+EGG_DESKTOP_FILE_KEY_STARTUP_WM_CLASS	eggdesktopfile.h	110;"	d
+EGG_DESKTOP_FILE_KEY_TERMINAL	eggdesktopfile.h	106;"	d
+EGG_DESKTOP_FILE_KEY_TRY_EXEC	eggdesktopfile.h	103;"	d
+EGG_DESKTOP_FILE_KEY_TYPE	eggdesktopfile.h	93;"	d
+EGG_DESKTOP_FILE_KEY_URL	eggdesktopfile.h	111;"	d
+EGG_DESKTOP_FILE_KEY_VERSION	eggdesktopfile.h	94;"	d
+EGG_DESKTOP_FILE_LAUNCH_CLEARENV	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_CLEARENV = 1,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_DIRECTORY	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_DIRECTORY,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_FLAGS	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_FLAGS,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_PUTENV	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_PUTENV,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_RETURN_PID	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_RETURN_PID,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_RETURN_STARTUP_ID$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDERR_PIPE,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDIN_PIPE,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_RETURN_STDOUT_PIPE,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_SCREEN	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_SCREEN,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_SETUP_FUNC,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_TIME	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_TIME,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_LAUNCH_WORKSPACE	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_LAUNCH_WORKSPACE,$/;"	e	enum:__anon30
+EGG_DESKTOP_FILE_SN_TIMEOUT_LENGTH	eggdesktopfile.c	990;"	d	file:
+EGG_DESKTOP_FILE_TYPE_APPLICATION	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_TYPE_APPLICATION,$/;"	e	enum:__anon29
+EGG_DESKTOP_FILE_TYPE_DIRECTORY	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_TYPE_DIRECTORY$/;"	e	enum:__anon29
+EGG_DESKTOP_FILE_TYPE_LINK	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_TYPE_LINK,$/;"	e	enum:__anon29
+EGG_DESKTOP_FILE_TYPE_UNRECOGNIZED	eggdesktopfile.h	/^	EGG_DESKTOP_FILE_TYPE_UNRECOGNIZED,$/;"	e	enum:__anon29
+EGG_IS_SM_CLIENT	eggsmclient.h	30;"	d
+EGG_IS_SM_CLIENT_CLASS	eggsmclient.h	31;"	d
+EGG_IS_SM_CLIENT_OSX	eggsmclient-osx.c	47;"	d	file:
+EGG_IS_SM_CLIENT_OSX_CLASS	eggsmclient-osx.c	48;"	d	file:
+EGG_IS_SM_CLIENT_WIN32	eggsmclient-win32.c	62;"	d	file:
+EGG_IS_SM_CLIENT_WIN32_CLASS	eggsmclient-win32.c	63;"	d	file:
+EGG_IS_SM_CLIENT_XSMP	eggsmclient-xsmp.c	43;"	d	file:
+EGG_IS_SM_CLIENT_XSMP_CLASS	eggsmclient-xsmp.c	44;"	d	file:
+EGG_SM_CLIENT	eggsmclient.h	28;"	d
+EGG_SM_CLIENT_CLASS	eggsmclient.h	29;"	d
+EGG_SM_CLIENT_END_SESSION_DEFAULT	eggsmclient.h	/^  EGG_SM_CLIENT_END_SESSION_DEFAULT,$/;"	e	enum:__anon32
+EGG_SM_CLIENT_GET_CLASS	eggsmclient.h	32;"	d
+EGG_SM_CLIENT_GET_PRIVATE	eggsmclient.c	47;"	d	file:
+EGG_SM_CLIENT_LOGOUT	eggsmclient.h	/^  EGG_SM_CLIENT_LOGOUT,$/;"	e	enum:__anon32
+EGG_SM_CLIENT_MODE_DISABLED	eggsmclient.h	/^  EGG_SM_CLIENT_MODE_DISABLED,$/;"	e	enum:__anon33
+EGG_SM_CLIENT_MODE_NORMAL	eggsmclient.h	/^  EGG_SM_CLIENT_MODE_NORMAL$/;"	e	enum:__anon33
+EGG_SM_CLIENT_MODE_NO_RESTART	eggsmclient.h	/^  EGG_SM_CLIENT_MODE_NO_RESTART,$/;"	e	enum:__anon33
+EGG_SM_CLIENT_OSX	eggsmclient-osx.c	45;"	d	file:
+EGG_SM_CLIENT_OSX_CLASS	eggsmclient-osx.c	46;"	d	file:
+EGG_SM_CLIENT_OSX_GET_CLASS	eggsmclient-osx.c	49;"	d	file:
+EGG_SM_CLIENT_REBOOT	eggsmclient.h	/^  EGG_SM_CLIENT_REBOOT,$/;"	e	enum:__anon32
+EGG_SM_CLIENT_SHUTDOWN	eggsmclient.h	/^  EGG_SM_CLIENT_SHUTDOWN$/;"	e	enum:__anon32
+EGG_SM_CLIENT_WIN32	eggsmclient-win32.c	60;"	d	file:
+EGG_SM_CLIENT_WIN32_CLASS	eggsmclient-win32.c	61;"	d	file:
+EGG_SM_CLIENT_WIN32_GET_CLASS	eggsmclient-win32.c	64;"	d	file:
+EGG_SM_CLIENT_XSMP	eggsmclient-xsmp.c	41;"	d	file:
+EGG_SM_CLIENT_XSMP_CLASS	eggsmclient-xsmp.c	42;"	d	file:
+EGG_SM_CLIENT_XSMP_GET_CLASS	eggsmclient-xsmp.c	45;"	d	file:
+EGG_SM_CLIENT_XSMP_STATE	eggsmclient-xsmp.c	78;"	d	file:
+EGG_TYPE_SM_CLIENT	eggsmclient.h	27;"	d
+EGG_TYPE_SM_CLIENT_OSX	eggsmclient-osx.c	44;"	d	file:
+EGG_TYPE_SM_CLIENT_WIN32	eggsmclient-win32.c	59;"	d	file:
+EGG_TYPE_SM_CLIENT_XSMP	eggsmclient-xsmp.c	40;"	d	file:
+EMAILIFY	terminal-window.c	3649;"	d	file:
+ENABLE_MENU_BAR_ACCEL_KEY	terminal-app.c	156;"	d	file:
+ENABLE_MNEMONICS_KEY	terminal-app.c	153;"	d	file:
+ENCODING_LIST_CHANGED	terminal-app.c	/^  ENCODING_LIST_CHANGED,$/;"	e	enum:__anon10	file:
+ENCODING_LIST_KEY	terminal-app.c	162;"	d	file:
+EggDesktopFile	eggdesktopfile.c	/^struct EggDesktopFile {$/;"	s	file:
+EggDesktopFile	eggdesktopfile.h	/^typedef struct EggDesktopFile EggDesktopFile;$/;"	t	typeref:struct:EggDesktopFile
+EggDesktopFileError	eggdesktopfile.h	/^} EggDesktopFileError;$/;"	t	typeref:enum:__anon31
+EggDesktopFileLaunchOption	eggdesktopfile.h	/^} EggDesktopFileLaunchOption;$/;"	t	typeref:enum:__anon30
+EggDesktopFileType	eggdesktopfile.h	/^} EggDesktopFileType;$/;"	t	typeref:enum:__anon29
+EggSMClient	eggsmclient.h	/^typedef struct _EggSMClient        EggSMClient;$/;"	t	typeref:struct:_EggSMClient
+EggSMClientClass	eggsmclient.h	/^typedef struct _EggSMClientClass   EggSMClientClass;$/;"	t	typeref:struct:_EggSMClientClass
+EggSMClientEndStyle	eggsmclient.h	/^} EggSMClientEndStyle;$/;"	t	typeref:enum:__anon32
+EggSMClientMode	eggsmclient.h	/^} EggSMClientMode;$/;"	t	typeref:enum:__anon33
+EggSMClientOSX	eggsmclient-osx.c	/^typedef struct _EggSMClientOSX        EggSMClientOSX;$/;"	t	typeref:struct:_EggSMClientOSX	file:
+EggSMClientOSXClass	eggsmclient-osx.c	/^typedef struct _EggSMClientOSXClass   EggSMClientOSXClass;$/;"	t	typeref:struct:_EggSMClientOSXClass	file:
+EggSMClientPrivate	eggsmclient.h	/^typedef struct _EggSMClientPrivate EggSMClientPrivate;$/;"	t	typeref:struct:_EggSMClientPrivate
+EggSMClientWin32	eggsmclient-win32.c	/^typedef struct _EggSMClientWin32        EggSMClientWin32;$/;"	t	typeref:struct:_EggSMClientWin32	file:
+EggSMClientWin32Class	eggsmclient-win32.c	/^typedef struct _EggSMClientWin32Class   EggSMClientWin32Class;$/;"	t	typeref:struct:_EggSMClientWin32Class	file:
+EggSMClientXSMP	eggsmclient-xsmp.c	/^typedef struct _EggSMClientXSMP        EggSMClientXSMP;$/;"	t	typeref:struct:_EggSMClientXSMP	file:
+EggSMClientXSMPClass	eggsmclient-xsmp.c	/^typedef struct _EggSMClientXSMPClass   EggSMClientXSMPClass;$/;"	t	typeref:struct:_EggSMClientXSMPClass	file:
+EggSMClientXSMPState	eggsmclient-xsmp.c	/^} EggSMClientXSMPState;$/;"	t	typeref:enum:__anon4	file:
+EncodingDialogData	terminal-encoding.c	/^} EncodingDialogData;$/;"	t	typeref:struct:__anon15	file:
+FALLBACK_PROFILE_ID	terminal-app.c	48;"	d	file:
+FILE_NEW_TERMINAL_TAB_UI_PATH	terminal-window.c	91;"	d	file:
+FILE_NEW_TERMINAL_WINDOW_UI_PATH	terminal-window.c	92;"	d	file:
+FLAG_INVERT_BOOL	terminal-util.h	/^  FLAG_INVERT_BOOL  = 1 << 0,$/;"	e	enum:__anon45
+FLAVOR_AS_IS	terminal-screen.h	/^  FLAVOR_AS_IS,$/;"	e	enum:__anon44
+FLAVOR_DEFAULT_TO_HTTP	terminal-screen.h	/^  FLAVOR_DEFAULT_TO_HTTP,$/;"	e	enum:__anon44
+FLAVOR_EMAIL	terminal-screen.h	/^  FLAVOR_EMAIL,$/;"	e	enum:__anon44
+FLAVOR_SKEY	terminal-screen.h	/^  FLAVOR_SKEY$/;"	e	enum:__anon44
+FLAVOR_VOIP_CALL	terminal-screen.h	/^  FLAVOR_VOIP_CALL,$/;"	e	enum:__anon44
+FORGOTTEN	terminal-profile.c	/^  FORGOTTEN,$/;"	e	enum:__anon18	file:
+GNOME_ENABLE_DEBUG_H	terminal-debug.h	22;"	d
+GNOME_TERMINAL_ICON_NAME	terminal-app.h	65;"	d
+GWin32HandleSource	eggsmclient-win32.c	/^} GWin32HandleSource;$/;"	t	typeref:struct:__anon3	file:
+G_GNUC_UNUSED	terminal-debug.h	/^static inline gboolean _terminal_debug_on (TerminalDebugFlags flags) G_GNUC_CONST G_GNUC_UNUSED;$/;"	v
+HOST	terminal-screen.c	149;"	d	file:
+HOSTCHARS_CLASS	terminal-screen.c	148;"	d	file:
+I_	terminal-intl.h	25;"	d
+InitialTab	terminal-options.h	/^} InitialTab;$/;"	t	typeref:struct:__anon37
+InitialWindow	terminal-options.h	/^} InitialWindow;$/;"	t	typeref:struct:__anon38
+KEYVAL_COLUMN	terminal-accels.c	/^  KEYVAL_COLUMN,$/;"	e	enum:__anon8	file:
+KEY_ALLOW_BOLD	terminal-profile.c	91;"	d	file:
+KEY_BACKGROUND_COLOR	terminal-profile.c	92;"	d	file:
+KEY_BACKGROUND_DARKNESS	terminal-profile.c	93;"	d	file:
+KEY_BACKGROUND_IMAGE_FILE	terminal-profile.c	94;"	d	file:
+KEY_BACKGROUND_TYPE	terminal-profile.c	95;"	d	file:
+KEY_BACKSPACE_BINDING	terminal-profile.c	96;"	d	file:
+KEY_BOLD_COLOR	terminal-profile.c	97;"	d	file:
+KEY_BOLD_COLOR_SAME_AS_FG	terminal-profile.c	98;"	d	file:
+KEY_CLOSE_TAB	terminal-accels.c	74;"	d	file:
+KEY_CLOSE_WINDOW	terminal-accels.c	75;"	d	file:
+KEY_COPY	terminal-accels.c	76;"	d	file:
+KEY_CURSOR_BLINK_MODE	terminal-profile.c	99;"	d	file:
+KEY_CURSOR_SHAPE	terminal-profile.c	100;"	d	file:
+KEY_CUSTOM_COMMAND	terminal-profile.c	101;"	d	file:
+KEY_DEFAULT_SHOW_MENUBAR	terminal-profile.c	102;"	d	file:
+KEY_DEFAULT_SIZE_COLUMNS	terminal-profile.c	103;"	d	file:
+KEY_DEFAULT_SIZE_ROWS	terminal-profile.c	104;"	d	file:
+KEY_DELETE_BINDING	terminal-profile.c	105;"	d	file:
+KEY_DETACH_TAB	terminal-accels.c	77;"	d	file:
+KEY_EXIT_ACTION	terminal-profile.c	106;"	d	file:
+KEY_FONT	terminal-profile.c	107;"	d	file:
+KEY_FOREGROUND_COLOR	terminal-profile.c	108;"	d	file:
+KEY_FULL_SCREEN	terminal-accels.c	78;"	d	file:
+KEY_HELP	terminal-accels.c	79;"	d	file:
+KEY_LOGIN_SHELL	terminal-profile.c	109;"	d	file:
+KEY_MOVE_TAB_LEFT	terminal-accels.c	80;"	d	file:
+KEY_MOVE_TAB_RIGHT	terminal-accels.c	81;"	d	file:
+KEY_NEW_PROFILE	terminal-accels.c	82;"	d	file:
+KEY_NEW_TAB	terminal-accels.c	83;"	d	file:
+KEY_NEW_WINDOW	terminal-accels.c	84;"	d	file:
+KEY_NEXT_TAB	terminal-accels.c	85;"	d	file:
+KEY_PALETTE	terminal-profile.c	110;"	d	file:
+KEY_PASTE	terminal-accels.c	86;"	d	file:
+KEY_PREV_TAB	terminal-accels.c	87;"	d	file:
+KEY_RESET	terminal-accels.c	89;"	d	file:
+KEY_RESET_AND_CLEAR	terminal-accels.c	88;"	d	file:
+KEY_SAVE_CONTENTS	terminal-accels.c	90;"	d	file:
+KEY_SCROLLBACK_LINES	terminal-profile.c	112;"	d	file:
+KEY_SCROLLBACK_UNLIMITED	terminal-profile.c	113;"	d	file:
+KEY_SCROLLBAR_POSITION	terminal-profile.c	114;"	d	file:
+KEY_SCROLL_BACKGROUND	terminal-profile.c	111;"	d	file:
+KEY_SCROLL_ON_KEYSTROKE	terminal-profile.c	115;"	d	file:
+KEY_SCROLL_ON_OUTPUT	terminal-profile.c	116;"	d	file:
+KEY_SET_TERMINAL_TITLE	terminal-accels.c	91;"	d	file:
+KEY_SILENT_BELL	terminal-profile.c	117;"	d	file:
+KEY_SWITCH_TAB_PREFIX	terminal-accels.c	96;"	d	file:
+KEY_TITLE	terminal-profile.c	119;"	d	file:
+KEY_TITLE_MODE	terminal-profile.c	118;"	d	file:
+KEY_TOGGLE_MENUBAR	terminal-accels.c	92;"	d	file:
+KEY_UPDATE_RECORDS	terminal-profile.c	120;"	d	file:
+KEY_USE_CUSTOM_COMMAND	terminal-profile.c	121;"	d	file:
+KEY_USE_SKEY	terminal-profile.c	122;"	d	file:
+KEY_USE_SYSTEM_FONT	terminal-profile.c	123;"	d	file:
+KEY_USE_THEME_COLORS	terminal-profile.c	124;"	d	file:
+KEY_VISIBLE_NAME	terminal-profile.c	125;"	d	file:
+KEY_WORD_CHARS	terminal-profile.c	126;"	d	file:
+KEY_ZOOM_IN	terminal-accels.c	93;"	d	file:
+KEY_ZOOM_NORMAL	terminal-accels.c	94;"	d	file:
+KEY_ZOOM_OUT	terminal-accels.c	95;"	d	file:
+KeyEntry	terminal-accels.c	/^} KeyEntry;$/;"	t	typeref:struct:__anon6	file:
+KeyEntryList	terminal-accels.c	/^} KeyEntryList;$/;"	t	typeref:struct:__anon7	file:
+LABEL_WIDTH_CHARS	terminal-tabs-menu.c	35;"	d	file:
+LAST_PROP	terminal-profile.c	/^  LAST_PROP$/;"	e	enum:__anon17	file:
+LAST_SIGNAL	eggsmclient.c	/^  LAST_SIGNAL$/;"	e	enum:__anon2	file:
+LAST_SIGNAL	terminal-app.c	/^  LAST_SIGNAL$/;"	e	enum:__anon10	file:
+LAST_SIGNAL	terminal-profile.c	/^  LAST_SIGNAL$/;"	e	enum:__anon18	file:
+LAST_SIGNAL	terminal-screen.c	/^  LAST_SIGNAL$/;"	e	enum:__anon20	file:
+LAST_SIGNAL	terminal-tab-label.c	/^  LAST_SIGNAL$/;"	e	enum:__anon25	file:
+LookupInfo	terminal-app.c	/^} LookupInfo;$/;"	t	typeref:struct:__anon13	file:
+MATCH_CLICKED	terminal-screen.c	/^  MATCH_CLICKED,$/;"	e	enum:__anon20	file:
+MIN_HEIGHT_CHARS	terminal-window.c	2850;"	d	file:
+MIN_WIDTH_CHARS	terminal-window.c	2849;"	d	file:
+MONOSPACE_FONT_DIR	terminal-app.c	149;"	d	file:
+MONOSPACE_FONT_KEY	terminal-app.c	150;"	d	file:
+NUM_COLUMNS	terminal-app.c	/^  NUM_COLUMNS$/;"	e	enum:__anon11	file:
+N_COLUMNS	terminal-accels.c	/^  N_COLUMNS$/;"	e	enum:__anon8	file:
+N_COLUMNS	terminal-encoding.c	/^  N_COLUMNS$/;"	e	enum:__anon16	file:
+OTP_PREFIX	skey-popup.c	31;"	d	file:
+PASSCHARS_CLASS	terminal-screen.c	147;"	d	file:
+PATHCHARS_CLASS	terminal-screen.c	151;"	d	file:
+PATHTERM_CLASS	terminal-screen.c	152;"	d	file:
+PORT	terminal-screen.c	150;"	d	file:
+PROFILES_POPUP_UI_PATH	terminal-window.c	97;"	d	file:
+PROFILES_UI_PATH	terminal-window.c	96;"	d	file:
+PROFILE_DATA_KEY	terminal-window.c	89;"	d	file:
+PROFILE_LIST_CHANGED	terminal-app.c	/^  PROFILE_LIST_CHANGED,$/;"	e	enum:__anon10	file:
+PROFILE_LIST_KEY	terminal-app.c	159;"	d	file:
+PROFILE_SET	terminal-screen.c	/^  PROFILE_SET,$/;"	e	enum:__anon20	file:
+PROP_0	terminal-app.c	/^  PROP_0,$/;"	e	enum:__anon9	file:
+PROP_0	terminal-profile.c	/^  PROP_0,$/;"	e	enum:__anon17	file:
+PROP_0	terminal-screen.c	/^  PROP_0,$/;"	e	enum:__anon21	file:
+PROP_0	terminal-tab-label.c	/^  PROP_0,$/;"	e	enum:__anon24	file:
+PROP_0	terminal-tabs-menu.c	/^	PROP_0,$/;"	e	enum:__anon26	file:
+PROP_ALLOW_BOLD	terminal-profile.c	/^  PROP_ALLOW_BOLD,$/;"	e	enum:__anon17	file:
+PROP_BACKGROUND_COLOR	terminal-profile.c	/^  PROP_BACKGROUND_COLOR,$/;"	e	enum:__anon17	file:
+PROP_BACKGROUND_DARKNESS	terminal-profile.c	/^  PROP_BACKGROUND_DARKNESS,$/;"	e	enum:__anon17	file:
+PROP_BACKGROUND_IMAGE	terminal-profile.c	/^  PROP_BACKGROUND_IMAGE,$/;"	e	enum:__anon17	file:
+PROP_BACKGROUND_IMAGE_FILE	terminal-profile.c	/^  PROP_BACKGROUND_IMAGE_FILE,$/;"	e	enum:__anon17	file:
+PROP_BACKGROUND_TYPE	terminal-profile.c	/^  PROP_BACKGROUND_TYPE,$/;"	e	enum:__anon17	file:
+PROP_BACKSPACE_BINDING	terminal-profile.c	/^  PROP_BACKSPACE_BINDING,$/;"	e	enum:__anon17	file:
+PROP_BOLD_COLOR	terminal-profile.c	/^  PROP_BOLD_COLOR,$/;"	e	enum:__anon17	file:
+PROP_BOLD_COLOR_SAME_AS_FG	terminal-profile.c	/^  PROP_BOLD_COLOR_SAME_AS_FG,$/;"	e	enum:__anon17	file:
+PROP_CURSOR_BLINK_MODE	terminal-profile.c	/^  PROP_CURSOR_BLINK_MODE,$/;"	e	enum:__anon17	file:
+PROP_CURSOR_SHAPE	terminal-profile.c	/^  PROP_CURSOR_SHAPE,$/;"	e	enum:__anon17	file:
+PROP_CUSTOM_COMMAND	terminal-profile.c	/^  PROP_CUSTOM_COMMAND,$/;"	e	enum:__anon17	file:
+PROP_DEFAULT_PROFILE	terminal-app.c	/^  PROP_DEFAULT_PROFILE,$/;"	e	enum:__anon9	file:
+PROP_DEFAULT_SHOW_MENUBAR	terminal-profile.c	/^  PROP_DEFAULT_SHOW_MENUBAR,$/;"	e	enum:__anon17	file:
+PROP_DEFAULT_SIZE_COLUMNS	terminal-profile.c	/^  PROP_DEFAULT_SIZE_COLUMNS,$/;"	e	enum:__anon17	file:
+PROP_DEFAULT_SIZE_ROWS	terminal-profile.c	/^  PROP_DEFAULT_SIZE_ROWS,$/;"	e	enum:__anon17	file:
+PROP_DELETE_BINDING	terminal-profile.c	/^  PROP_DELETE_BINDING,$/;"	e	enum:__anon17	file:
+PROP_ENABLE_MENU_BAR_ACCEL	terminal-app.c	/^  PROP_ENABLE_MENU_BAR_ACCEL,$/;"	e	enum:__anon9	file:
+PROP_ENABLE_MNEMONICS	terminal-app.c	/^  PROP_ENABLE_MNEMONICS,$/;"	e	enum:__anon9	file:
+PROP_EXIT_ACTION	terminal-profile.c	/^  PROP_EXIT_ACTION,$/;"	e	enum:__anon17	file:
+PROP_FONT	terminal-profile.c	/^  PROP_FONT,$/;"	e	enum:__anon17	file:
+PROP_FOREGROUND_COLOR	terminal-profile.c	/^  PROP_FOREGROUND_COLOR,$/;"	e	enum:__anon17	file:
+PROP_ICON_TITLE	terminal-screen.c	/^  PROP_ICON_TITLE,$/;"	e	enum:__anon21	file:
+PROP_ICON_TITLE_SET	terminal-screen.c	/^  PROP_ICON_TITLE_SET,$/;"	e	enum:__anon21	file:
+PROP_INITIAL_ENVIRONMENT	terminal-screen.c	/^  PROP_INITIAL_ENVIRONMENT$/;"	e	enum:__anon21	file:
+PROP_LOGIN_SHELL	terminal-profile.c	/^  PROP_LOGIN_SHELL,$/;"	e	enum:__anon17	file:
+PROP_NAME	terminal-profile.c	/^  PROP_NAME,$/;"	e	enum:__anon17	file:
+PROP_OVERRIDE_COMMAND	terminal-screen.c	/^  PROP_OVERRIDE_COMMAND,$/;"	e	enum:__anon21	file:
+PROP_PALETTE	terminal-profile.c	/^  PROP_PALETTE,$/;"	e	enum:__anon17	file:
+PROP_PROFILE	terminal-screen.c	/^  PROP_PROFILE,$/;"	e	enum:__anon21	file:
+PROP_SCREEN	terminal-tab-label.c	/^  PROP_SCREEN$/;"	e	enum:__anon24	file:
+PROP_SCROLLBACK_LINES	terminal-profile.c	/^  PROP_SCROLLBACK_LINES,$/;"	e	enum:__anon17	file:
+PROP_SCROLLBACK_UNLIMITED	terminal-profile.c	/^  PROP_SCROLLBACK_UNLIMITED,$/;"	e	enum:__anon17	file:
+PROP_SCROLLBAR_POSITION	terminal-profile.c	/^  PROP_SCROLLBAR_POSITION,$/;"	e	enum:__anon17	file:
+PROP_SCROLL_BACKGROUND	terminal-profile.c	/^  PROP_SCROLL_BACKGROUND,$/;"	e	enum:__anon17	file:
+PROP_SCROLL_ON_KEYSTROKE	terminal-profile.c	/^  PROP_SCROLL_ON_KEYSTROKE,$/;"	e	enum:__anon17	file:
+PROP_SCROLL_ON_OUTPUT	terminal-profile.c	/^  PROP_SCROLL_ON_OUTPUT,$/;"	e	enum:__anon17	file:
+PROP_SILENT_BELL	terminal-profile.c	/^  PROP_SILENT_BELL,$/;"	e	enum:__anon17	file:
+PROP_SYSTEM_FONT	terminal-app.c	/^  PROP_SYSTEM_FONT,$/;"	e	enum:__anon9	file:
+PROP_TITLE	terminal-profile.c	/^  PROP_TITLE,$/;"	e	enum:__anon17	file:
+PROP_TITLE	terminal-screen.c	/^  PROP_TITLE,$/;"	e	enum:__anon21	file:
+PROP_TITLE_MODE	terminal-profile.c	/^  PROP_TITLE_MODE,$/;"	e	enum:__anon17	file:
+PROP_UPDATE_RECORDS	terminal-profile.c	/^  PROP_UPDATE_RECORDS,$/;"	e	enum:__anon17	file:
+PROP_USE_CUSTOM_COMMAND	terminal-profile.c	/^  PROP_USE_CUSTOM_COMMAND,$/;"	e	enum:__anon17	file:
+PROP_USE_SKEY	terminal-profile.c	/^  PROP_USE_SKEY,$/;"	e	enum:__anon17	file:
+PROP_USE_SYSTEM_FONT	terminal-profile.c	/^  PROP_USE_SYSTEM_FONT,$/;"	e	enum:__anon17	file:
+PROP_USE_THEME_COLORS	terminal-profile.c	/^  PROP_USE_THEME_COLORS,$/;"	e	enum:__anon17	file:
+PROP_VISIBLE_NAME	terminal-profile.c	/^  PROP_VISIBLE_NAME,$/;"	e	enum:__anon17	file:
+PROP_WINDOW	terminal-tabs-menu.c	/^	PROP_WINDOW$/;"	e	enum:__anon26	file:
+PROP_WORD_CHARS	terminal-profile.c	/^  PROP_WORD_CHARS,$/;"	e	enum:__anon17	file:
+PasteData	terminal-window.c	/^} PasteData;$/;"	t	typeref:struct:__anon28	file:
+PropertyChange	terminal-util.c	/^} PropertyChange;$/;"	t	typeref:struct:__anon27	file:
+PropertyChangeFlags	terminal-util.h	/^} PropertyChangeFlags;$/;"	t	typeref:enum:__anon45
+QUIT	eggsmclient.c	/^  QUIT,$/;"	e	enum:__anon2	file:
+QUIT	terminal-app.c	/^  QUIT,$/;"	e	enum:__anon10	file:
+QUIT_CANCELLED	eggsmclient.c	/^  QUIT_CANCELLED,$/;"	e	enum:__anon2	file:
+QUIT_REQUESTED	eggsmclient.c	/^  QUIT_REQUESTED,$/;"	e	enum:__anon2	file:
+SAVE_STATE	eggsmclient.c	/^  SAVE_STATE,$/;"	e	enum:__anon2	file:
+SCHEME	terminal-screen.c	153;"	d	file:
+SCREEN_DATA_KEY	terminal-screen-container.c	25;"	d	file:
+SCROLLBAR_DATA_KEY	terminal-screen-container.c	26;"	d	file:
+SET_ENCODING_ACTION_NAME_PREFIX	terminal-window.c	94;"	d	file:
+SET_ENCODING_UI_PATH	terminal-window.c	93;"	d	file:
+SET_ENUM_VALUE	profile-editor.c	798;"	d	file:
+SET_ENUM_VALUE	profile-editor.c	853;"	d	file:
+SET_INSENSITIVE	profile-editor.c	309;"	d	file:
+SET_SENSITIVE	profile-editor.c	121;"	d	file:
+SHOW_POPUP_MENU	terminal-screen.c	/^  SHOW_POPUP_MENU,$/;"	e	enum:__anon20	file:
+SIZE_TO_ACTION_NAME_PREFIX	terminal-window.c	100;"	d	file:
+SIZE_TO_UI_PATH	terminal-window.c	99;"	d	file:
+SKEY_MATCH_CURSOR	terminal-screen.c	48;"	d	file:
+SKEY_POPUP_H	skey-popup.h	21;"	d
+SKEY_PREFIX	skey-popup.c	30;"	d	file:
+SOURCE_DEFAULT	terminal-app.c	/^  SOURCE_DEFAULT = 0,$/;"	e	enum:__anon12	file:
+SOURCE_SESSION	terminal-app.c	/^  SOURCE_SESSION = 1$/;"	e	enum:__anon12	file:
+SPACING	terminal-tab-label.c	29;"	d	file:
+STOCK_NEW_TAB	terminal-window.c	103;"	d	file:
+STOCK_NEW_WINDOW	terminal-window.c	102;"	d	file:
+SkeyData	skey-popup.c	/^} SkeyData;$/;"	t	typeref:struct:__anon5	file:
+StartupNotificationData	eggdesktopfile.c	/^} StartupNotificationData;$/;"	t	typeref:struct:__anon1	file:
+TARGET_BGIMAGE	terminal-screen.c	/^  TARGET_BGIMAGE,$/;"	e	enum:__anon22	file:
+TARGET_COLOR	terminal-screen.c	/^  TARGET_COLOR,$/;"	e	enum:__anon22	file:
+TARGET_MOZ_URL	terminal-screen.c	/^  TARGET_MOZ_URL,$/;"	e	enum:__anon22	file:
+TARGET_NETSCAPE_URL	terminal-screen.c	/^  TARGET_NETSCAPE_URL,$/;"	e	enum:__anon22	file:
+TARGET_RESET_BG	terminal-screen.c	/^  TARGET_RESET_BG,$/;"	e	enum:__anon22	file:
+TARGET_TAB	terminal-screen.c	/^  TARGET_TAB$/;"	e	enum:__anon22	file:
+TERMINAL_ACCELS_H	terminal-accels.h	21;"	d
+TERMINAL_ACCELS_N_TABS_SWITCH	terminal-tabs-menu.c	33;"	d	file:
+TERMINAL_APP	terminal-app.h	75;"	d
+TERMINAL_APP_CLASS	terminal-app.h	76;"	d
+TERMINAL_APP_DEFAULT_PROFILE	terminal-app.h	67;"	d
+TERMINAL_APP_ENABLE_MENU_BAR_ACCEL	terminal-app.h	68;"	d
+TERMINAL_APP_ENABLE_MNEMONICS	terminal-app.h	69;"	d
+TERMINAL_APP_GET_CLASS	terminal-app.h	79;"	d
+TERMINAL_APP_H	terminal-app.h	22;"	d
+TERMINAL_APP_SYSTEM_FONT	terminal-app.h	70;"	d
+TERMINAL_BACKGROUND_IMAGE	terminal-profile.h	/^  TERMINAL_BACKGROUND_IMAGE,$/;"	e	enum:__anon43
+TERMINAL_BACKGROUND_SOLID	terminal-profile.h	/^  TERMINAL_BACKGROUND_SOLID,$/;"	e	enum:__anon43
+TERMINAL_BACKGROUND_TRANSPARENT	terminal-profile.h	/^  TERMINAL_BACKGROUND_TRANSPARENT$/;"	e	enum:__anon43
+TERMINAL_CHECK_VERSION	terminal-version.h	30;"	d
+TERMINAL_CONFIG_COMPAT_VERSION	terminal-app.h	34;"	d
+TERMINAL_CONFIG_GROUP	terminal-app.h	36;"	d
+TERMINAL_CONFIG_PROP_COMPAT_VERSION	terminal-app.h	39;"	d
+TERMINAL_CONFIG_PROP_FACTORY	terminal-app.h	37;"	d
+TERMINAL_CONFIG_PROP_VERSION	terminal-app.h	38;"	d
+TERMINAL_CONFIG_PROP_WINDOWS	terminal-app.h	40;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_COMMAND	terminal-app.h	51;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_HEIGHT	terminal-app.h	50;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_PROFILE_ID	terminal-app.h	52;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_TITLE	terminal-app.h	53;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_WIDTH	terminal-app.h	54;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_WORKING_DIRECTORY	terminal-app.h	55;"	d
+TERMINAL_CONFIG_TERMINAL_PROP_ZOOM	terminal-app.h	56;"	d
+TERMINAL_CONFIG_VERSION	terminal-app.h	33;"	d
+TERMINAL_CONFIG_WINDOW_PROP_ACTIVE_TAB	terminal-app.h	42;"	d
+TERMINAL_CONFIG_WINDOW_PROP_FULLSCREEN	terminal-app.h	43;"	d
+TERMINAL_CONFIG_WINDOW_PROP_GEOMETRY	terminal-app.h	44;"	d
+TERMINAL_CONFIG_WINDOW_PROP_MAXIMIZED	terminal-app.h	45;"	d
+TERMINAL_CONFIG_WINDOW_PROP_MENUBAR_VISIBLE	terminal-app.h	46;"	d
+TERMINAL_CONFIG_WINDOW_PROP_ROLE	terminal-app.h	47;"	d
+TERMINAL_CONFIG_WINDOW_PROP_TABS	terminal-app.h	48;"	d
+TERMINAL_DEBUG_ACCELS	terminal-debug.h	/^  TERMINAL_DEBUG_ACCELS     = 1 << 0,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_ENCODINGS	terminal-debug.h	/^  TERMINAL_DEBUG_ENCODINGS  = 1 << 1,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_FACTORY	terminal-debug.h	/^  TERMINAL_DEBUG_FACTORY    = 1 << 2,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_GEOMETRY	terminal-debug.h	/^  TERMINAL_DEBUG_GEOMETRY   = 1 << 3,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_MDI	terminal-debug.h	/^  TERMINAL_DEBUG_MDI        = 1 << 4,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_PROCESSES	terminal-debug.h	/^  TERMINAL_DEBUG_PROCESSES  = 1 << 5,$/;"	e	enum:__anon34
+TERMINAL_DEBUG_PROFILE	terminal-debug.h	/^  TERMINAL_DEBUG_PROFILE    = 1 << 6$/;"	e	enum:__anon34
+TERMINAL_ENCODING_H	terminal-encoding.h	23;"	d
+TERMINAL_EXIT_CLOSE	terminal-profile.h	/^  TERMINAL_EXIT_CLOSE,$/;"	e	enum:__anon42
+TERMINAL_EXIT_HOLD	terminal-profile.h	/^  TERMINAL_EXIT_HOLD$/;"	e	enum:__anon42
+TERMINAL_EXIT_RESTART	terminal-profile.h	/^  TERMINAL_EXIT_RESTART,$/;"	e	enum:__anon42
+TERMINAL_FACTORY	terminal.c	58;"	d	file:
+TERMINAL_FACTORY_CLASS	terminal.c	59;"	d	file:
+TERMINAL_FACTORY_GET_CLASS	terminal.c	62;"	d	file:
+TERMINAL_FACTORY_INTERFACE_NAME	terminal.c	55;"	d	file:
+TERMINAL_FACTORY_SERVICE_NAME_PREFIX	terminal.c	53;"	d	file:
+TERMINAL_FACTORY_SERVICE_PATH	terminal.c	54;"	d	file:
+TERMINAL_INTL_H	terminal-intl.h	21;"	d
+TERMINAL_IS_APP	terminal-app.h	77;"	d
+TERMINAL_IS_APP_CLASS	terminal-app.h	78;"	d
+TERMINAL_IS_FACTORY	terminal.c	60;"	d	file:
+TERMINAL_IS_FACTORY_CLASS	terminal.c	61;"	d	file:
+TERMINAL_IS_PROFILE	terminal-profile.h	112;"	d
+TERMINAL_IS_PROFILE_CLASS	terminal-profile.h	113;"	d
+TERMINAL_IS_SCREEN	terminal-screen.h	45;"	d
+TERMINAL_IS_SCREEN_CLASS	terminal-screen.h	46;"	d
+TERMINAL_IS_TABS_MENU	terminal-tabs-menu.h	29;"	d
+TERMINAL_IS_TABS_MENU_CLASS	terminal-tabs-menu.h	30;"	d
+TERMINAL_IS_TAB_LABEL	terminal-tab-label.h	31;"	d
+TERMINAL_IS_TAB_LABEL_CLASS	terminal-tab-label.h	32;"	d
+TERMINAL_IS_WINDOW	terminal-window.h	32;"	d
+TERMINAL_IS_WINDOW_CLASS	terminal-window.h	33;"	d
+TERMINAL_MAJOR_VERSION	terminal-version.h	26;"	d
+TERMINAL_MICRO_VERSION	terminal-version.h	28;"	d
+TERMINAL_MINOR_VERSION	terminal-version.h	27;"	d
+TERMINAL_OPTIONS_H	terminal-options.h	23;"	d
+TERMINAL_OPTION_ERROR	terminal-options.h	87;"	d
+TERMINAL_OPTION_ERROR_EXCLUSIVE_OPTIONS	terminal-options.h	/^  TERMINAL_OPTION_ERROR_EXCLUSIVE_OPTIONS,$/;"	e	enum:__anon39
+TERMINAL_OPTION_ERROR_INCOMPATIBLE_CONFIG_FILE	terminal-options.h	/^  TERMINAL_OPTION_ERROR_INCOMPATIBLE_CONFIG_FILE$/;"	e	enum:__anon39
+TERMINAL_OPTION_ERROR_INVALID_CONFIG_FILE	terminal-options.h	/^  TERMINAL_OPTION_ERROR_INVALID_CONFIG_FILE,$/;"	e	enum:__anon39
+TERMINAL_OPTION_ERROR_NOT_IN_FACTORY	terminal-options.h	/^  TERMINAL_OPTION_ERROR_NOT_IN_FACTORY,$/;"	e	enum:__anon39
+TERMINAL_PALETTE_LINUX	terminal-profile.h	62;"	d
+TERMINAL_PALETTE_N_BUILTINS	terminal-profile.h	65;"	d
+TERMINAL_PALETTE_RXVT	terminal-profile.h	64;"	d
+TERMINAL_PALETTE_SIZE	terminal-profile.h	59;"	d
+TERMINAL_PALETTE_TANGO	terminal-profile.h	61;"	d
+TERMINAL_PALETTE_XTERM	terminal-profile.h	63;"	d
+TERMINAL_PROFILE	terminal-profile.h	110;"	d
+TERMINAL_PROFILE_ALLOW_BOLD	terminal-profile.h	68;"	d
+TERMINAL_PROFILE_BACKGROUND_COLOR	terminal-profile.h	69;"	d
+TERMINAL_PROFILE_BACKGROUND_DARKNESS	terminal-profile.h	70;"	d
+TERMINAL_PROFILE_BACKGROUND_IMAGE	terminal-profile.h	71;"	d
+TERMINAL_PROFILE_BACKGROUND_IMAGE_FILE	terminal-profile.h	72;"	d
+TERMINAL_PROFILE_BACKGROUND_TYPE	terminal-profile.h	73;"	d
+TERMINAL_PROFILE_BACKSPACE_BINDING	terminal-profile.h	74;"	d
+TERMINAL_PROFILE_BOLD_COLOR	terminal-profile.h	75;"	d
+TERMINAL_PROFILE_BOLD_COLOR_SAME_AS_FG	terminal-profile.h	76;"	d
+TERMINAL_PROFILE_CLASS	terminal-profile.h	111;"	d
+TERMINAL_PROFILE_CURSOR_BLINK_MODE	terminal-profile.h	77;"	d
+TERMINAL_PROFILE_CURSOR_SHAPE	terminal-profile.h	78;"	d
+TERMINAL_PROFILE_CUSTOM_COMMAND	terminal-profile.h	79;"	d
+TERMINAL_PROFILE_DEFAULT_SHOW_MENUBAR	terminal-profile.h	80;"	d
+TERMINAL_PROFILE_DEFAULT_SIZE_COLUMNS	terminal-profile.h	81;"	d
+TERMINAL_PROFILE_DEFAULT_SIZE_ROWS	terminal-profile.h	82;"	d
+TERMINAL_PROFILE_DELETE_BINDING	terminal-profile.h	83;"	d
+TERMINAL_PROFILE_EDITOR_H	profile-editor.h	21;"	d
+TERMINAL_PROFILE_EXIT_ACTION	terminal-profile.h	84;"	d
+TERMINAL_PROFILE_FONT	terminal-profile.h	85;"	d
+TERMINAL_PROFILE_FOREGROUND_COLOR	terminal-profile.h	86;"	d
+TERMINAL_PROFILE_GET_CLASS	terminal-profile.h	114;"	d
+TERMINAL_PROFILE_H	terminal-profile.h	23;"	d
+TERMINAL_PROFILE_LOGIN_SHELL	terminal-profile.h	87;"	d
+TERMINAL_PROFILE_NAME	terminal-profile.h	88;"	d
+TERMINAL_PROFILE_PALETTE	terminal-profile.h	89;"	d
+TERMINAL_PROFILE_PROPERTY	terminal-profile.c	1215;"	d	file:
+TERMINAL_PROFILE_PROPERTY_BOOLEAN	terminal-profile.c	1227;"	d	file:
+TERMINAL_PROFILE_PROPERTY_BOXED	terminal-profile.c	1234;"	d	file:
+TERMINAL_PROFILE_PROPERTY_DOUBLE	terminal-profile.c	1241;"	d	file:
+TERMINAL_PROFILE_PROPERTY_ENUM	terminal-profile.c	1248;"	d	file:
+TERMINAL_PROFILE_PROPERTY_INT	terminal-profile.c	1255;"	d	file:
+TERMINAL_PROFILE_PROPERTY_OBJECT	terminal-profile.c	1263;"	d	file:
+TERMINAL_PROFILE_PROPERTY_STRING	terminal-profile.c	1270;"	d	file:
+TERMINAL_PROFILE_PROPERTY_STRING_CO	terminal-profile.c	1277;"	d	file:
+TERMINAL_PROFILE_PROPERTY_VALUE_ARRAY_BOXED	terminal-profile.c	1284;"	d	file:
+TERMINAL_PROFILE_PSPEC_STATIC	terminal-profile.c	1213;"	d	file:
+TERMINAL_PROFILE_SCROLLBACK_LINES	terminal-profile.h	91;"	d
+TERMINAL_PROFILE_SCROLLBACK_UNLIMITED	terminal-profile.h	92;"	d
+TERMINAL_PROFILE_SCROLLBAR_POSITION	terminal-profile.h	93;"	d
+TERMINAL_PROFILE_SCROLL_BACKGROUND	terminal-profile.h	90;"	d
+TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE	terminal-profile.h	94;"	d
+TERMINAL_PROFILE_SCROLL_ON_OUTPUT	terminal-profile.h	95;"	d
+TERMINAL_PROFILE_SILENT_BELL	terminal-profile.h	96;"	d
+TERMINAL_PROFILE_TITLE	terminal-profile.h	98;"	d
+TERMINAL_PROFILE_TITLE_MODE	terminal-profile.h	97;"	d
+TERMINAL_PROFILE_UPDATE_RECORDS	terminal-profile.h	99;"	d
+TERMINAL_PROFILE_USE_CUSTOM_COMMAND	terminal-profile.h	100;"	d
+TERMINAL_PROFILE_USE_SKEY	terminal-profile.h	101;"	d
+TERMINAL_PROFILE_USE_SYSTEM_FONT	terminal-profile.h	102;"	d
+TERMINAL_PROFILE_USE_THEME_COLORS	terminal-profile.h	103;"	d
+TERMINAL_PROFILE_VISIBLE_NAME	terminal-profile.h	104;"	d
+TERMINAL_PROFILE_WORD_CHARS	terminal-profile.h	105;"	d
+TERMINAL_SCALE_MAXIMUM	terminal-screen.h	141;"	d
+TERMINAL_SCALE_MINIMUM	terminal-screen.h	140;"	d
+TERMINAL_SCALE_XXXXX_LARGE	terminal-screen.h	139;"	d
+TERMINAL_SCALE_XXXXX_SMALL	terminal-screen.h	136;"	d
+TERMINAL_SCALE_XXXX_LARGE	terminal-screen.h	138;"	d
+TERMINAL_SCALE_XXXX_SMALL	terminal-screen.h	135;"	d
+TERMINAL_SCALE_XXX_LARGE	terminal-screen.h	137;"	d
+TERMINAL_SCALE_XXX_SMALL	terminal-screen.h	134;"	d
+TERMINAL_SCREEN	terminal-screen.h	43;"	d
+TERMINAL_SCREEN_CLASS	terminal-screen.h	44;"	d
+TERMINAL_SCREEN_CONTAINER_H	terminal-screen-container.h	21;"	d
+TERMINAL_SCREEN_GET_CLASS	terminal-screen.h	47;"	d
+TERMINAL_SCREEN_H	terminal-screen.h	22;"	d
+TERMINAL_SCROLLBAR_HIDDEN	terminal-profile.h	/^  TERMINAL_SCROLLBAR_HIDDEN$/;"	e	enum:__anon41
+TERMINAL_SCROLLBAR_LEFT	terminal-profile.h	/^  TERMINAL_SCROLLBAR_LEFT,$/;"	e	enum:__anon41
+TERMINAL_SCROLLBAR_RIGHT	terminal-profile.h	/^  TERMINAL_SCROLLBAR_RIGHT,$/;"	e	enum:__anon41
+TERMINAL_TABS_MENU	terminal-tabs-menu.h	27;"	d
+TERMINAL_TABS_MENU_CLASS	terminal-tabs-menu.h	28;"	d
+TERMINAL_TABS_MENU_GET_CLASS	terminal-tabs-menu.h	31;"	d
+TERMINAL_TABS_MENU_GET_PRIVATE	terminal-tabs-menu.c	47;"	d	file:
+TERMINAL_TABS_MENU_H	terminal-tabs-menu.h	20;"	d
+TERMINAL_TAB_LABEL	terminal-tab-label.h	29;"	d
+TERMINAL_TAB_LABEL_CLASS	terminal-tab-label.h	30;"	d
+TERMINAL_TAB_LABEL_GET_CLASS	terminal-tab-label.h	33;"	d
+TERMINAL_TAB_LABEL_GET_PRIVATE	terminal-tab-label.c	27;"	d	file:
+TERMINAL_TAB_LABEL_H	terminal-tab-label.h	20;"	d
+TERMINAL_TITLE_AFTER	terminal-profile.h	/^  TERMINAL_TITLE_AFTER,$/;"	e	enum:__anon40
+TERMINAL_TITLE_BEFORE	terminal-profile.h	/^  TERMINAL_TITLE_BEFORE,$/;"	e	enum:__anon40
+TERMINAL_TITLE_IGNORE	terminal-profile.h	/^  TERMINAL_TITLE_IGNORE$/;"	e	enum:__anon40
+TERMINAL_TITLE_REPLACE	terminal-profile.h	/^  TERMINAL_TITLE_REPLACE,$/;"	e	enum:__anon40
+TERMINAL_TYPE_APP	terminal-app.h	74;"	d
+TERMINAL_TYPE_ENCODING	terminal-encoding.h	27;"	d
+TERMINAL_TYPE_FACTORY	terminal.c	57;"	d	file:
+TERMINAL_TYPE_PROFILE	terminal-profile.h	109;"	d
+TERMINAL_TYPE_SCREEN	terminal-screen.h	42;"	d
+TERMINAL_TYPE_TABS_MENU	terminal-tabs-menu.h	26;"	d
+TERMINAL_TYPE_TAB_LABEL	terminal-tab-label.h	28;"	d
+TERMINAL_TYPE_WINDOW	terminal-window.h	29;"	d
+TERMINAL_UTIL_H	terminal-util.h	22;"	d
+TERMINAL_VERSION_H	terminal-version.h	24;"	d
+TERMINAL_WINDOW	terminal-window.h	30;"	d
+TERMINAL_WINDOW_CLASS	terminal-window.h	31;"	d
+TERMINAL_WINDOW_GET_CLASS	terminal-window.h	34;"	d
+TERMINAL_WINDOW_H	terminal-window.h	21;"	d
+TagData	terminal-screen.c	/^} TagData;$/;"	t	typeref:struct:__anon19	file:
+TerminalApp	terminal-app.h	/^typedef struct _TerminalApp TerminalApp;$/;"	t	typeref:struct:_TerminalApp
+TerminalAppClass	terminal-app.h	/^typedef struct _TerminalAppClass TerminalAppClass;$/;"	t	typeref:struct:_TerminalAppClass
+TerminalBackgroundType	terminal-profile.h	/^} TerminalBackgroundType;$/;"	t	typeref:enum:__anon43
+TerminalColorScheme	profile-editor.c	/^typedef struct _TerminalColorScheme TerminalColorScheme;$/;"	t	typeref:struct:_TerminalColorScheme	file:
+TerminalDebugFlags	terminal-debug.h	/^} TerminalDebugFlags;$/;"	t	typeref:enum:__anon34
+TerminalEncoding	terminal-encoding.h	/^} TerminalEncoding;$/;"	t	typeref:struct:__anon35
+TerminalExitAction	terminal-profile.h	/^} TerminalExitAction;$/;"	t	typeref:enum:__anon42
+TerminalFactory	terminal.c	/^typedef struct _TerminalFactory        TerminalFactory;$/;"	t	typeref:struct:_TerminalFactory	file:
+TerminalFactoryClass	terminal.c	/^typedef struct _TerminalFactoryClass   TerminalFactoryClass;$/;"	t	typeref:struct:_TerminalFactoryClass	file:
+TerminalFactoryPrivate	terminal.c	/^typedef struct _TerminalFactoryPrivate TerminalFactoryPrivate;$/;"	t	typeref:struct:_TerminalFactoryPrivate	file:
+TerminalOptionError	terminal-options.h	/^} TerminalOptionError;$/;"	t	typeref:enum:__anon39
+TerminalOptions	terminal-options.h	/^} TerminalOptions;$/;"	t	typeref:struct:__anon36
+TerminalProfile	terminal-profile.h	/^typedef struct _TerminalProfile        TerminalProfile;$/;"	t	typeref:struct:_TerminalProfile
+TerminalProfileClass	terminal-profile.h	/^typedef struct _TerminalProfileClass   TerminalProfileClass;$/;"	t	typeref:struct:_TerminalProfileClass
+TerminalProfilePrivate	terminal-profile.h	/^typedef struct _TerminalProfilePrivate TerminalProfilePrivate;$/;"	t	typeref:struct:_TerminalProfilePrivate
+TerminalRegexPattern	terminal-screen.c	/^} TerminalRegexPattern;$/;"	t	typeref:struct:__anon23	file:
+TerminalScreen	terminal-screen.h	/^typedef struct _TerminalScreen        TerminalScreen;$/;"	t	typeref:struct:_TerminalScreen
+TerminalScreenClass	terminal-screen.h	/^typedef struct _TerminalScreenClass   TerminalScreenClass;$/;"	t	typeref:struct:_TerminalScreenClass
+TerminalScreenPopupInfo	terminal-screen.h	/^typedef struct _TerminalScreenPopupInfo TerminalScreenPopupInfo;$/;"	t	typeref:struct:_TerminalScreenPopupInfo
+TerminalScreenPrivate	terminal-screen.h	/^typedef struct _TerminalScreenPrivate TerminalScreenPrivate;$/;"	t	typeref:struct:_TerminalScreenPrivate
+TerminalScrollbarPosition	terminal-profile.h	/^} TerminalScrollbarPosition;$/;"	t	typeref:enum:__anon41
+TerminalTabLabel	terminal-tab-label.h	/^typedef struct _TerminalTabLabel        TerminalTabLabel;$/;"	t	typeref:struct:_TerminalTabLabel
+TerminalTabLabelClass	terminal-tab-label.h	/^typedef struct _TerminalTabLabelClass   TerminalTabLabelClass;$/;"	t	typeref:struct:_TerminalTabLabelClass
+TerminalTabLabelPrivate	terminal-tab-label.h	/^typedef struct _TerminalTabLabelPrivate TerminalTabLabelPrivate;$/;"	t	typeref:struct:_TerminalTabLabelPrivate
+TerminalTabsMenu	terminal-tabs-menu.h	/^typedef struct _TerminalTabsMenu TerminalTabsMenu;$/;"	t	typeref:struct:_TerminalTabsMenu
+TerminalTabsMenuClass	terminal-tabs-menu.h	/^typedef struct _TerminalTabsMenuClass TerminalTabsMenuClass;$/;"	t	typeref:struct:_TerminalTabsMenuClass
+TerminalTabsMenuPrivate	terminal-tabs-menu.h	/^typedef struct _TerminalTabsMenuPrivate TerminalTabsMenuPrivate;$/;"	t	typeref:struct:_TerminalTabsMenuPrivate
+TerminalTitleMode	terminal-profile.h	/^} TerminalTitleMode;$/;"	t	typeref:enum:__anon40
+TerminalURLFlavour	terminal-screen.h	/^} TerminalURLFlavour;$/;"	t	typeref:enum:__anon44
+TerminalWindow	terminal-screen.h	/^typedef struct _TerminalWindow        TerminalWindow;$/;"	t	typeref:struct:_TerminalWindow
+TerminalWindowClass	terminal-window.h	/^typedef struct _TerminalWindowClass   TerminalWindowClass;$/;"	t	typeref:struct:_TerminalWindowClass
+TerminalWindowPrivate	terminal-window.h	/^typedef struct _TerminalWindowPrivate TerminalWindowPrivate;$/;"	t	typeref:struct:_TerminalWindowPrivate
+UI_PATH	terminal-tabs-menu.c	45;"	d	file:
+UNICODE	eggsmclient-win32.c	55;"	d	file:
+URLPATH	terminal-screen.c	155;"	d	file:
+URL_MATCH_CURSOR	terminal-screen.c	47;"	d	file:
+USERCHARS	terminal-screen.c	145;"	d	file:
+USERCHARS_CLASS	terminal-screen.c	146;"	d	file:
+USERPASS	terminal-screen.c	154;"	d	file:
+VTE_DISABLE_DEPRECATED	terminal-screen.c	21;"	d	file:
+WIN32_LEAN_AND_MEAN	eggsmclient-win32.c	54;"	d	file:
+XSMP_STATE_CONNECTION_CLOSED	eggsmclient-xsmp.c	/^  XSMP_STATE_CONNECTION_CLOSED$/;"	e	enum:__anon4	file:
+XSMP_STATE_IDLE	eggsmclient-xsmp.c	/^  XSMP_STATE_IDLE,$/;"	e	enum:__anon4	file:
+XSMP_STATE_INTERACT	eggsmclient-xsmp.c	/^  XSMP_STATE_INTERACT,$/;"	e	enum:__anon4	file:
+XSMP_STATE_INTERACT_REQUEST	eggsmclient-xsmp.c	/^  XSMP_STATE_INTERACT_REQUEST,$/;"	e	enum:__anon4	file:
+XSMP_STATE_SAVE_YOURSELF	eggsmclient-xsmp.c	/^  XSMP_STATE_SAVE_YOURSELF,$/;"	e	enum:__anon4	file:
+XSMP_STATE_SAVE_YOURSELF_DONE	eggsmclient-xsmp.c	/^  XSMP_STATE_SAVE_YOURSELF_DONE,$/;"	e	enum:__anon4	file:
+XSMP_STATE_SHUTDOWN_CANCELLED	eggsmclient-xsmp.c	/^  XSMP_STATE_SHUTDOWN_CANCELLED,$/;"	e	enum:__anon4	file:
+_EggSMClient	eggsmclient.h	/^struct _EggSMClient$/;"	s
+_EggSMClientClass	eggsmclient.h	/^struct _EggSMClientClass$/;"	s
+_EggSMClientOSX	eggsmclient-osx.c	/^struct _EggSMClientOSX {$/;"	s	file:
+_EggSMClientOSXClass	eggsmclient-osx.c	/^struct _EggSMClientOSXClass$/;"	s	file:
+_EggSMClientPrivate	eggsmclient.c	/^struct _EggSMClientPrivate {$/;"	s	file:
+_EggSMClientWin32	eggsmclient-win32.c	/^struct _EggSMClientWin32 {$/;"	s	file:
+_EggSMClientWin32Class	eggsmclient-win32.c	/^struct _EggSMClientWin32Class$/;"	s	file:
+_EggSMClientXSMP	eggsmclient-xsmp.c	/^struct _EggSMClientXSMP$/;"	s	file:
+_EggSMClientXSMPClass	eggsmclient-xsmp.c	/^struct _EggSMClientXSMPClass$/;"	s	file:
+_TERMINAL_DEBUG_IF	terminal-debug.h	50;"	d
+_TERMINAL_DEBUG_IF	terminal-debug.h	52;"	d
+_TerminalApp	terminal-app.c	/^struct _TerminalApp$/;"	s	file:
+_TerminalAppClass	terminal-app.c	/^struct _TerminalAppClass {$/;"	s	file:
+_TerminalColorScheme	profile-editor.c	/^struct _TerminalColorScheme$/;"	s	file:
+_TerminalFactory	terminal.c	/^struct _TerminalFactory$/;"	s	file:
+_TerminalFactoryClass	terminal.c	/^struct _TerminalFactoryClass$/;"	s	file:
+_TerminalProfile	terminal-profile.h	/^struct _TerminalProfile$/;"	s
+_TerminalProfileClass	terminal-profile.h	/^struct _TerminalProfileClass$/;"	s
+_TerminalProfilePrivate	terminal-profile.c	/^struct _TerminalProfilePrivate$/;"	s	file:
+_TerminalScreen	terminal-screen.h	/^struct _TerminalScreen$/;"	s
+_TerminalScreenClass	terminal-screen.h	/^struct _TerminalScreenClass$/;"	s
+_TerminalScreenPopupInfo	terminal-screen.h	/^struct _TerminalScreenPopupInfo {$/;"	s
+_TerminalScreenPrivate	terminal-screen.c	/^struct _TerminalScreenPrivate$/;"	s	file:
+_TerminalTabLabel	terminal-tab-label.h	/^struct _TerminalTabLabel$/;"	s
+_TerminalTabLabelClass	terminal-tab-label.h	/^struct _TerminalTabLabelClass$/;"	s
+_TerminalTabLabelPrivate	terminal-tab-label.c	/^struct _TerminalTabLabelPrivate$/;"	s	file:
+_TerminalTabsMenu	terminal-tabs-menu.h	/^struct _TerminalTabsMenu$/;"	s
+_TerminalTabsMenuClass	terminal-tabs-menu.h	/^struct _TerminalTabsMenuClass$/;"	s
+_TerminalTabsMenuPrivate	terminal-tabs-menu.c	/^struct _TerminalTabsMenuPrivate$/;"	s	file:
+_TerminalWindow	terminal-window.h	/^struct _TerminalWindow$/;"	s
+_TerminalWindowClass	terminal-window.h	/^struct _TerminalWindowClass$/;"	s
+_TerminalWindowPrivate	terminal-window.c	/^struct _TerminalWindowPrivate$/;"	s	file:
+__EGG_DESKTOP_FILE_H__	eggdesktopfile.h	21;"	d
+__EGG_SM_CLIENT_H__	eggsmclient.h	21;"	d
+__EGG_SM_CLIENT_PRIVATE_H__	eggsmclient-private.h	21;"	d
+__EGG_USER_SHELL_H__	eggshell.h	28;"	d
+_egg_reserved1	eggsmclient.h	/^  void (*_egg_reserved1) (void);$/;"	m	struct:_EggSMClientClass
+_egg_reserved2	eggsmclient.h	/^  void (*_egg_reserved2) (void);$/;"	m	struct:_EggSMClientClass
+_egg_reserved3	eggsmclient.h	/^  void (*_egg_reserved3) (void);$/;"	m	struct:_EggSMClientClass
+_egg_reserved4	eggsmclient.h	/^  void (*_egg_reserved4) (void);$/;"	m	struct:_EggSMClientClass
+_terminal_debug_flags	terminal-debug.c	/^TerminalDebugFlags _terminal_debug_flags;$/;"	v
+_terminal_debug_init	terminal-debug.c	/^_terminal_debug_init(void)$/;"	f
+_terminal_debug_on	terminal-debug.h	/^_terminal_debug_on (TerminalDebugFlags flags)$/;"	f
+_terminal_debug_print	terminal-debug.h	/^static void _terminal_debug_print (guint flags, const char *fmt, ...)$/;"	f
+_terminal_debug_print	terminal-debug.h	56;"	d
+_terminal_profile_clone	terminal-profile.c	/^_terminal_profile_clone (TerminalProfile *base_profile,$/;"	f
+_terminal_profile_forget	terminal-profile.c	/^_terminal_profile_forget (TerminalProfile *profile)$/;"	f
+_terminal_profile_get_forgotten	terminal-profile.c	/^_terminal_profile_get_forgotten (TerminalProfile *profile)$/;"	f
+_terminal_profile_new	terminal-profile.c	/^_terminal_profile_new (const char *name)$/;"	f
+_terminal_screen_update_scrollbar	terminal-screen.c	/^_terminal_screen_update_scrollbar (TerminalScreen *screen)$/;"	f
+about_email_hook	terminal.c	/^about_email_hook (GtkAboutDialog *about,$/;"	f	file:
+about_url_hook	terminal.c	/^about_url_hook (GtkAboutDialog *about,$/;"	f	file:
+accel_changed_callback	terminal-accels.c	/^accel_changed_callback (GtkAccelGroup  *accel_group,$/;"	f	file:
+accel_cleared_callback	terminal-accels.c	/^accel_cleared_callback (GtkCellRendererAccel *cell,$/;"	f	file:
+accel_compare_func	terminal-accels.c	/^accel_compare_func (GtkTreeModel *model,$/;"	f	file:
+accel_edited_callback	terminal-accels.c	/^accel_edited_callback (GtkCellRendererAccel *cell,$/;"	f	file:
+accel_path	terminal-accels.c	/^  const char *accel_path;$/;"	m	struct:__anon6	file:
+accel_path_unlocked	terminal-accels.c	/^  gboolean accel_path_unlocked;$/;"	m	struct:__anon6	file:
+accel_set_func	terminal-accels.c	/^accel_set_func (GtkTreeViewColumn *tree_column,$/;"	f	file:
+action_group	terminal-tabs-menu.c	/^	GtkActionGroup *action_group;$/;"	m	struct:_TerminalTabsMenuPrivate	file:
+action_group	terminal-window.c	/^  GtkActionGroup *action_group;$/;"	m	struct:_TerminalWindowPrivate	file:
+active	terminal-options.h	/^  guint active : 1;$/;"	m	struct:__anon37
+active_model	terminal-encoding.c	/^  GtkTreeModel *active_model;$/;"	m	struct:__anon15	file:
+active_screen	terminal-window.c	/^  TerminalScreen *active_screen;$/;"	m	struct:_TerminalWindowPrivate	file:
+active_selection	terminal-encoding.c	/^  GtkTreeSelection *active_selection;$/;"	m	struct:__anon15	file:
+active_tree_view	terminal-encoding.c	/^  GtkTreeView *active_tree_view;$/;"	m	struct:__anon15	file:
+add_button	terminal-encoding.c	/^  GtkWidget *add_button;$/;"	m	struct:__anon15	file:
+add_key_entry_to_changeset	terminal-accels.c	/^add_key_entry_to_changeset (gpointer key,$/;"	f	file:
+add_new_window	terminal-options.c	/^add_new_window (TerminalOptions *options,$/;"	f	file:
+all_entries	terminal-accels.c	/^static KeyEntryList all_entries[] =$/;"	v	file:
+allocate_tab_id	terminal-tabs-menu.c	/^allocate_tab_id (void)$/;"	f	file:
+anchor_action	terminal-tabs-menu.c	/^	GtkAction *anchor_action;$/;"	m	struct:_TerminalTabsMenuPrivate	file:
+app_setting_notify_cb	terminal-window.c	/^app_setting_notify_cb (TerminalApp *app,$/;"	f	file:
+app_setting_notify_destroy_cb	terminal-window.c	/^app_setting_notify_destroy_cb (GdkScreen *screen)$/;"	f	file:
+append_quoted_word	eggdesktopfile.c	/^append_quoted_word (GString    *str,$/;"	f	file:
+apply_defaults	terminal-options.c	/^apply_defaults (TerminalOptions *options,$/;"	f	file:
+array_prop	eggsmclient-xsmp.c	/^array_prop (const char *name, ...) $/;"	f	file:
+array_putenv	eggdesktopfile.c	/^array_putenv (GPtrArray *env, char *variable)$/;"	f	file:
+available_model	terminal-encoding.c	/^  GtkTreeModel *available_model;$/;"	m	struct:__anon15	file:
+available_selection	terminal-encoding.c	/^  GtkTreeSelection *available_selection;$/;"	m	struct:__anon15	file:
+available_tree_view	terminal-encoding.c	/^  GtkTreeView *available_tree_view;$/;"	m	struct:__anon15	file:
+background	profile-editor.c	/^  const GdkColor background;$/;"	m	struct:_TerminalColorScheme	file:
+background_load_failed	terminal-profile.c	/^  gboolean background_load_failed;$/;"	m	struct:_TerminalProfilePrivate	file:
+base_store	terminal-encoding.c	/^  GtkListStore *base_store;$/;"	m	struct:__anon15	file:
+binding_display_name	terminal-accels.c	/^binding_display_name (guint            keyval,$/;"	f	file:
+binding_from_string	terminal-accels.c	/^binding_from_string (const char      *str,$/;"	f	file:
+binding_from_value	terminal-accels.c	/^binding_from_value (GConfValue       *value,$/;"	f	file:
+binding_name	terminal-accels.c	/^binding_name (guint            keyval,$/;"	f	file:
+bold	terminal-tab-label.c	/^  gboolean bold;$/;"	m	struct:_TerminalTabLabelPrivate	file:
+button	terminal-screen.h	/^  guint button;$/;"	m	struct:_TerminalScreenPopupInfo
+button_clicked_cb	terminal-encoding.c	/^button_clicked_cb (GtkWidget *button,$/;"	f	file:
+card8_prop	eggsmclient-xsmp.c	/^card8_prop (const char *name, unsigned char value)$/;"	f	file:
+charset	terminal-encoding.c	/^  const char *charset;$/;"	m	struct:__anon14	file:
+charset	terminal-encoding.h	/^  char *charset;$/;"	m	struct:__anon35
+child_pid	terminal-screen.c	/^  int child_pid;$/;"	m	struct:_TerminalScreenPrivate	file:
+clear_demands_attention	terminal-window.c	/^  guint clear_demands_attention : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+client_id	eggsmclient-xsmp.c	/^  char *client_id;$/;"	m	struct:_EggSMClientXSMP	file:
+clipboard_targets_received_cb	terminal-window.c	/^clipboard_targets_received_cb (GtkClipboard *clipboard,$/;"	f	file:
+clipboard_uris_received_cb	terminal-window.c	/^clipboard_uris_received_cb (GtkClipboard *clipboard,$/;"	f	file:
+close_button	terminal-tab-label.c	/^  GtkWidget *close_button;$/;"	m	struct:_TerminalTabLabelPrivate	file:
+close_button_clicked	terminal-tab-label.h	/^  void (* close_button_clicked) (TerminalTabLabel *tab_label);$/;"	m	struct:_TerminalTabLabelClass
+close_button_clicked_cb	terminal-tab-label.c	/^close_button_clicked_cb (GtkWidget *widget,$/;"	f	file:
+close_button_clicked_cb	terminal-window.c	/^close_button_clicked_cb (GtkWidget *tab_label,$/;"	f	file:
+close_screen	terminal-screen.h	/^  void (* close_screen)       (TerminalScreen *screen);$/;"	m	struct:_TerminalScreenClass
+closure	terminal-accels.c	/^  GClosure *closure;$/;"	m	struct:__anon6	file:
+color_scheme_combo_changed_cb	profile-editor.c	/^color_scheme_combo_changed_cb (GtkWidget *combo,$/;"	f	file:
+color_schemes	profile-editor.c	/^static const TerminalColorScheme color_schemes[] = {$/;"	v	file:
+compare_encodings	terminal-app.c	/^compare_encodings (TerminalEncoding *a,$/;"	f	file:
+conf	terminal-app.c	/^  GConfClient *conf;$/;"	m	struct:_TerminalApp	file:
+conf	terminal-profile.c	/^  GConfClient *conf;$/;"	m	struct:_TerminalProfilePrivate	file:
+conf_get_string	terminal-util.c	/^conf_get_string (GConfClient *conf,$/;"	f	file:
+config_file	terminal-options.h	/^  char    *config_file;$/;"	m	struct:__anon36
+confirm_close_dialog	terminal-window.c	/^  GtkWidget *confirm_close_dialog;$/;"	m	struct:_TerminalWindowPrivate	file:
+confirm_close_response_cb	terminal-window.c	/^confirm_close_response_cb (GtkWidget *dialog,$/;"	f	file:
+confirm_close_window_or_tab	terminal-window.c	/^confirm_close_window_or_tab (TerminalWindow *window,$/;"	f	file:
+connect_proxy_cb	terminal-tabs-menu.c	/^connect_proxy_cb (GtkActionGroup *action_group,$/;"	f	file:
+connection	eggsmclient-xsmp.c	/^  SmcConn connection;$/;"	m	struct:_EggSMClientXSMP	file:
+cooked_icon_title	terminal-screen.c	/^  char *cooked_title, *cooked_icon_title;$/;"	m	struct:_TerminalScreenPrivate	file:
+cooked_title	terminal-screen.c	/^  char *cooked_title, *cooked_icon_title;$/;"	m	struct:_TerminalScreenPrivate	file:
+custom_command_entry_changed_cb	profile-editor.c	/^custom_command_entry_changed_cb (GtkEntry *entry)$/;"	f	file:
+cwd_of_pid	terminal-screen.c	/^cwd_of_pid (int pid)$/;"	f	file:
+default_bg_color	terminal-profile.c	/^static const GdkColor default_bg_color = { 0, 0xffff, 0xffff, 0xdddd };$/;"	v	file:
+default_fg_color	terminal-profile.c	/^static const GdkColor default_fg_color = { 0, 0, 0, 0 };$/;"	v	file:
+default_fullscreen	terminal-options.h	/^  gboolean default_fullscreen;$/;"	m	struct:__anon36
+default_geometry	terminal-options.h	/^  char    *default_geometry;$/;"	m	struct:__anon36
+default_maximize	terminal-options.h	/^  gboolean default_maximize;$/;"	m	struct:__anon36
+default_profile	terminal-app.c	/^  TerminalProfile *default_profile;$/;"	m	struct:_TerminalApp	file:
+default_profile	terminal-options.h	/^  char    *default_profile;$/;"	m	struct:__anon36
+default_profile_id	terminal-app.c	/^  char* default_profile_id;$/;"	m	struct:_TerminalApp	file:
+default_profile_is_id	terminal-options.h	/^  gboolean default_profile_is_id;$/;"	m	struct:__anon36
+default_profile_locked	terminal-app.c	/^  gboolean default_profile_locked;$/;"	m	struct:_TerminalApp	file:
+default_profile_notify_id	terminal-app.c	/^  guint default_profile_notify_id;$/;"	m	struct:_TerminalApp	file:
+default_role	terminal-options.h	/^  char    *default_role;$/;"	m	struct:__anon36
+default_title	terminal-options.h	/^  char    *default_title;$/;"	m	struct:__anon36
+default_window_menubar_forced	terminal-options.h	/^  gboolean default_window_menubar_forced;$/;"	m	struct:__anon36
+default_window_menubar_state	terminal-options.h	/^  gboolean default_window_menubar_state;$/;"	m	struct:__anon36
+default_working_dir	terminal-options.h	/^  char    *default_working_dir;$/;"	m	struct:__anon36
+delete_properties	eggsmclient-xsmp.c	/^delete_properties (EggSMClientXSMP *xsmp, ...)$/;"	f	file:
+dialog	terminal-encoding.c	/^  GtkWidget *dialog;$/;"	m	struct:__anon15	file:
+digest_options_callback	terminal-options.c	/^digest_options_callback (GOptionContext *context,$/;"	f	file:
+dirty_pspecs	terminal-profile.c	/^  GSList *dirty_pspecs;$/;"	m	struct:_TerminalProfilePrivate	file:
+discard_command	eggsmclient-xsmp.c	/^  char **discard_command;$/;"	m	struct:_EggSMClientXSMP	file:
+disconnect_profiles_from_actions_in_group	terminal-window.c	/^disconnect_profiles_from_actions_in_group (GtkActionGroup *action_group)$/;"	f	file:
+display	eggdesktopfile.c	/^  GdkDisplay *display;$/;"	m	struct:__anon1	file:
+display_name	terminal-options.h	/^  char    *display_name;$/;"	m	struct:__anon36
+disposed	terminal-window.c	/^  guint disposed : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+do_percent_subst	eggdesktopfile.c	/^do_percent_subst (EggDesktopFile *desktop_file,$/;"	f	file:
+do_save_yourself	eggsmclient-xsmp.c	/^do_save_yourself (EggSMClientXSMP *xsmp)$/;"	f	file:
+document_code	eggdesktopfile.c	/^  char                document_code;$/;"	m	struct:EggDesktopFile	file:
+edit_copy_callback	terminal-window.c	/^edit_copy_callback (GtkAction *action,$/;"	f	file:
+edit_current_profile_callback	terminal-window.c	/^edit_current_profile_callback (GtkAction *action,$/;"	f	file:
+edit_entries	terminal-accels.c	/^static KeyEntry edit_entries[] =$/;"	v	file:
+edit_keybindings_callback	terminal-window.c	/^edit_keybindings_callback (GtkAction *action,$/;"	f	file:
+edit_keys_dialog	terminal-accels.c	/^static GtkWidget *edit_keys_dialog = NULL;$/;"	v	file:
+edit_keys_dialog_destroy_cb	terminal-accels.c	/^edit_keys_dialog_destroy_cb (GtkWidget *widget,$/;"	f	file:
+edit_keys_dialog_response_cb	terminal-accels.c	/^edit_keys_dialog_response_cb (GtkWidget *editor,$/;"	f	file:
+edit_keys_store	terminal-accels.c	/^static GtkTreeStore *edit_keys_store = NULL;$/;"	v	file:
+edit_menu_activate_callback	terminal-window.c	/^edit_menu_activate_callback (GtkMenuItem *menuitem,$/;"	f	file:
+edit_paste_callback	terminal-window.c	/^edit_paste_callback (GtkAction *action,$/;"	f	file:
+edit_profiles_callback	terminal-window.c	/^edit_profiles_callback (GtkAction *action,$/;"	f	file:
+edit_select_all_callback	terminal-window.c	/^edit_select_all_callback (GtkAction *action,$/;"	f	file:
+editor_response_cb	profile-editor.c	/^editor_response_cb (GtkWidget *editor,$/;"	f	file:
+egg_desktop_file	eggdesktopfile.c	/^G_LOCK_DEFINE_STATIC (egg_desktop_file);$/;"	v
+egg_desktop_file	eggdesktopfile.c	/^static EggDesktopFile *egg_desktop_file;$/;"	v	file:
+egg_desktop_file_accepts_documents	eggdesktopfile.c	/^egg_desktop_file_accepts_documents (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_accepts_multiple	eggdesktopfile.c	/^egg_desktop_file_accepts_multiple (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_accepts_uris	eggdesktopfile.c	/^egg_desktop_file_accepts_uris (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_can_launch	eggdesktopfile.c	/^egg_desktop_file_can_launch (EggDesktopFile *desktop_file,$/;"	f
+egg_desktop_file_error_quark	eggdesktopfile.c	/^egg_desktop_file_error_quark (void)$/;"	f
+egg_desktop_file_free	eggdesktopfile.c	/^egg_desktop_file_free (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_get_boolean	eggdesktopfile.c	/^egg_desktop_file_get_boolean (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_get_desktop_file_type	eggdesktopfile.c	/^egg_desktop_file_get_desktop_file_type (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_get_icon	eggdesktopfile.c	/^egg_desktop_file_get_icon (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_get_locale_string	eggdesktopfile.c	/^egg_desktop_file_get_locale_string (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_get_locale_string_list	eggdesktopfile.c	/^egg_desktop_file_get_locale_string_list (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_get_name	eggdesktopfile.c	/^egg_desktop_file_get_name (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_get_numeric	eggdesktopfile.c	/^egg_desktop_file_get_numeric (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_get_source	eggdesktopfile.c	/^egg_desktop_file_get_source (EggDesktopFile *desktop_file)$/;"	f
+egg_desktop_file_get_string	eggdesktopfile.c	/^egg_desktop_file_get_string (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_get_string_list	eggdesktopfile.c	/^egg_desktop_file_get_string_list (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_has_key	eggdesktopfile.c	/^egg_desktop_file_has_key (EggDesktopFile  *desktop_file,$/;"	f
+egg_desktop_file_launch	eggdesktopfile.c	/^egg_desktop_file_launch (EggDesktopFile *desktop_file,$/;"	f
+egg_desktop_file_launchv	eggdesktopfile.c	/^egg_desktop_file_launchv (EggDesktopFile *desktop_file,$/;"	f	file:
+egg_desktop_file_new	eggdesktopfile.c	/^egg_desktop_file_new (const char *desktop_file_path, GError **error)$/;"	f
+egg_desktop_file_new_from_data_dirs	eggdesktopfile.c	/^egg_desktop_file_new_from_data_dirs (const char  *desktop_file_path,$/;"	f
+egg_desktop_file_new_from_dirs	eggdesktopfile.c	/^egg_desktop_file_new_from_dirs (const char  *desktop_file_path,$/;"	f
+egg_desktop_file_new_from_key_file	eggdesktopfile.c	/^egg_desktop_file_new_from_key_file (GKeyFile    *key_file,$/;"	f
+egg_desktop_file_parse_exec	eggdesktopfile.c	/^egg_desktop_file_parse_exec (EggDesktopFile  *desktop_file,$/;"	f
+egg_get_desktop_file	eggdesktopfile.c	/^egg_get_desktop_file (void)$/;"	f
+egg_set_desktop_file	eggdesktopfile.c	/^egg_set_desktop_file (const char *desktop_file_path)$/;"	f
+egg_set_desktop_file_internal	eggdesktopfile.c	/^egg_set_desktop_file_internal (const char *desktop_file_path,$/;"	f	file:
+egg_set_desktop_file_without_defaults	eggdesktopfile.c	/^egg_set_desktop_file_without_defaults (const char *desktop_file_path)$/;"	f
+egg_shell	eggshell.c	/^egg_shell (const char *shell)$/;"	f
+egg_sm_client_class_init	eggsmclient.c	/^egg_sm_client_class_init (EggSMClientClass *klass)$/;"	f	file:
+egg_sm_client_debug_handler	eggsmclient.c	/^egg_sm_client_debug_handler (const char *log_domain,$/;"	f	file:
+egg_sm_client_end_session	eggsmclient.c	/^egg_sm_client_end_session (EggSMClientEndStyle  style,$/;"	f
+egg_sm_client_get	eggsmclient.c	/^egg_sm_client_get (void)$/;"	f
+egg_sm_client_get_mode	eggsmclient.c	/^egg_sm_client_get_mode (void)$/;"	f
+egg_sm_client_get_option_group	eggsmclient.c	/^egg_sm_client_get_option_group (void)$/;"	f
+egg_sm_client_get_state_file	eggsmclient.c	/^egg_sm_client_get_state_file (EggSMClient *client)$/;"	f
+egg_sm_client_init	eggsmclient.c	/^egg_sm_client_init (EggSMClient *client)$/;"	f	file:
+egg_sm_client_is_resumed	eggsmclient.c	/^egg_sm_client_is_resumed (EggSMClient *client)$/;"	f
+egg_sm_client_osx_class_init	eggsmclient-osx.c	/^egg_sm_client_osx_class_init (EggSMClientOSXClass *klass)$/;"	f	file:
+egg_sm_client_osx_init	eggsmclient-osx.c	/^egg_sm_client_osx_init (EggSMClientOSX *osx)$/;"	f	file:
+egg_sm_client_osx_new	eggsmclient-osx.c	/^egg_sm_client_osx_new (void)$/;"	f
+egg_sm_client_quit	eggsmclient.c	/^egg_sm_client_quit (EggSMClient *client)$/;"	f
+egg_sm_client_quit_cancelled	eggsmclient.c	/^egg_sm_client_quit_cancelled (EggSMClient *client)$/;"	f
+egg_sm_client_quit_requested	eggsmclient.c	/^egg_sm_client_quit_requested (EggSMClient *client)$/;"	f
+egg_sm_client_save_state	eggsmclient.c	/^egg_sm_client_save_state (EggSMClient *client)$/;"	f
+egg_sm_client_set_discard_command	eggsmclient.c	/^egg_sm_client_set_discard_command (EggSMClient  *client,$/;"	f
+egg_sm_client_set_mode	eggsmclient.c	/^egg_sm_client_set_mode (EggSMClientMode mode)$/;"	f
+egg_sm_client_set_restart_command	eggsmclient.c	/^egg_sm_client_set_restart_command (EggSMClient  *client,$/;"	f
+egg_sm_client_will_quit	eggsmclient.c	/^egg_sm_client_will_quit (EggSMClient *client,$/;"	f
+egg_sm_client_win32_class_init	eggsmclient-win32.c	/^egg_sm_client_win32_class_init (EggSMClientWin32Class *klass)$/;"	f	file:
+egg_sm_client_win32_init	eggsmclient-win32.c	/^egg_sm_client_win32_init (EggSMClientWin32 *win32)$/;"	f	file:
+egg_sm_client_win32_new	eggsmclient-win32.c	/^egg_sm_client_win32_new (void)$/;"	f
+egg_sm_client_xsmp_class_init	eggsmclient-xsmp.c	/^egg_sm_client_xsmp_class_init (EggSMClientXSMPClass *klass)$/;"	f	file:
+egg_sm_client_xsmp_init	eggsmclient-xsmp.c	/^egg_sm_client_xsmp_init (EggSMClientXSMP *xsmp)$/;"	f	file:
+egg_sm_client_xsmp_new	eggsmclient-xsmp.c	/^egg_sm_client_xsmp_new (void)$/;"	f
+emit_quit	eggsmclient-win32.c	/^emit_quit (gpointer smclient)$/;"	f	file:
+emit_quit_cancelled	eggsmclient-win32.c	/^emit_quit_cancelled (gpointer smclient)$/;"	f	file:
+emit_quit_requested	eggsmclient-win32.c	/^emit_quit_requested (gpointer smclient)$/;"	f	file:
+enable_menu_accels	terminal-app.c	/^  gboolean enable_menu_accels;$/;"	m	struct:_TerminalApp	file:
+enable_menu_accels_notify_id	terminal-app.c	/^  guint enable_menu_accels_notify_id;$/;"	m	struct:_TerminalApp	file:
+enable_mnemonics	terminal-app.c	/^  gboolean enable_mnemonics;$/;"	m	struct:_TerminalApp	file:
+enable_mnemonics_notify_id	terminal-app.c	/^  guint enable_mnemonics_notify_id;$/;"	m	struct:_TerminalApp	file:
+encoding_dialog	terminal-encoding.c	/^static GtkWidget *encoding_dialog = NULL;$/;"	v	file:
+encoding_dialog_data_free	terminal-encoding.c	/^encoding_dialog_data_free (EncodingDialogData *data)$/;"	f	file:
+encoding_list_changed	terminal-app.c	/^  void (* encoding_list_changed) (TerminalApp *app);$/;"	m	struct:_TerminalAppClass	file:
+encoding_list_notify_id	terminal-app.c	/^  guint encoding_list_notify_id;$/;"	m	struct:_TerminalApp	file:
+encoding_mark_active	terminal-app.c	/^encoding_mark_active (gpointer key,$/;"	f	file:
+encodings	terminal-app.c	/^  GHashTable *encodings;$/;"	m	struct:_TerminalApp	file:
+encodings	terminal-encoding.c	/^} encodings[] = {$/;"	v	typeref:struct:__anon14	file:
+encodings_action_group	terminal-window.c	/^  GtkActionGroup *encodings_action_group;$/;"	m	struct:_TerminalWindowPrivate	file:
+encodings_create_treemodel	terminal-encoding.c	/^encodings_create_treemodel (GtkListStore *base_store,$/;"	f	file:
+encodings_list_changed_cb	terminal-encoding.c	/^encodings_list_changed_cb (TerminalApp *app,$/;"	f	file:
+encodings_locked	terminal-app.c	/^  gboolean encodings_locked;$/;"	m	struct:_TerminalApp	file:
+encodings_ui_id	terminal-window.c	/^  guint encodings_ui_id;$/;"	m	struct:_TerminalWindowPrivate	file:
+end_session	eggsmclient.h	/^  gboolean (*end_session)         (EggSMClient          *client,$/;"	m	struct:_EggSMClientClass
+end_startup_notification	eggdesktopfile.c	/^end_startup_notification (GdkDisplay *display,$/;"	f	file:
+ensure_pixbuf_property	terminal-profile.c	/^ensure_pixbuf_property (TerminalProfile *profile,$/;"	f	file:
+ensure_top_tab	terminal-options.c	/^ensure_top_tab (TerminalOptions *options)$/;"	f	file:
+ensure_top_window	terminal-options.c	/^ensure_top_window (TerminalOptions *options)$/;"	f	file:
+env	terminal-options.h	/^  char   **env;$/;"	m	struct:__anon36
+erase_bindings	terminal-profile.c	/^static const GConfEnumStringPair erase_bindings[] = {$/;"	v	file:
+escape_underscores	terminal-window.c	/^escape_underscores (const char *name)$/;"	f	file:
+event	eggsmclient-win32.c	/^  volatile GSourceFunc event;$/;"	m	struct:_EggSMClientWin32	file:
+exec_argv	terminal-options.h	/^  char   **exec_argv;$/;"	m	struct:__anon36
+exec_argv	terminal-options.h	/^  char **exec_argv;$/;"	m	struct:__anon37
+execute	terminal-options.h	/^  gboolean  execute;$/;"	m	struct:__anon36
+expecting_initial_save_yourself	eggsmclient-xsmp.c	/^  guint expecting_initial_save_yourself : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+extract_hash_seq_and_seed	skey-popup.c	/^extract_hash_seq_and_seed (const gchar  *otp_match,$/;"	f	file:
+extract_seq_and_seed	skey-popup.c	/^extract_seq_and_seed (const gchar  *skey_match,$/;"	f	file:
+factory	terminal.c	/^static TerminalFactory *factory = NULL;$/;"	v	file:
+file_close_tab_callback	terminal-window.c	/^file_close_tab_callback (GtkAction *action,$/;"	f	file:
+file_close_window_callback	terminal-window.c	/^file_close_window_callback (GtkAction *action,$/;"	f	file:
+file_entries	terminal-accels.c	/^static KeyEntry file_entries[] =$/;"	v	file:
+file_new_profile_callback	terminal-window.c	/^file_new_profile_callback (GtkAction *action,$/;"	f	file:
+file_new_tab_callback	terminal-window.c	/^file_new_tab_callback (GtkAction *action,$/;"	f	file:
+file_new_window_callback	terminal-window.c	/^file_new_window_callback (GtkAction *action,$/;"	f	file:
+filter_active_encodings	terminal-encoding.c	/^filter_active_encodings (GtkTreeModel *child_model,$/;"	f	file:
+find_larger_zoom_factor	terminal-window.c	/^find_larger_zoom_factor (double  current,$/;"	f	file:
+find_profile_link	terminal-app.c	/^find_profile_link (GList      *profiles,$/;"	f	file:
+find_smaller_zoom_factor	terminal-window.c	/^find_smaller_zoom_factor (double  current,$/;"	f	file:
+find_tab_num_at_pos	terminal-window.c	/^find_tab_num_at_pos (GtkNotebook *notebook,$/;"	f	file:
+fix_broken_state	eggsmclient-xsmp.c	/^fix_broken_state (EggSMClientXSMP *xsmp, const char *message,$/;"	f	file:
+flags	terminal-screen.c	/^  GRegexCompileFlags flags;$/;"	m	struct:__anon23	file:
+flags	terminal-util.c	/^  PropertyChangeFlags flags;$/;"	m	struct:__anon27	file:
+flavor	terminal-screen.c	/^  TerminalURLFlavour flavor;$/;"	m	struct:__anon19	file:
+flavor	terminal-screen.c	/^  TerminalURLFlavour flavor;$/;"	m	struct:__anon23	file:
+flavour	terminal-screen.h	/^  TerminalURLFlavour flavour;$/;"	m	struct:_TerminalScreenPopupInfo
+font_scale	terminal-screen.c	/^  double font_scale;$/;"	m	struct:_TerminalScreenPrivate	file:
+force_menubar_state	terminal-options.h	/^  gboolean force_menubar_state;$/;"	m	struct:__anon38
+foreground	profile-editor.c	/^  const GdkColor foreground;$/;"	m	struct:_TerminalColorScheme	file:
+forgotten	terminal-profile.c	/^  guint forgotten : 1;$/;"	m	struct:_TerminalProfilePrivate	file:
+forgotten	terminal-profile.h	/^  void (* forgotten) (TerminalProfile           *profile);$/;"	m	struct:_TerminalProfileClass
+format_percent_value	profile-editor.c	/^format_percent_value (GtkScale *scale,$/;"	f	file:
+free_document_list	eggdesktopfile.c	/^free_document_list (GSList *documents)$/;"	f	file:
+free_tab_id	terminal-tabs-menu.c	/^free_tab_id (GtkAction *action)$/;"	f	file:
+free_tag_data	terminal-screen.c	/^free_tag_data (TagData *tagdata)$/;"	f	file:
+g_win32_handle_source_add	eggsmclient-win32.c	/^g_win32_handle_source_add (HANDLE handle, GSourceFunc callback, gpointer user_data)$/;"	f	file:
+g_win32_handle_source_check	eggsmclient-win32.c	/^g_win32_handle_source_check (GSource *source)$/;"	f	file:
+g_win32_handle_source_dispatch	eggsmclient-win32.c	/^g_win32_handle_source_dispatch (GSource *source, GSourceFunc callback, gpointer user_data)$/;"	f	file:
+g_win32_handle_source_finalize	eggsmclient-win32.c	/^g_win32_handle_source_finalize (GSource *source)$/;"	f	file:
+g_win32_handle_source_funcs	eggsmclient-win32.c	/^GSourceFuncs g_win32_handle_source_funcs = {$/;"	v
+g_win32_handle_source_prepare	eggsmclient-win32.c	/^g_win32_handle_source_prepare (GSource *source, gint *timeout)$/;"	f	file:
+gconf_key	terminal-accels.c	/^  const char *gconf_key;$/;"	m	struct:__anon6	file:
+gconf_key_quark	terminal-profile.c	/^static GQuark gconf_key_quark;$/;"	v	file:
+gconf_key_to_entry	terminal-accels.c	/^static GHashTable *gconf_key_to_entry;$/;"	v	file:
+gconf_keys	terminal-profile.h	/^  GHashTable *gconf_keys;$/;"	m	struct:_TerminalProfileClass
+gconf_keyval	terminal-accels.c	/^  guint gconf_keyval;$/;"	m	struct:__anon6	file:
+gconf_mask	terminal-accels.c	/^  GdkModifierType gconf_mask;$/;"	m	struct:__anon6	file:
+gconf_notification_pspec	terminal-profile.c	/^  GParamSpec *gconf_notification_pspec;$/;"	m	struct:_TerminalProfilePrivate	file:
+gconf_notify_id	terminal-accels.c	/^static guint gconf_notify_id;$/;"	v	file:
+generate_command	eggsmclient-xsmp.c	/^generate_command (char **argv, const char *client_id,$/;"	f	file:
+geometry	terminal-options.h	/^  char *geometry;$/;"	m	struct:__anon38
+get_child_command	terminal-screen.c	/^get_child_command (TerminalScreen *screen,$/;"	f	file:
+get_child_environment	terminal-screen.c	/^get_child_environment (TerminalScreen *screen,$/;"	f	file:
+get_factory_name_for_display	terminal.c	/^get_factory_name_for_display (const char *display_name)$/;"	f	file:
+get_goption_context	terminal-options.c	/^get_goption_context (TerminalOptions *options)$/;"	f	file:
+get_prop_value_from_prop_name	terminal-profile.c	/^get_prop_value_from_prop_name (TerminalProfile *profile,$/;"	f	file:
+get_pspec_from_name	terminal-profile.c	/^get_pspec_from_name (TerminalProfile *profile,$/;"	f	file:
+global_app	terminal-app.c	/^static TerminalApp *global_app = NULL;$/;"	v	file:
+global_client	eggsmclient.c	/^static EggSMClient *global_client;$/;"	v	file:
+global_client_mode	eggsmclient.c	/^static EggSMClientMode global_client_mode = EGG_SM_CLIENT_MODE_NORMAL;$/;"	v	file:
+got_message	eggsmclient-win32.c	/^got_message (gpointer smclient)$/;"	f	file:
+handle_tab_droped_on_desktop	terminal-window.c	/^handle_tab_droped_on_desktop (GtkNotebook *source_notebook,$/;"	f	file:
+hash	skey-popup.c	/^  int hash;$/;"	m	struct:__anon5	file:
+have_argb_visual	terminal-window.c	/^  guint have_argb_visual : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+help_about_callback	terminal-window.c	/^help_about_callback (GtkAction *action,$/;"	f	file:
+help_contents_callback	terminal-window.c	/^help_contents_callback (GtkAction *action,$/;"	f	file:
+help_entries	terminal-accels.c	/^static KeyEntry help_entries[] = {$/;"	v	file:
+ice_connection_watch	eggsmclient-xsmp.c	/^ice_connection_watch (IceConn     ice_conn,$/;"	f	file:
+ice_error_handler	eggsmclient-xsmp.c	/^ice_error_handler (IceConn       ice_conn,$/;"	f	file:
+ice_init	eggsmclient-xsmp.c	/^ice_init (void)$/;"	f	file:
+ice_io_error_handler	eggsmclient-xsmp.c	/^ice_io_error_handler (IceConn ice_conn)$/;"	f	file:
+ice_iochannel_watch	eggsmclient-xsmp.c	/^ice_iochannel_watch (GIOChannel   *channel,$/;"	f	file:
+icon	eggdesktopfile.c	/^  char               *name, *icon;$/;"	m	struct:EggDesktopFile	file:
+icon_title_set	terminal-screen.c	/^  gboolean icon_title_set;$/;"	m	struct:_TerminalScreenPrivate	file:
+icon_title_set	terminal-window.c	/^  guint icon_title_set : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+idle	eggsmclient-xsmp.c	/^  guint idle;$/;"	m	struct:_EggSMClientXSMP	file:
+idle_do_pending_events	eggsmclient-xsmp.c	/^idle_do_pending_events (gpointer data)$/;"	f	file:
+idle_quit_requested	eggsmclient-osx.c	/^idle_quit_requested (gpointer client)$/;"	f	file:
+idle_remove_popup_info	terminal-window.c	/^idle_remove_popup_info (TerminalWindow *window)$/;"	f	file:
+idle_will_quit	eggsmclient-osx.c	/^idle_will_quit (gpointer client)$/;"	f	file:
+init_background_darkness_scale	profile-editor.c	/^init_background_darkness_scale (GtkWidget *scale)$/;"	f	file:
+init_color_scheme_menu	profile-editor.c	/^init_color_scheme_menu (GtkWidget *combo_box)$/;"	f	file:
+initial_env	terminal-screen.c	/^  char **initial_env;$/;"	m	struct:_TerminalScreenPrivate	file:
+initial_tab_free	terminal-options.c	/^initial_tab_free (InitialTab *it)$/;"	f	file:
+initial_tab_new	terminal-options.c	/^initial_tab_new (const char *profile,$/;"	f	file:
+initial_window_free	terminal-options.c	/^initial_window_free (InitialWindow *iw)$/;"	f	file:
+initial_window_new	terminal-options.c	/^initial_window_new (guint source_tag)$/;"	f	file:
+initial_windows	terminal-options.h	/^  GList   *initial_windows;$/;"	m	struct:__anon36
+initial_working_directory	terminal-screen.c	/^  char *initial_working_directory;$/;"	m	struct:_TerminalScreenPrivate	file:
+inside_gconf_notify	terminal-accels.c	/^static int inside_gconf_notify = 0;$/;"	v	file:
+interact_errors	eggsmclient-xsmp.c	/^  guint interact_errors : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+is_active	terminal-encoding.h	/^  guint is_active        : 1;$/;"	m	struct:__anon35
+is_custom	terminal-encoding.h	/^  guint is_custom        : 1;$/;"	m	struct:__anon35
+key_entry	terminal-accels.c	/^  KeyEntry *key_entry;$/;"	m	struct:__anon7	file:
+key_file	eggdesktopfile.c	/^  GKeyFile           *key_file;$/;"	m	struct:EggDesktopFile	file:
+key_from_gconf_key	terminal-accels.c	/^key_from_gconf_key (const char *gconf_key)$/;"	f	file:
+keys_change_notify	terminal-accels.c	/^keys_change_notify (GConfClient *client,$/;"	f	file:
+label	terminal-tab-label.c	/^  GtkWidget *label;$/;"	m	struct:_TerminalTabLabelPrivate	file:
+launch_child_source_id	terminal-screen.c	/^  guint launch_child_source_id;$/;"	m	struct:_TerminalScreenPrivate	file:
+liststore_insert_encoding	terminal-encoding.c	/^liststore_insert_encoding (gpointer key,$/;"	f	file:
+load_config	terminal-options.h	/^  gboolean load_config;$/;"	m	struct:__anon36
+locked	terminal-profile.c	/^  gboolean *locked;$/;"	m	struct:_TerminalProfilePrivate	file:
+main	terminal.c	/^main (int argc, char **argv)$/;"	f
+manage_profiles_default_menu	terminal-app.c	/^  GtkWidget *manage_profiles_default_menu;$/;"	m	struct:_TerminalApp	file:
+manage_profiles_delete_button	terminal-app.c	/^  GtkWidget *manage_profiles_delete_button;$/;"	m	struct:_TerminalApp	file:
+manage_profiles_dialog	terminal-app.c	/^  GtkWidget *manage_profiles_dialog;$/;"	m	struct:_TerminalApp	file:
+manage_profiles_edit_button	terminal-app.c	/^  GtkWidget *manage_profiles_edit_button;$/;"	m	struct:_TerminalApp	file:
+manage_profiles_list	terminal-app.c	/^  GtkWidget *manage_profiles_list;$/;"	m	struct:_TerminalApp	file:
+manage_profiles_new_button	terminal-app.c	/^  GtkWidget *manage_profiles_new_button;$/;"	m	struct:_TerminalApp	file:
+match_clicked	terminal-screen.h	/^  gboolean (* match_clicked)  (TerminalScreen *screen,$/;"	m	struct:_TerminalScreenClass
+match_tags	terminal-screen.c	/^  GSList *match_tags;$/;"	m	struct:_TerminalScreenPrivate	file:
+menubar	terminal-window.c	/^  GtkWidget *menubar;$/;"	m	struct:_TerminalWindowPrivate	file:
+menubar_state	terminal-options.h	/^  gboolean menubar_state;$/;"	m	struct:__anon38
+menubar_visible	terminal-window.c	/^  guint menubar_visible : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+message_event	eggsmclient-win32.c	/^  HANDLE message_event, response_event;$/;"	m	struct:_EggSMClientWin32	file:
+n_elements	terminal-accels.c	/^  guint n_elements;$/;"	m	struct:__anon7	file:
+n_skey_regexes	terminal-screen.c	/^static guint n_skey_regexes;$/;"	v	file:
+n_tabs	terminal-tabs-menu.c	/^static guint n_tabs = 0;$/;"	v	file:
+n_url_regexes	terminal-screen.c	/^static guint n_url_regexes;$/;"	v	file:
+name	eggdesktopfile.c	/^  char               *name, *icon;$/;"	m	struct:EggDesktopFile	file:
+name	profile-editor.c	/^  const char *name;$/;"	m	struct:_TerminalColorScheme	file:
+name	terminal-encoding.c	/^  const char *name;$/;"	m	struct:__anon14	file:
+name	terminal-encoding.h	/^  char *name;$/;"	m	struct:__anon35
+need_quit_requested	eggsmclient-xsmp.c	/^  guint need_quit_requested : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+need_save_state	eggsmclient-xsmp.c	/^  guint need_save_state : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+needs_gconf_sync	terminal-accels.c	/^  gboolean needs_gconf_sync;$/;"	m	struct:__anon6	file:
+new_profile_dialog	terminal-app.c	/^  GtkWidget *new_profile_dialog;$/;"	m	struct:_TerminalApp	file:
+new_profile_dialog_destroy_cb	terminal-app.c	/^new_profile_dialog_destroy_cb (GtkWidget *new_profile_dialog,$/;"	f	file:
+new_profile_name_entry_changed_cb	terminal-app.c	/^new_profile_name_entry_changed_cb (GtkEntry *entry,$/;"	f	file:
+new_profile_response_cb	terminal-app.c	/^new_profile_response_cb (GtkWidget *new_profile_dialog,$/;"	f	file:
+new_terminal_action_group	terminal-window.c	/^  GtkActionGroup *new_terminal_action_group;$/;"	m	struct:_TerminalWindowPrivate	file:
+new_terminal_ui_id	terminal-window.c	/^  guint new_terminal_ui_id;$/;"	m	struct:_TerminalWindowPrivate	file:
+notebook	terminal-window.c	/^  GtkWidget *notebook;$/;"	m	struct:_TerminalWindowPrivate	file:
+notebook_button_press_cb	terminal-window.c	/^notebook_button_press_cb (GtkWidget *widget,$/;"	f	file:
+notebook_page_added_callback	terminal-window.c	/^notebook_page_added_callback (GtkWidget       *notebook,$/;"	f	file:
+notebook_page_added_cb	terminal-tabs-menu.c	/^notebook_page_added_cb (GtkNotebook *notebook,$/;"	f	file:
+notebook_page_removed_callback	terminal-window.c	/^notebook_page_removed_callback (GtkWidget       *notebook,$/;"	f	file:
+notebook_page_removed_cb	terminal-tabs-menu.c	/^notebook_page_removed_cb (GtkNotebook *notebook,$/;"	f	file:
+notebook_page_reordered_cb	terminal-tabs-menu.c	/^notebook_page_reordered_cb (GtkNotebook *notebook,$/;"	f	file:
+notebook_page_selected_callback	terminal-window.c	/^notebook_page_selected_callback (GtkWidget       *notebook,$/;"	f	file:
+notebook_page_switch_cb	terminal-tabs-menu.c	/^notebook_page_switch_cb (GtkNotebook *notebook,$/;"	f	file:
+notebook_popup_menu_cb	terminal-window.c	/^notebook_popup_menu_cb (GtkWidget *widget,$/;"	f	file:
+notification_group	terminal-accels.c	/^static GtkAccelGroup *notification_group = NULL;$/;"	v	file:
+notify_id	terminal-profile.c	/^  guint notify_id;$/;"	m	struct:_TerminalProfilePrivate	file:
+object	terminal-util.c	/^  GObject *object;$/;"	m	struct:__anon27	file:
+object_change_notify_cb	terminal-util.c	/^object_change_notify_cb (PropertyChange *change)$/;"	f	file:
+object_notify_id	terminal-util.c	/^  gulong object_notify_id;$/;"	m	struct:__anon27	file:
+object_prop	terminal-util.c	/^  const char *object_prop;$/;"	m	struct:__anon27	file:
+old_char_height	terminal-window.c	/^  int old_char_height;$/;"	m	struct:_TerminalWindowPrivate	file:
+old_char_width	terminal-window.c	/^  int old_char_width;$/;"	m	struct:_TerminalWindowPrivate	file:
+old_geometry_widget	terminal-window.c	/^  void *old_geometry_widget; \/* only used for pointer value as it may be freed *\/$/;"	m	struct:_TerminalWindowPrivate	file:
+open_url	terminal-util.c	/^open_url (GtkWindow *parent,$/;"	f	file:
+option_active_callback	terminal-options.c	/^option_active_callback (const gchar *option_name,$/;"	f	file:
+option_command_callback	terminal-options.c	/^option_command_callback (const gchar *option_name,$/;"	f	file:
+option_disable_factory_callback	terminal-options.c	/^option_disable_factory_callback (const gchar *option_name,$/;"	f	file:
+option_fullscreen_callback	terminal-options.c	/^option_fullscreen_callback (const gchar *option_name,$/;"	f	file:
+option_geometry_callback	terminal-options.c	/^option_geometry_callback (const gchar *option_name,$/;"	f	file:
+option_hide_menubar_callback	terminal-options.c	/^option_hide_menubar_callback (const gchar *option_name,$/;"	f	file:
+option_load_save_config_cb	terminal-options.c	/^option_load_save_config_cb (const gchar *option_name,$/;"	f	file:
+option_maximize_callback	terminal-options.c	/^option_maximize_callback (const gchar *option_name,$/;"	f	file:
+option_profile_cb	terminal-options.c	/^option_profile_cb (const gchar *option_name,$/;"	f	file:
+option_profile_id_cb	terminal-options.c	/^option_profile_id_cb (const gchar *option_name,$/;"	f	file:
+option_role_callback	terminal-options.c	/^option_role_callback (const gchar *option_name,$/;"	f	file:
+option_show_menubar_callback	terminal-options.c	/^option_show_menubar_callback (const gchar *option_name,$/;"	f	file:
+option_tab_callback	terminal-options.c	/^option_tab_callback (const gchar *option_name,$/;"	f	file:
+option_title_callback	terminal-options.c	/^option_title_callback (const gchar *option_name,$/;"	f	file:
+option_version_cb	terminal-options.c	/^option_version_cb (const gchar *option_name,$/;"	f	file:
+option_window_callback	terminal-options.c	/^option_window_callback (const gchar *option_name,$/;"	f	file:
+option_working_directory_callback	terminal-options.c	/^option_working_directory_callback (const gchar *option_name,$/;"	f	file:
+option_zoom_callback	terminal-options.c	/^option_zoom_callback (const gchar *option_name,$/;"	f	file:
+override_command	terminal-screen.c	/^  char **override_command;$/;"	m	struct:_TerminalScreenPrivate	file:
+override_title	terminal-screen.c	/^  char *override_title;$/;"	m	struct:_TerminalScreenPrivate	file:
+palette_cmp	terminal-profile.c	/^palette_cmp (const GdkColor *ca,$/;"	f	file:
+palette_color_notify_cb	profile-editor.c	/^palette_color_notify_cb (GtkColorButton *button,$/;"	f	file:
+palette_scheme_combo_changed_cb	profile-editor.c	/^palette_scheme_combo_changed_cb (GtkComboBox *combo,$/;"	f	file:
+parent	eggsmclient-osx.c	/^  EggSMClient parent;$/;"	m	struct:_EggSMClientOSX	file:
+parent	eggsmclient-win32.c	/^  EggSMClient parent;$/;"	m	struct:_EggSMClientWin32	file:
+parent	eggsmclient-xsmp.c	/^  EggSMClient parent;$/;"	m	struct:_EggSMClientXSMP	file:
+parent	eggsmclient.h	/^  GObject parent;$/;"	m	struct:_EggSMClient
+parent_class	eggsmclient-osx.c	/^  EggSMClientClass parent_class;$/;"	m	struct:_EggSMClientOSXClass	file:
+parent_class	eggsmclient-win32.c	/^  EggSMClientClass parent_class;$/;"	m	struct:_EggSMClientWin32Class	file:
+parent_class	eggsmclient-xsmp.c	/^  EggSMClientClass parent_class;$/;"	m	struct:_EggSMClientXSMPClass	file:
+parent_class	eggsmclient.h	/^  GObjectClass parent_class;$/;"	m	struct:_EggSMClientClass
+parent_class	terminal-app.c	/^  GObjectClass parent_class;$/;"	m	struct:_TerminalAppClass	file:
+parent_class	terminal-profile.h	/^  GObjectClass parent_class;$/;"	m	struct:_TerminalProfileClass
+parent_class	terminal-screen.h	/^  VteTerminalClass parent_class;$/;"	m	struct:_TerminalScreenClass
+parent_class	terminal-tab-label.h	/^  GtkHBoxClass parent_class;$/;"	m	struct:_TerminalTabLabelClass
+parent_class	terminal-tabs-menu.h	/^	GObjectClass parent_class;$/;"	m	struct:_TerminalTabsMenuClass
+parent_class	terminal-window.h	/^  GtkWindowClass parent_class;$/;"	m	struct:_TerminalWindowClass
+parent_class	terminal.c	/^  GObjectClass parent_class;$/;"	m	struct:_TerminalFactoryClass	file:
+parent_instance	terminal-app.c	/^  GObject parent_instance;$/;"	m	struct:_TerminalApp	file:
+parent_instance	terminal-profile.h	/^  GObject parent_instance;$/;"	m	struct:_TerminalProfile
+parent_instance	terminal-screen.h	/^  VteTerminal parent_instance;$/;"	m	struct:_TerminalScreen
+parent_instance	terminal-tab-label.h	/^  GtkHBox parent_instance;$/;"	m	struct:_TerminalTabLabel
+parent_instance	terminal-window.h	/^  GtkWindow parent_instance;$/;"	m	struct:_TerminalWindow
+parent_instance	terminal.c	/^  GObject parent_instance;$/;"	m	struct:_TerminalFactory	file:
+parent_object	terminal-tabs-menu.h	/^	GObject parent_object;$/;"	m	struct:_TerminalTabsMenu
+parent_parent_set_cb	terminal-screen.c	/^parent_parent_set_cb (GtkWidget *widget,$/;"	f	file:
+parent_set_callback	terminal-screen.c	/^parent_set_callback (GtkWidget *widget,$/;"	f	file:
+parent_size_request	terminal-screen.c	/^parent_size_request (GtkWidget *scrolled_window, GtkRequisition *req, GtkWidget *screen)$/;"	f	file:
+parse_exec	eggdesktopfile.c	/^parse_exec (EggDesktopFile  *desktop_file,$/;"	f	file:
+parse_link	eggdesktopfile.c	/^parse_link (EggDesktopFile  *desktop_file,$/;"	f	file:
+pattern	terminal-screen.c	/^  const char *pattern;$/;"	m	struct:__anon23	file:
+pollfd	eggsmclient-win32.c	/^  GPollFD pollfd;$/;"	m	struct:__anon3	file:
+popup_clipboard_targets_received_cb	terminal-window.c	/^popup_clipboard_targets_received_cb (GtkClipboard *clipboard,$/;"	f	file:
+popup_copy_url_callback	terminal-window.c	/^popup_copy_url_callback (GtkAction *action,$/;"	f	file:
+popup_info	terminal-window.c	/^  TerminalScreenPopupInfo *popup_info;$/;"	m	struct:_TerminalWindowPrivate	file:
+popup_leave_fullscreen_callback	terminal-window.c	/^popup_leave_fullscreen_callback (GtkAction *action,$/;"	f	file:
+popup_menu_deactivate_callback	terminal-window.c	/^popup_menu_deactivate_callback (GtkWidget *popup,$/;"	f	file:
+popup_open_url_callback	terminal-window.c	/^popup_open_url_callback (GtkAction *action,$/;"	f	file:
+position_menu_under_widget	terminal-window.c	/^position_menu_under_widget (GtkMenu *menu,$/;"	f	file:
+present_on_insert	terminal-window.c	/^  guint present_on_insert : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+priv	terminal-profile.h	/^  TerminalProfilePrivate *priv;$/;"	m	struct:_TerminalProfile
+priv	terminal-screen.h	/^  TerminalScreenPrivate *priv;$/;"	m	struct:_TerminalScreen
+priv	terminal-tab-label.h	/^  TerminalTabLabelPrivate *priv;$/;"	m	struct:_TerminalTabLabel
+priv	terminal-tabs-menu.h	/^	TerminalTabsMenuPrivate *priv;$/;"	m	struct:_TerminalTabsMenu
+priv	terminal-window.h	/^  TerminalWindowPrivate *priv;$/;"	m	struct:_TerminalWindow
+process_ice_messages	eggsmclient-xsmp.c	/^process_ice_messages (IceConn ice_conn)$/;"	f	file:
+profile	terminal-options.h	/^  char *profile;$/;"	m	struct:__anon37
+profile	terminal-screen.c	/^  TerminalProfile *profile; \/* may be NULL at times *\/$/;"	m	struct:_TerminalScreenPrivate	file:
+profile_changed_id	terminal-screen.c	/^  guint profile_changed_id;$/;"	m	struct:_TerminalScreenPrivate	file:
+profile_colors_notify_scheme_combo_cb	profile-editor.c	/^profile_colors_notify_scheme_combo_cb (TerminalProfile *profile,$/;"	f	file:
+profile_combo_box_changed_cb	terminal-app.c	/^profile_combo_box_changed_cb (GtkWidget *widget,$/;"	f	file:
+profile_combo_box_get_selected	terminal-app.c	/^profile_combo_box_get_selected (GtkWidget *widget)$/;"	f	file:
+profile_combo_box_new	terminal-app.c	/^profile_combo_box_new (TerminalApp *app)$/;"	f	file:
+profile_combo_box_refill	terminal-app.c	/^profile_combo_box_refill (TerminalApp *app,$/;"	f	file:
+profile_dir	terminal-profile.c	/^  char *profile_dir;$/;"	m	struct:_TerminalProfilePrivate	file:
+profile_editor_destroyed	profile-editor.c	/^profile_editor_destroyed (GtkWidget       *editor,$/;"	f	file:
+profile_editor_get_widget	profile-editor.c	/^profile_editor_get_widget (GtkWidget  *editor,$/;"	f	file:
+profile_forgotten_callback	terminal-screen.c	/^profile_forgotten_callback (TerminalProfile *profile,$/;"	f	file:
+profile_forgotten_cb	profile-editor.c	/^profile_forgotten_cb (TerminalProfile *profile,$/;"	f	file:
+profile_forgotten_id	terminal-screen.c	/^  guint profile_forgotten_id;$/;"	m	struct:_TerminalScreenPrivate	file:
+profile_is_id	terminal-options.h	/^  gboolean profile_is_id;$/;"	m	struct:__anon37
+profile_list_changed	terminal-app.c	/^  void (* profile_list_changed) (TerminalApp *app);$/;"	m	struct:_TerminalAppClass	file:
+profile_list_delete_button_clicked_cb	terminal-app.c	/^profile_list_delete_button_clicked_cb (GtkWidget *button,$/;"	f	file:
+profile_list_delete_confirm_response_cb	terminal-app.c	/^profile_list_delete_confirm_response_cb (GtkWidget *dialog,$/;"	f	file:
+profile_list_destroyed_cb	terminal-app.c	/^profile_list_destroyed_cb (GtkWidget   *manage_profiles_dialog,$/;"	f	file:
+profile_list_edit_button_clicked_cb	terminal-app.c	/^profile_list_edit_button_clicked_cb (GtkWidget *button,$/;"	f	file:
+profile_list_new_button_clicked_cb	terminal-app.c	/^profile_list_new_button_clicked_cb (GtkWidget   *button,$/;"	f	file:
+profile_list_notify_id	terminal-app.c	/^  guint profile_list_notify_id;$/;"	m	struct:_TerminalApp	file:
+profile_list_response_cb	terminal-app.c	/^profile_list_response_cb (GtkWidget *dialog,$/;"	f	file:
+profile_list_row_activated_cb	terminal-app.c	/^profile_list_row_activated_cb (GtkTreeView       *tree_view,$/;"	f	file:
+profile_list_selection_changed_cb	terminal-app.c	/^profile_list_selection_changed_cb (GtkTreeSelection *selection,$/;"	f	file:
+profile_list_treeview_create	terminal-app.c	/^profile_list_treeview_create (TerminalApp *app)$/;"	f	file:
+profile_list_treeview_refill	terminal-app.c	/^profile_list_treeview_refill (TerminalApp *app,$/;"	f	file:
+profile_notify_sensitivity_cb	profile-editor.c	/^profile_notify_sensitivity_cb (TerminalProfile *profile,$/;"	f	file:
+profile_palette_notify_colorpickers_cb	profile-editor.c	/^profile_palette_notify_colorpickers_cb (TerminalProfile *profile,$/;"	f	file:
+profile_palette_notify_scheme_combo_cb	profile-editor.c	/^profile_palette_notify_scheme_combo_cb (TerminalProfile *profile,$/;"	f	file:
+profile_set	terminal-screen.h	/^  void (* profile_set)        (TerminalScreen *screen,$/;"	m	struct:_TerminalScreenClass
+profile_set_callback	terminal-window.c	/^profile_set_callback (TerminalScreen *screen,$/;"	f	file:
+profile_visible_name_notify_cb	terminal-window.c	/^profile_visible_name_notify_cb (TerminalProfile *profile,$/;"	f	file:
+profiles	terminal-app.c	/^  GHashTable *profiles;$/;"	m	struct:_TerminalApp	file:
+profiles_action_group	terminal-window.c	/^  GtkActionGroup *profiles_action_group;$/;"	m	struct:_TerminalWindowPrivate	file:
+profiles_alphabetic_cmp	terminal-app.c	/^profiles_alphabetic_cmp (gconstpointer pa,$/;"	f	file:
+profiles_lookup_by_visible_name_foreach	terminal-app.c	/^profiles_lookup_by_visible_name_foreach (gpointer key,$/;"	f	file:
+profiles_ui_id	terminal-window.c	/^  guint profiles_ui_id;$/;"	m	struct:_TerminalWindowPrivate	file:
+properties	terminal-profile.c	/^  GValueArray *properties;$/;"	m	struct:_TerminalProfilePrivate	file:
+property_change_free	terminal-util.c	/^property_change_free (PropertyChange *change)$/;"	f	file:
+ptrarray_prop	eggsmclient-xsmp.c	/^ptrarray_prop (const char *name, GPtrArray *values)$/;"	f	file:
+pty_fd	terminal-screen.c	/^  int pty_fd;$/;"	m	struct:_TerminalScreenPrivate	file:
+quit	eggsmclient.h	/^  void (*quit)             (EggSMClient *client);$/;"	m	struct:_EggSMClientClass
+quit	terminal-app.c	/^  void (* quit) (TerminalApp *app);$/;"	m	struct:_TerminalAppClass	file:
+quit_cancelled	eggsmclient.h	/^  void (*quit_cancelled)   (EggSMClient *client);$/;"	m	struct:_EggSMClientClass
+quit_event	eggsmclient-osx.c	/^  AppleEvent quit_event, quit_reply;$/;"	m	struct:_EggSMClientOSX	file:
+quit_reply	eggsmclient-osx.c	/^  AppleEvent quit_event, quit_reply;$/;"	m	struct:_EggSMClientOSX	file:
+quit_requested	eggsmclient-osx.c	/^  gboolean quit_requested, quitting;$/;"	m	struct:_EggSMClientOSX	file:
+quit_requested	eggsmclient-osx.c	/^quit_requested (const AppleEvent *aevt, AppleEvent *reply, long refcon)$/;"	f	file:
+quit_requested	eggsmclient.h	/^  void (*quit_requested)   (EggSMClient *client);$/;"	m	struct:_EggSMClientClass
+quit_requested_resumed	eggsmclient-osx.c	/^quit_requested_resumed (const AppleEvent *aevt, AppleEvent *reply, long refcon)$/;"	f	file:
+quitting	eggsmclient-osx.c	/^  gboolean quit_requested, quitting;$/;"	m	struct:_EggSMClientOSX	file:
+raw_icon_title	terminal-screen.c	/^  char *raw_title, *raw_icon_title;$/;"	m	struct:_TerminalScreenPrivate	file:
+raw_title	terminal-screen.c	/^  char *raw_title, *raw_icon_title;$/;"	m	struct:_TerminalScreenPrivate	file:
+ref_count	terminal-screen.h	/^  int ref_count;$/;"	m	struct:_TerminalScreenPopupInfo
+refcount	terminal-encoding.h	/^  int   refcount;$/;"	m	struct:__anon35
+remote_arguments	terminal-options.h	/^  gboolean remote_arguments;$/;"	m	struct:__anon36
+remove_button	terminal-encoding.c	/^  GtkWidget *remove_button;$/;"	m	struct:__anon15	file:
+remove_popup_info	terminal-window.c	/^remove_popup_info (TerminalWindow *window)$/;"	f	file:
+remove_popup_info_idle	terminal-window.c	/^  guint remove_popup_info_idle;$/;"	m	struct:_TerminalWindowPrivate	file:
+reset_compat_defaults_cb	profile-editor.c	/^reset_compat_defaults_cb (GtkWidget       *button,$/;"	f	file:
+response_callback	terminal-encoding.c	/^response_callback (GtkWidget *window,$/;"	f	file:
+response_event	eggsmclient-win32.c	/^  HANDLE message_event, response_event;$/;"	m	struct:_EggSMClientWin32	file:
+restart_command	eggsmclient-xsmp.c	/^  char **restart_command;$/;"	m	struct:_EggSMClientXSMP	file:
+restart_style	eggsmclient-xsmp.c	/^  int restart_style;$/;"	m	struct:_EggSMClientXSMP	file:
+result	terminal-app.c	/^  TerminalProfile *result;$/;"	m	struct:__anon13	file:
+role	terminal-options.h	/^  char *role;$/;"	m	struct:__anon38
+row_changed	terminal-accels.c	/^row_changed (GtkTreeModel *tree_model,$/;"	f	file:
+save_config	terminal-options.h	/^  gboolean save_config;$/;"	m	struct:__anon36
+save_idle_id	terminal-profile.c	/^  guint save_idle_id;$/;"	m	struct:_TerminalProfilePrivate	file:
+save_state	eggsmclient-xsmp.c	/^save_state (EggSMClientXSMP *xsmp)$/;"	f	file:
+save_state	eggsmclient.h	/^  void (*save_state)       (EggSMClient *client,$/;"	m	struct:_EggSMClientClass
+screen	skey-popup.c	/^  TerminalScreen *screen;$/;"	m	struct:__anon5	file:
+screen	terminal-screen.h	/^  TerminalScreen *screen;$/;"	m	struct:_TerminalScreenPopupInfo
+screen	terminal-tab-label.c	/^  TerminalScreen *screen;$/;"	m	struct:_TerminalTabLabelPrivate	file:
+screen	terminal-window.c	/^  TerminalScreen *screen;$/;"	m	struct:__anon28	file:
+screen_close_cb	terminal-window.c	/^screen_close_cb (TerminalScreen *screen,$/;"	f	file:
+screen_match_clicked_cb	terminal-window.c	/^screen_match_clicked_cb (TerminalScreen *screen,$/;"	f	file:
+screen_number	terminal-options.h	/^  int      screen_number;$/;"	m	struct:__anon36
+screen_resize_window_cb	terminal-window.c	/^screen_resize_window_cb (TerminalScreen *screen,$/;"	f	file:
+screen_show_popup_menu_callback	terminal-window.c	/^screen_show_popup_menu_callback (TerminalScreen *screen,$/;"	f	file:
+seed	skey-popup.c	/^  char *seed;$/;"	m	struct:__anon5	file:
+selection_changed_cb	terminal-encoding.c	/^selection_changed_cb (GtkTreeSelection *selection,$/;"	f	file:
+seq	skey-popup.c	/^  int seq;$/;"	m	struct:__anon5	file:
+set_discard_command	eggsmclient-xsmp.c	/^  gboolean set_discard_command;$/;"	m	struct:_EggSMClientXSMP	file:
+set_discard_command	eggsmclient.h	/^  void	   (*set_discard_command) (EggSMClient          *client,$/;"	m	struct:_EggSMClientClass
+set_properties	eggsmclient-xsmp.c	/^set_properties (EggSMClientXSMP *xsmp, ...)$/;"	f	file:
+set_proxy_env	terminal-util.c	/^set_proxy_env (GHashTable *env_table,$/;"	f	file:
+set_restart_command	eggsmclient-xsmp.c	/^  gboolean set_restart_command;$/;"	m	struct:_EggSMClientXSMP	file:
+set_restart_command	eggsmclient.h	/^  void	   (*set_restart_command) (EggSMClient          *client,$/;"	m	struct:_EggSMClientClass
+set_startup_notification_timeout	eggdesktopfile.c	/^set_startup_notification_timeout (GdkDisplay *display,$/;"	f	file:
+set_value_from_palette	terminal-profile.c	/^set_value_from_palette (GValue *ret_value,$/;"	f	file:
+setup_autoconfig_proxy_env	terminal-util.c	/^setup_autoconfig_proxy_env (GHashTable *env_table,$/;"	f	file:
+setup_background_filechooser	profile-editor.c	/^setup_background_filechooser (GtkWidget *filechooser, $/;"	f	file:
+setup_ftp_proxy_env	terminal-util.c	/^setup_ftp_proxy_env (GHashTable *env_table,$/;"	f	file:
+setup_http_proxy_env	terminal-util.c	/^setup_http_proxy_env (GHashTable *env_table,$/;"	f	file:
+setup_https_proxy_env	terminal-util.c	/^setup_https_proxy_env (GHashTable *env_table,$/;"	f	file:
+setup_socks_proxy_env	terminal-util.c	/^setup_socks_proxy_env (GHashTable *env_table,$/;"	f	file:
+show_command_error_dialog	terminal-screen.c	/^show_command_error_dialog (TerminalScreen *screen,$/;"	f	file:
+show_popup_menu	terminal-screen.h	/^  void (* show_popup_menu)    (TerminalScreen *screen,$/;"	m	struct:_TerminalScreenClass
+shutting_down	eggsmclient-xsmp.c	/^  guint shutting_down : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+signals	eggsmclient.c	/^static guint signals[LAST_SIGNAL];$/;"	v	file:
+signals	terminal-app.c	/^static guint signals[LAST_SIGNAL];$/;"	v	file:
+signals	terminal-profile.c	/^static guint signals[LAST_SIGNAL];$/;"	v	file:
+signals	terminal-screen.c	/^static guint signals[LAST_SIGNAL];$/;"	v	file:
+signals	terminal-tab-label.c	/^static guint signals[LAST_SIGNAL];$/;"	v	file:
+size_allocate	terminal-screen.c	/^size_allocate (GtkWidget *widget,$/;"	f	file:
+size_request	terminal-screen.c	/^size_request (GtkWidget *widget,$/;"	f	file:
+skey_challenge_response_cb	skey-popup.c	/^skey_challenge_response_cb (GtkWidget *dialog,$/;"	f	file:
+skey_data_free	skey-popup.c	/^skey_data_free (SkeyData *data)$/;"	f	file:
+skey_regex_patterns	terminal-screen.c	/^static const TerminalRegexPattern skey_regex_patterns[] = {$/;"	v	file:
+skey_regexes	terminal-screen.c	/^static GRegex **skey_regexes;$/;"	v	file:
+slowly_and_stupidly_obtain_timestamp	terminal.c	/^slowly_and_stupidly_obtain_timestamp (Display *xdisplay)$/;"	f	file:
+sm_client_disable	eggsmclient.c	/^static gboolean sm_client_disable = FALSE;$/;"	v	file:
+sm_client_id	eggsmclient.c	/^static char *sm_client_id = NULL;$/;"	v	file:
+sm_client_osx_end_session	eggsmclient-osx.c	/^sm_client_osx_end_session (EggSMClient         *client,$/;"	f	file:
+sm_client_osx_startup	eggsmclient-osx.c	/^sm_client_osx_startup (EggSMClient *client,$/;"	f	file:
+sm_client_osx_will_quit	eggsmclient-osx.c	/^sm_client_osx_will_quit (EggSMClient *client,$/;"	f	file:
+sm_client_post_parse_func	eggsmclient.c	/^sm_client_post_parse_func (GOptionContext  *context,$/;"	f	file:
+sm_client_state_file	eggsmclient.c	/^static char *sm_client_state_file = NULL;$/;"	v	file:
+sm_client_thread	eggsmclient-win32.c	/^sm_client_thread (gpointer smclient)$/;"	f	file:
+sm_client_win32_end_session	eggsmclient-win32.c	/^sm_client_win32_end_session (EggSMClient         *client,$/;"	f	file:
+sm_client_win32_startup	eggsmclient-win32.c	/^sm_client_win32_startup (EggSMClient *client,$/;"	f	file:
+sm_client_win32_will_quit	eggsmclient-win32.c	/^sm_client_win32_will_quit (EggSMClient *client,$/;"	f	file:
+sm_client_win32_window_procedure	eggsmclient-win32.c	/^sm_client_win32_window_procedure (HWND   hwnd,$/;"	f
+sm_client_xsmp_disconnect	eggsmclient-xsmp.c	/^sm_client_xsmp_disconnect (EggSMClientXSMP *xsmp)$/;"	f	file:
+sm_client_xsmp_end_session	eggsmclient-xsmp.c	/^sm_client_xsmp_end_session (EggSMClient         *client,$/;"	f	file:
+sm_client_xsmp_set_discard_command	eggsmclient-xsmp.c	/^sm_client_xsmp_set_discard_command (EggSMClient  *client,$/;"	f	file:
+sm_client_xsmp_set_initial_properties	eggsmclient-xsmp.c	/^sm_client_xsmp_set_initial_properties (gpointer user_data)$/;"	f	file:
+sm_client_xsmp_set_restart_command	eggsmclient-xsmp.c	/^sm_client_xsmp_set_restart_command (EggSMClient  *client,$/;"	f	file:
+sm_client_xsmp_startup	eggsmclient-xsmp.c	/^sm_client_xsmp_startup (EggSMClient *client,$/;"	f	file:
+sm_client_xsmp_will_quit	eggsmclient-xsmp.c	/^sm_client_xsmp_will_quit (EggSMClient *client,$/;"	f	file:
+sm_config_prefix	eggsmclient.c	/^static char *sm_config_prefix = NULL;$/;"	v	file:
+smc_error_handler	eggsmclient-xsmp.c	/^smc_error_handler (SmcConn       smc_conn,$/;"	f	file:
+source	eggdesktopfile.c	/^  char               *source;$/;"	m	struct:EggDesktopFile	file:
+source	eggsmclient-win32.c	/^  GSource source;$/;"	m	struct:__anon3	file:
+source_tag	terminal-options.h	/^  guint source_tag;$/;"	m	struct:__anon38
+start_fullscreen	terminal-options.h	/^  gboolean start_fullscreen;$/;"	m	struct:__anon38
+start_maximized	terminal-options.h	/^  gboolean start_maximized;$/;"	m	struct:__anon38
+start_startup_notification	eggdesktopfile.c	/^start_startup_notification (GdkDisplay     *display,$/;"	f	file:
+startup	eggsmclient.h	/^  void	   (*startup)             (EggSMClient          *client,$/;"	m	struct:_EggSMClientClass
+startup_id	eggdesktopfile.c	/^  char *startup_id;$/;"	m	struct:__anon1	file:
+startup_id	terminal-options.h	/^  char    *startup_id;$/;"	m	struct:__anon36
+startup_notification_timeout	eggdesktopfile.c	/^startup_notification_timeout (gpointer data)$/;"	f	file:
+state	eggsmclient-xsmp.c	/^  EggSMClientXSMPState state;$/;"	m	struct:_EggSMClientXSMP	file:
+state	terminal-screen.h	/^  guint state;$/;"	m	struct:_TerminalScreenPopupInfo
+state_file	eggsmclient.c	/^  GKeyFile *state_file;$/;"	m	struct:_EggSMClientPrivate	file:
+state_names	eggsmclient-xsmp.c	/^static const char *state_names[] = {$/;"	v	file:
+string	terminal-screen.h	/^  char *string;$/;"	m	struct:_TerminalScreenPopupInfo
+string_prop	eggsmclient-xsmp.c	/^string_prop (const char *name, const char *value)$/;"	f	file:
+sync_idle_cb	terminal-accels.c	/^sync_idle_cb (gpointer data)$/;"	f	file:
+sync_idle_id	terminal-accels.c	/^static guint sync_idle_id = 0;$/;"	v	file:
+sync_screen_icon_title	terminal-window.c	/^sync_screen_icon_title (TerminalScreen *screen,$/;"	f	file:
+sync_screen_icon_title_set	terminal-window.c	/^sync_screen_icon_title_set (TerminalScreen *screen,$/;"	f	file:
+sync_screen_title	terminal-window.c	/^sync_screen_title (TerminalScreen *screen,$/;"	f	file:
+sync_tab_label	terminal-tab-label.c	/^sync_tab_label (TerminalScreen *screen,$/;"	f	file:
+sync_tab_title	terminal-tabs-menu.c	/^sync_tab_title (TerminalScreen *screen,$/;"	f	file:
+system_font_desc	terminal-app.c	/^  PangoFontDescription *system_font_desc;$/;"	m	struct:_TerminalApp	file:
+system_font_notify_id	terminal-app.c	/^  guint system_font_notify_id;$/;"	m	struct:_TerminalApp	file:
+tab_action_activate_cb	terminal-tabs-menu.c	/^tab_action_activate_cb (GtkToggleAction *action,$/;"	f	file:
+tab_set_action_accelerator	terminal-tabs-menu.c	/^tab_set_action_accelerator (GtkActionGroup *action_group,$/;"	f	file:
+tabs	terminal-options.h	/^  GList *tabs; \/* list of InitialTab *\/$/;"	m	struct:__anon38
+tabs_detach_tab_callback	terminal-window.c	/^tabs_detach_tab_callback (GtkAction *action,$/;"	f	file:
+tabs_entries	terminal-accels.c	/^static KeyEntry tabs_entries[] =$/;"	v	file:
+tabs_id_array	terminal-tabs-menu.c	/^static GByteArray *tabs_id_array = NULL;$/;"	v	file:
+tabs_menu	terminal-window.c	/^  TerminalTabsMenu *tabs_menu;$/;"	m	struct:_TerminalWindowPrivate	file:
+tabs_move_left_callback	terminal-window.c	/^tabs_move_left_callback (GtkAction *action,$/;"	f	file:
+tabs_move_right_callback	terminal-window.c	/^tabs_move_right_callback (GtkAction *action,$/;"	f	file:
+tabs_next_or_previous_tab_cb	terminal-window.c	/^tabs_next_or_previous_tab_cb (GtkAction *action,$/;"	f	file:
+tag	terminal-screen.c	/^  int tag;$/;"	m	struct:__anon19	file:
+target	terminal-app.c	/^  const char *target;$/;"	m	struct:__anon13	file:
+terminal_accels_init	terminal-accels.c	/^terminal_accels_init (void)$/;"	f
+terminal_accels_shutdown	terminal-accels.c	/^terminal_accels_shutdown (void)$/;"	f
+terminal_add_encoding_callback	terminal-window.c	/^terminal_add_encoding_callback (GtkAction *action,$/;"	f	file:
+terminal_app_class_init	terminal-app.c	/^terminal_app_class_init (TerminalAppClass *klass)$/;"	f	file:
+terminal_app_client_quit_cb	terminal-app.c	/^terminal_app_client_quit_cb (EggSMClient *client,$/;"	f	file:
+terminal_app_create_profile	terminal-app.c	/^terminal_app_create_profile (TerminalApp *app,$/;"	f	file:
+terminal_app_default_profile_notify_cb	terminal-app.c	/^terminal_app_default_profile_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_app_delete_profile	terminal-app.c	/^terminal_app_delete_profile (TerminalApp *app,$/;"	f	file:
+terminal_app_edit_encodings	terminal-app.c	/^terminal_app_edit_encodings (TerminalApp     *app,$/;"	f
+terminal_app_edit_keybindings	terminal-app.c	/^terminal_app_edit_keybindings (TerminalApp     *app,$/;"	f
+terminal_app_edit_profile	terminal-app.c	/^terminal_app_edit_profile (TerminalApp     *app,$/;"	f
+terminal_app_enable_menu_accels_notify_cb	terminal-app.c	/^terminal_app_enable_menu_accels_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_app_enable_mnemonics_notify_cb	terminal-app.c	/^terminal_app_enable_mnemonics_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_app_encoding_list_notify_cb	terminal-app.c	/^terminal_app_encoding_list_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_app_finalize	terminal-app.c	/^terminal_app_finalize (GObject *object)$/;"	f	file:
+terminal_app_get	terminal-app.c	/^terminal_app_get (void)$/;"	f
+terminal_app_get_active_encodings	terminal-app.c	/^terminal_app_get_active_encodings (TerminalApp *app)$/;"	f
+terminal_app_get_current_window	terminal-app.c	/^terminal_app_get_current_window (TerminalApp *app)$/;"	f
+terminal_app_get_default_profile	terminal-app.c	/^terminal_app_get_default_profile (TerminalApp *app)$/;"	f
+terminal_app_get_encodings	terminal-app.c	/^terminal_app_get_encodings (TerminalApp *app)$/;"	f
+terminal_app_get_profile_by_name	terminal-app.c	/^terminal_app_get_profile_by_name (TerminalApp *app,$/;"	f
+terminal_app_get_profile_by_visible_name	terminal-app.c	/^terminal_app_get_profile_by_visible_name (TerminalApp *app,$/;"	f
+terminal_app_get_profile_for_new_term	terminal-app.c	/^terminal_app_get_profile_for_new_term (TerminalApp *app)$/;"	f
+terminal_app_get_profile_list	terminal-app.c	/^terminal_app_get_profile_list (TerminalApp *app)$/;"	f
+terminal_app_get_profile_liststore	terminal-app.c	/^terminal_app_get_profile_liststore (TerminalApp *app,$/;"	f	file:
+terminal_app_get_property	terminal-app.c	/^terminal_app_get_property (GObject *object,$/;"	f	file:
+terminal_app_get_screen_by_display_name	terminal-app.c	/^terminal_app_get_screen_by_display_name (const char *display_name,$/;"	f	file:
+terminal_app_handle_options	terminal-app.c	/^terminal_app_handle_options (TerminalApp *app,$/;"	f
+terminal_app_init	terminal-app.c	/^terminal_app_init (TerminalApp *app)$/;"	f	file:
+terminal_app_initialize	terminal-app.c	/^terminal_app_initialize (gboolean use_factory)$/;"	f
+terminal_app_manage_profiles	terminal-app.c	/^terminal_app_manage_profiles (TerminalApp     *app,$/;"	f
+terminal_app_new_profile	terminal-app.c	/^terminal_app_new_profile (TerminalApp     *app,$/;"	f
+terminal_app_new_terminal	terminal-app.c	/^terminal_app_new_terminal (TerminalApp     *app,$/;"	f
+terminal_app_new_window	terminal-app.c	/^terminal_app_new_window (TerminalApp *app,$/;"	f
+terminal_app_profile_cell_data_func	terminal-app.c	/^terminal_app_profile_cell_data_func (GtkTreeViewColumn *tree_column,$/;"	f	file:
+terminal_app_profile_list_notify_cb	terminal-app.c	/^terminal_app_profile_list_notify_cb (GConfClient *conf,$/;"	f	file:
+terminal_app_profile_sort_func	terminal-app.c	/^terminal_app_profile_sort_func (GtkTreeModel *model,$/;"	f	file:
+terminal_app_save_config	terminal-app.c	/^terminal_app_save_config (TerminalApp *app,$/;"	f
+terminal_app_save_config_file	terminal-app.c	/^terminal_app_save_config_file (TerminalApp *app,$/;"	f
+terminal_app_save_state_cb	terminal-app.c	/^terminal_app_save_state_cb (EggSMClient *client,$/;"	f	file:
+terminal_app_set_property	terminal-app.c	/^terminal_app_set_property (GObject *object,$/;"	f	file:
+terminal_app_shutdown	terminal-app.c	/^terminal_app_shutdown (void)$/;"	f
+terminal_app_system_font_notify_cb	terminal-app.c	/^terminal_app_system_font_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_edit_keys_dialog_show	terminal-accels.c	/^terminal_edit_keys_dialog_show (GtkWindow *transient_parent)$/;"	f
+terminal_encoding_dialog_show	terminal-encoding.c	/^terminal_encoding_dialog_show (GtkWindow *transient_parent)$/;"	f
+terminal_encoding_get_type	terminal-encoding.c	/^terminal_encoding_get_type (void)$/;"	f
+terminal_encoding_is_valid	terminal-encoding.c	/^terminal_encoding_is_valid (TerminalEncoding *encoding)$/;"	f
+terminal_encoding_new	terminal-encoding.c	/^terminal_encoding_new (const char *charset,$/;"	f
+terminal_encoding_ref	terminal-encoding.c	/^terminal_encoding_ref (TerminalEncoding *encoding)$/;"	f
+terminal_encoding_unref	terminal-encoding.c	/^terminal_encoding_unref (TerminalEncoding *encoding)$/;"	f
+terminal_encodings_get_builtins	terminal-encoding.c	/^terminal_encodings_get_builtins (void)$/;"	f
+terminal_entries	terminal-accels.c	/^static KeyEntry terminal_entries[] =$/;"	v	file:
+terminal_factory_class_init	terminal.c	/^terminal_factory_class_init (TerminalFactoryClass *factory_class)$/;"	f	file:
+terminal_factory_handle_arguments	terminal.c	/^terminal_factory_handle_arguments (TerminalFactory *terminal_factory,$/;"	f	file:
+terminal_factory_init	terminal.c	/^terminal_factory_init (TerminalFactory *factory)$/;"	f	file:
+terminal_options_ensure_window	terminal-options.c	/^terminal_options_ensure_window (TerminalOptions *options)$/;"	f
+terminal_options_free	terminal-options.c	/^terminal_options_free (TerminalOptions *options)$/;"	f
+terminal_options_merge_config	terminal-options.c	/^terminal_options_merge_config (TerminalOptions *options,$/;"	f
+terminal_options_parse	terminal-options.c	/^terminal_options_parse (const char *working_directory,$/;"	f
+terminal_palettes	terminal-profile.c	/^static const GdkColor terminal_palettes[TERMINAL_PALETTE_N_BUILTINS][TERMINAL_PALETTE_SIZE] =$/;"	v	file:
+terminal_profile_class_init	terminal-profile.c	/^terminal_profile_class_init (TerminalProfileClass *klass)$/;"	f	file:
+terminal_profile_constructor	terminal-profile.c	/^terminal_profile_constructor (GType type,$/;"	f	file:
+terminal_profile_edit	profile-editor.c	/^terminal_profile_edit (TerminalProfile *profile,$/;"	f
+terminal_profile_finalize	terminal-profile.c	/^terminal_profile_finalize (GObject *object)$/;"	f	file:
+terminal_profile_gconf_changeset_add	terminal-profile.c	/^terminal_profile_gconf_changeset_add (TerminalProfile *profile,$/;"	f	file:
+terminal_profile_gconf_notify_cb	terminal-profile.c	/^terminal_profile_gconf_notify_cb (GConfClient *client,$/;"	f	file:
+terminal_profile_get_palette	terminal-profile.c	/^terminal_profile_get_palette (TerminalProfile *profile,$/;"	f
+terminal_profile_get_palette_is_builtin	terminal-profile.c	/^terminal_profile_get_palette_is_builtin (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property	terminal-profile.c	/^terminal_profile_get_property (GObject *object,$/;"	f	file:
+terminal_profile_get_property_boolean	terminal-profile.c	/^terminal_profile_get_property_boolean (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_boxed	terminal-profile.c	/^terminal_profile_get_property_boxed (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_double	terminal-profile.c	/^terminal_profile_get_property_double (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_enum	terminal-profile.c	/^terminal_profile_get_property_enum (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_int	terminal-profile.c	/^terminal_profile_get_property_int (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_object	terminal-profile.c	/^terminal_profile_get_property_object (TerminalProfile *profile,$/;"	f
+terminal_profile_get_property_string	terminal-profile.c	/^terminal_profile_get_property_string (TerminalProfile *profile,$/;"	f
+terminal_profile_init	terminal-profile.c	/^terminal_profile_init (TerminalProfile *profile)$/;"	f	file:
+terminal_profile_modify_palette_entry	terminal-profile.c	/^terminal_profile_modify_palette_entry (TerminalProfile *profile,$/;"	f
+terminal_profile_notify	terminal-profile.c	/^terminal_profile_notify (GObject *object,$/;"	f	file:
+terminal_profile_property_locked	terminal-profile.c	/^terminal_profile_property_locked (TerminalProfile *profile,$/;"	f
+terminal_profile_reset_property	terminal-profile.c	/^terminal_profile_reset_property (TerminalProfile *profile,$/;"	f
+terminal_profile_reset_property_internal	terminal-profile.c	/^terminal_profile_reset_property_internal (TerminalProfile *profile,$/;"	f	file:
+terminal_profile_save	terminal-profile.c	/^terminal_profile_save (TerminalProfile *profile)$/;"	f	file:
+terminal_profile_save_idle_cb	terminal-profile.c	/^terminal_profile_save_idle_cb (TerminalProfile *profile)$/;"	f	file:
+terminal_profile_schedule_save	terminal-profile.c	/^terminal_profile_schedule_save (TerminalProfile *profile,$/;"	f	file:
+terminal_profile_set_palette_builtin	terminal-profile.c	/^terminal_profile_set_palette_builtin (TerminalProfile *profile,$/;"	f
+terminal_profile_set_property	terminal-profile.c	/^terminal_profile_set_property (GObject *object,$/;"	f	file:
+terminal_reset_callback	terminal-window.c	/^terminal_reset_callback (GtkAction *action,$/;"	f	file:
+terminal_reset_clear_callback	terminal-window.c	/^terminal_reset_clear_callback (GtkAction *action,$/;"	f	file:
+terminal_screen_button_press	terminal-screen.c	/^terminal_screen_button_press (GtkWidget      *widget,$/;"	f	file:
+terminal_screen_change_font	terminal-screen.c	/^terminal_screen_change_font (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_check_match	terminal-screen.c	/^terminal_screen_check_match (TerminalScreen *screen,$/;"	f	file:
+terminal_screen_child_exited	terminal-screen.c	/^terminal_screen_child_exited (VteTerminal *terminal)$/;"	f	file:
+terminal_screen_class_enable_menu_bar_accel_notify_cb	terminal-screen.c	/^terminal_screen_class_enable_menu_bar_accel_notify_cb (TerminalApp *app,$/;"	f	file:
+terminal_screen_class_init	terminal-screen.c	/^terminal_screen_class_init (TerminalScreenClass *klass)$/;"	f	file:
+terminal_screen_container_get_screen	terminal-screen-container.c	/^terminal_screen_container_get_screen (GtkWidget *container)$/;"	f
+terminal_screen_container_get_scrollbar	terminal-screen-container.c	/^terminal_screen_container_get_scrollbar (GtkWidget *container)$/;"	f	file:
+terminal_screen_container_new	terminal-screen-container.c	/^terminal_screen_container_new (TerminalScreen *screen)$/;"	f
+terminal_screen_container_set_placement	terminal-screen-container.c	/^terminal_screen_container_set_placement (GtkWidget *container,$/;"	f
+terminal_screen_container_set_policy	terminal-screen-container.c	/^terminal_screen_container_set_policy (GtkWidget *container,$/;"	f
+terminal_screen_cook_icon_title	terminal-screen.c	/^terminal_screen_cook_icon_title (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_cook_title	terminal-screen.c	/^terminal_screen_cook_title (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_dispose	terminal-screen.c	/^terminal_screen_dispose (GObject *object)$/;"	f	file:
+terminal_screen_drag_data_received	terminal-screen.c	/^terminal_screen_drag_data_received (GtkWidget        *widget,$/;"	f	file:
+terminal_screen_finalize	terminal-screen.c	/^terminal_screen_finalize (GObject *object)$/;"	f	file:
+terminal_screen_format_title	terminal-screen.c	/^terminal_screen_format_title (TerminalScreen *screen,$/;"	f	file:
+terminal_screen_get_cell_size	terminal-screen.c	/^terminal_screen_get_cell_size (TerminalScreen *screen,$/;"	f
+terminal_screen_get_current_dir	terminal-screen.c	/^terminal_screen_get_current_dir (TerminalScreen *screen)$/;"	f
+terminal_screen_get_current_dir_with_fallback	terminal-screen.c	/^terminal_screen_get_current_dir_with_fallback (TerminalScreen *screen)$/;"	f
+terminal_screen_get_dynamic_icon_title	terminal-screen.c	/^terminal_screen_get_dynamic_icon_title (TerminalScreen *screen)$/;"	f
+terminal_screen_get_dynamic_title	terminal-screen.c	/^terminal_screen_get_dynamic_title (TerminalScreen *screen)$/;"	f
+terminal_screen_get_font_scale	terminal-screen.c	/^terminal_screen_get_font_scale (TerminalScreen *screen)$/;"	f
+terminal_screen_get_icon_title	terminal-screen.c	/^terminal_screen_get_icon_title (TerminalScreen *screen)$/;"	f
+terminal_screen_get_icon_title_set	terminal-screen.c	/^terminal_screen_get_icon_title_set (TerminalScreen *screen)$/;"	f
+terminal_screen_get_initial_environment	terminal-screen.c	/^terminal_screen_get_initial_environment (TerminalScreen *screen)$/;"	f
+terminal_screen_get_override_command	terminal-screen.c	/^terminal_screen_get_override_command (TerminalScreen *screen)$/;"	f
+terminal_screen_get_profile	terminal-screen.c	/^terminal_screen_get_profile (TerminalScreen *screen)$/;"	f
+terminal_screen_get_property	terminal-screen.c	/^terminal_screen_get_property (GObject *object,$/;"	f	file:
+terminal_screen_get_raw_title	terminal-screen.c	/^terminal_screen_get_raw_title (TerminalScreen *screen)$/;"	f
+terminal_screen_get_size	terminal-screen.c	/^terminal_screen_get_size (TerminalScreen *screen,$/;"	f
+terminal_screen_get_title	terminal-screen.c	/^terminal_screen_get_title (TerminalScreen *screen)$/;"	f
+terminal_screen_get_title_format	terminal-screen.c	/^terminal_screen_get_title_format (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_has_foreground_process	terminal-screen.c	/^terminal_screen_has_foreground_process (TerminalScreen *screen)$/;"	f
+terminal_screen_icon_title_changed	terminal-screen.c	/^terminal_screen_icon_title_changed (VteTerminal *vte_terminal,$/;"	f	file:
+terminal_screen_init	terminal-screen.c	/^terminal_screen_init (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_launch_child_cb	terminal-screen.c	/^terminal_screen_launch_child_cb (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_launch_child_on_idle	terminal-screen.c	/^terminal_screen_launch_child_on_idle (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_new	terminal-screen.c	/^terminal_screen_new (TerminalProfile *profile,$/;"	f
+terminal_screen_popup_info_new	terminal-screen.c	/^terminal_screen_popup_info_new (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_popup_info_ref	terminal-screen.c	/^terminal_screen_popup_info_ref (TerminalScreenPopupInfo *info)$/;"	f
+terminal_screen_popup_info_unref	terminal-screen.c	/^terminal_screen_popup_info_unref (TerminalScreenPopupInfo *info)$/;"	f
+terminal_screen_popup_menu	terminal-screen.c	/^terminal_screen_popup_menu (GtkWidget *widget)$/;"	f	file:
+terminal_screen_profile_notify_cb	terminal-screen.c	/^terminal_screen_profile_notify_cb (TerminalProfile *profile,$/;"	f	file:
+terminal_screen_realize	terminal-screen.c	/^terminal_screen_realize (GtkWidget *widget)$/;"	f	file:
+terminal_screen_save_config	terminal-screen.c	/^terminal_screen_save_config (TerminalScreen *screen,$/;"	f
+terminal_screen_set_dynamic_icon_title	terminal-screen.c	/^terminal_screen_set_dynamic_icon_title (TerminalScreen *screen,$/;"	f	file:
+terminal_screen_set_dynamic_title	terminal-screen.c	/^terminal_screen_set_dynamic_title (TerminalScreen *screen,$/;"	f	file:
+terminal_screen_set_font	terminal-screen.c	/^terminal_screen_set_font (TerminalScreen *screen)$/;"	f
+terminal_screen_set_font_scale	terminal-screen.c	/^terminal_screen_set_font_scale (TerminalScreen *screen,$/;"	f
+terminal_screen_set_initial_environment	terminal-screen.c	/^terminal_screen_set_initial_environment (TerminalScreen *screen,$/;"	f
+terminal_screen_set_override_command	terminal-screen.c	/^terminal_screen_set_override_command (TerminalScreen *screen,$/;"	f
+terminal_screen_set_override_title	terminal-screen.c	/^terminal_screen_set_override_title (TerminalScreen *screen,$/;"	f
+terminal_screen_set_profile	terminal-screen.c	/^terminal_screen_set_profile (TerminalScreen *screen,$/;"	f
+terminal_screen_set_property	terminal-screen.c	/^terminal_screen_set_property (GObject *object,$/;"	f	file:
+terminal_screen_set_user_title	terminal-screen.c	/^terminal_screen_set_user_title (TerminalScreen *screen,$/;"	f
+terminal_screen_skey_match_remove	terminal-screen.c	/^terminal_screen_skey_match_remove (TerminalScreen *screen)$/;"	f	file:
+terminal_screen_style_set	terminal-screen.c	/^terminal_screen_style_set (GtkWidget *widget,$/;"	f	file:
+terminal_screen_system_font_notify_cb	terminal-screen.c	/^terminal_screen_system_font_notify_cb (TerminalApp *app,$/;"	f	file:
+terminal_screen_window_title_changed	terminal-screen.c	/^terminal_screen_window_title_changed (VteTerminal *vte_terminal,$/;"	f	file:
+terminal_set_encoding_callback	terminal-window.c	/^terminal_set_encoding_callback (GtkToggleAction *action,$/;"	f	file:
+terminal_set_profile_toggled_callback	terminal-window.c	/^terminal_set_profile_toggled_callback (GtkToggleAction *action,$/;"	f	file:
+terminal_set_title_callback	terminal-window.c	/^terminal_set_title_callback (GtkAction *action,$/;"	f	file:
+terminal_set_title_dialog_response_cb	terminal-window.c	/^terminal_set_title_dialog_response_cb (GtkWidget *dialog,$/;"	f	file:
+terminal_size_to_cb	terminal-window.c	/^terminal_size_to_cb (GtkAction *action,$/;"	f	file:
+terminal_skey_do_popup	skey-popup.c	/^terminal_skey_do_popup (GtkWindow *window,$/;"	f
+terminal_tab_label_class_init	terminal-tab-label.c	/^terminal_tab_label_class_init (TerminalTabLabelClass *klass)$/;"	f	file:
+terminal_tab_label_constructor	terminal-tab-label.c	/^terminal_tab_label_constructor (GType type,$/;"	f	file:
+terminal_tab_label_finalize	terminal-tab-label.c	/^terminal_tab_label_finalize (GObject *object)$/;"	f	file:
+terminal_tab_label_init	terminal-tab-label.c	/^terminal_tab_label_init (TerminalTabLabel *tab_label)$/;"	f	file:
+terminal_tab_label_new	terminal-tab-label.c	/^terminal_tab_label_new (TerminalScreen *screen)$/;"	f
+terminal_tab_label_parent_set	terminal-tab-label.c	/^terminal_tab_label_parent_set (GtkWidget *widget,$/;"	f	file:
+terminal_tab_label_set_bold	terminal-tab-label.c	/^terminal_tab_label_set_bold (TerminalTabLabel *tab_label,$/;"	f
+terminal_tab_label_set_property	terminal-tab-label.c	/^terminal_tab_label_set_property (GObject *object,$/;"	f	file:
+terminal_tab_label_style_set	terminal-tab-label.c	/^terminal_tab_label_style_set (GtkWidget *widget,$/;"	f	file:
+terminal_tabs_menu_class_init	terminal-tabs-menu.c	/^terminal_tabs_menu_class_init (TerminalTabsMenuClass *klass)$/;"	f	file:
+terminal_tabs_menu_clean	terminal-tabs-menu.c	/^terminal_tabs_menu_clean (TerminalTabsMenu *menu)$/;"	f	file:
+terminal_tabs_menu_get_property	terminal-tabs-menu.c	/^terminal_tabs_menu_get_property (GObject *object,$/;"	f	file:
+terminal_tabs_menu_init	terminal-tabs-menu.c	/^terminal_tabs_menu_init (TerminalTabsMenu *menu)$/;"	f	file:
+terminal_tabs_menu_new	terminal-tabs-menu.c	/^terminal_tabs_menu_new (TerminalWindow *window)$/;"	f
+terminal_tabs_menu_set_property	terminal-tabs-menu.c	/^terminal_tabs_menu_set_property (GObject *object,$/;"	f	file:
+terminal_tabs_menu_set_window	terminal-tabs-menu.c	/^terminal_tabs_menu_set_window (TerminalTabsMenu *menu,$/;"	f	file:
+terminal_tabs_menu_update	terminal-tabs-menu.c	/^terminal_tabs_menu_update (TerminalTabsMenu *menu)$/;"	f	file:
+terminal_util_add_proxy_env	terminal-util.c	/^terminal_util_add_proxy_env (GHashTable *env_table)$/;"	f
+terminal_util_array_to_string	terminal-util.c	/^terminal_util_array_to_string (const GArray *array,$/;"	f
+terminal_util_array_to_strv	terminal-util.c	/^terminal_util_array_to_strv (const GArray *array,$/;"	f
+terminal_util_bind_object_property_to_widget	terminal-util.c	/^terminal_util_bind_object_property_to_widget (GObject *object,$/;"	f
+terminal_util_concat_uris	terminal-util.c	/^terminal_util_concat_uris (char **uris,$/;"	f
+terminal_util_dialog_response_on_delete	terminal-util.c	/^terminal_util_dialog_response_on_delete (GtkWindow *widget)$/;"	f
+terminal_util_get_licence_text	terminal-util.c	/^terminal_util_get_licence_text (void)$/;"	f
+terminal_util_key_file_get_argv	terminal-util.c	/^terminal_util_key_file_get_argv (GKeyFile *key_file,$/;"	f
+terminal_util_key_file_get_string_unescape	terminal-util.c	/^terminal_util_key_file_get_string_unescape (GKeyFile *key_file,$/;"	f
+terminal_util_key_file_set_argv	terminal-util.c	/^terminal_util_key_file_set_argv (GKeyFile *key_file,$/;"	f
+terminal_util_key_file_set_string_escape	terminal-util.c	/^terminal_util_key_file_set_string_escape (GKeyFile *key_file,$/;"	f
+terminal_util_load_builder_file	terminal-util.c	/^terminal_util_load_builder_file (const char *filename,$/;"	f
+terminal_util_open_url	terminal-util.c	/^terminal_util_open_url (GtkWidget *parent,$/;"	f
+terminal_util_resolve_relative_path	terminal-util.c	/^terminal_util_resolve_relative_path (const char *path,$/;"	f
+terminal_util_set_atk_name_description	terminal-util.c	/^terminal_util_set_atk_name_description (GtkWidget  *widget,$/;"	f
+terminal_util_set_unique_role	terminal-util.c	/^terminal_util_set_unique_role (GtkWindow *window, const char *prefix)$/;"	f
+terminal_util_show_error_dialog	terminal-util.c	/^terminal_util_show_error_dialog (GtkWindow *transient_parent, $/;"	f
+terminal_util_show_help	terminal-util.c	/^terminal_util_show_help (const char *topic, $/;"	f
+terminal_util_string_to_array	terminal-util.c	/^terminal_util_string_to_array (const char *string)$/;"	f
+terminal_util_strv_to_array	terminal-util.c	/^terminal_util_strv_to_array (int argc,$/;"	f
+terminal_util_transform_uris_to_quoted_fuse_paths	terminal-util.c	/^terminal_util_transform_uris_to_quoted_fuse_paths (char **uris)$/;"	f
+terminal_util_x11_clear_demands_attention	terminal-util.c	/^terminal_util_x11_clear_demands_attention (GdkWindow *window)$/;"	f
+terminal_util_x11_get_net_wm_desktop	terminal-util.c	/^terminal_util_x11_get_net_wm_desktop (GdkWindow *window,$/;"	f
+terminal_util_x11_set_net_wm_desktop	terminal-util.c	/^terminal_util_x11_set_net_wm_desktop (GdkWindow *window,$/;"	f
+terminal_util_x11_window_is_minimized	terminal-util.c	/^terminal_util_x11_window_is_minimized (GdkWindow *window)$/;"	f
+terminal_window_accel_activate_cb	terminal-window.c	/^terminal_window_accel_activate_cb (GtkAccelGroup  *accel_group,$/;"	f	file:
+terminal_window_add_screen	terminal-window.c	/^terminal_window_add_screen (TerminalWindow *window,$/;"	f
+terminal_window_class_init	terminal-window.c	/^terminal_window_class_init (TerminalWindowClass *klass)$/;"	f	file:
+terminal_window_composited_changed_cb	terminal-window.c	/^terminal_window_composited_changed_cb (GdkScreen *screen,$/;"	f	file:
+terminal_window_create_new_terminal_action	terminal-window.c	/^terminal_window_create_new_terminal_action (TerminalWindow *window,$/;"	f	file:
+terminal_window_delete_event	terminal-window.c	/^terminal_window_delete_event (GtkWidget *widget,$/;"	f	file:
+terminal_window_destroyed	terminal-app.c	/^terminal_window_destroyed (TerminalWindow *window,$/;"	f	file:
+terminal_window_dispose	terminal-window.c	/^terminal_window_dispose (GObject *object)$/;"	f	file:
+terminal_window_encoding_list_changed_cb	terminal-window.c	/^terminal_window_encoding_list_changed_cb (TerminalApp *app,$/;"	f	file:
+terminal_window_finalize	terminal-window.c	/^terminal_window_finalize (GObject *object)$/;"	f	file:
+terminal_window_get_active	terminal-window.c	/^terminal_window_get_active (TerminalWindow *window)$/;"	f
+terminal_window_get_menubar_visible	terminal-window.c	/^terminal_window_get_menubar_visible (TerminalWindow *window)$/;"	f
+terminal_window_get_notebook	terminal-window.c	/^terminal_window_get_notebook (TerminalWindow *window)$/;"	f
+terminal_window_get_ui_manager	terminal-window.c	/^terminal_window_get_ui_manager (TerminalWindow *window)$/;"	f
+terminal_window_init	terminal-window.c	/^terminal_window_init (TerminalWindow *window)$/;"	f	file:
+terminal_window_list_screen_containers	terminal-window.c	/^terminal_window_list_screen_containers (TerminalWindow *window)$/;"	f
+terminal_window_map_event	terminal-window.c	/^terminal_window_map_event (GtkWidget    *widget,$/;"	f	file:
+terminal_window_move_screen	terminal-window.c	/^terminal_window_move_screen (TerminalWindow *source_window,$/;"	f
+terminal_window_new	terminal-window.c	/^terminal_window_new (void)$/;"	f
+terminal_window_profile_list_changed_cb	terminal-window.c	/^terminal_window_profile_list_changed_cb (TerminalApp *app,$/;"	f	file:
+terminal_window_realize	terminal-window.c	/^terminal_window_realize (GtkWidget *widget)$/;"	f	file:
+terminal_window_remove_screen	terminal-window.c	/^terminal_window_remove_screen (TerminalWindow *window,$/;"	f
+terminal_window_save_state	terminal-window.c	/^terminal_window_save_state (TerminalWindow *window,$/;"	f
+terminal_window_screen_changed	terminal-window.c	/^terminal_window_screen_changed (GtkWidget *widget,$/;"	f	file:
+terminal_window_screen_update	terminal-window.c	/^terminal_window_screen_update (TerminalWindow *window,$/;"	f	file:
+terminal_window_set_is_restored	terminal-window.c	/^terminal_window_set_is_restored (TerminalWindow *window)$/;"	f
+terminal_window_set_menubar_visible	terminal-window.c	/^terminal_window_set_menubar_visible (TerminalWindow *window,$/;"	f
+terminal_window_set_size	terminal-window.c	/^terminal_window_set_size (TerminalWindow *window,$/;"	f
+terminal_window_set_size_force_grid	terminal-window.c	/^terminal_window_set_size_force_grid (TerminalWindow *window,$/;"	f
+terminal_window_show	terminal-window.c	/^terminal_window_show (GtkWidget *widget)$/;"	f	file:
+terminal_window_size_allocate_cb	terminal-window.c	/^terminal_window_size_allocate_cb (GtkWidget *widget,$/;"	f	file:
+terminal_window_size_request_cb	terminal-window.c	/^terminal_window_size_request_cb (GtkWidget *widget,$/;"	f	file:
+terminal_window_state_event	terminal-window.c	/^terminal_window_state_event (GtkWidget            *widget,$/;"	f	file:
+terminal_window_switch_screen	terminal-window.c	/^terminal_window_switch_screen (TerminalWindow *window,$/;"	f
+terminal_window_update_copy_sensitivity	terminal-window.c	/^terminal_window_update_copy_sensitivity (TerminalScreen *screen,$/;"	f	file:
+terminal_window_update_encoding_menu	terminal-window.c	/^terminal_window_update_encoding_menu (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_encoding_menu_active_encoding	terminal-window.c	/^terminal_window_update_encoding_menu_active_encoding (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_geometry	terminal-window.c	/^terminal_window_update_geometry (TerminalWindow *window)$/;"	f
+terminal_window_update_new_terminal_menus	terminal-window.c	/^terminal_window_update_new_terminal_menus (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_set_profile_menu	terminal-window.c	/^terminal_window_update_set_profile_menu (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_set_profile_menu_active_profile	terminal-window.c	/^terminal_window_update_set_profile_menu_active_profile (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_size_to_menu	terminal-window.c	/^terminal_window_update_size_to_menu (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_tabs_menu_sensitivity	terminal-window.c	/^terminal_window_update_tabs_menu_sensitivity (TerminalWindow *window)$/;"	f	file:
+terminal_window_update_zoom_sensitivity	terminal-window.c	/^terminal_window_update_zoom_sensitivity (TerminalWindow *window)$/;"	f	file:
+terminal_window_uses_argb_visual	terminal-window.c	/^terminal_window_uses_argb_visual (TerminalWindow *window)$/;"	f
+terminal_window_window_manager_changed_cb	terminal-window.c	/^terminal_window_window_manager_changed_cb (GdkScreen *screen,$/;"	f	file:
+timestamp	terminal-screen.h	/^  guint32 timestamp;$/;"	m	struct:_TerminalScreenPopupInfo
+title	terminal-options.h	/^  char *title;$/;"	m	struct:__anon37
+transform_boolean	terminal-util.c	/^transform_boolean (gboolean input,$/;"	f	file:
+translate_document_list	eggdesktopfile.c	/^translate_document_list (EggDesktopFile *desktop_file, GSList *documents)$/;"	f	file:
+treeview_accel_changed_cb	terminal-accels.c	/^treeview_accel_changed_cb (GtkAccelGroup  *accel_group,$/;"	f	file:
+type	eggdesktopfile.c	/^  EggDesktopFileType  type;$/;"	m	struct:EggDesktopFile	file:
+ui_id	terminal-tabs-menu.c	/^	guint ui_id;$/;"	m	struct:_TerminalTabsMenuPrivate	file:
+ui_id	terminal-window.c	/^  guint ui_id;$/;"	m	struct:_TerminalWindowPrivate	file:
+ui_manager	terminal-window.c	/^  GtkUIManager *ui_manager;$/;"	m	struct:_TerminalWindowPrivate	file:
+unset_popup_info	terminal-window.c	/^unset_popup_info (TerminalWindow *window)$/;"	f	file:
+unsupported_option_callback	terminal-options.c	/^unsupported_option_callback (const gchar *option_name,$/;"	f	file:
+update_active_encodings_gconf	terminal-encoding.c	/^update_active_encodings_gconf (void)$/;"	f	file:
+update_color_scheme	terminal-screen.c	/^update_color_scheme (TerminalScreen *screen)$/;"	f	file:
+update_edit_menu_cb	terminal-window.c	/^update_edit_menu_cb (GtkClipboard *clipboard,$/;"	f	file:
+update_model_foreach	terminal-accels.c	/^update_model_foreach (GtkTreeModel *model,$/;"	f	file:
+update_pending_events	eggsmclient-xsmp.c	/^update_pending_events (EggSMClientXSMP *xsmp)$/;"	f	file:
+update_tab_visibility	terminal-window.c	/^update_tab_visibility (TerminalWindow *window,$/;"	f	file:
+uris_as_paths	terminal-window.c	/^  gboolean uris_as_paths;$/;"	m	struct:__anon28	file:
+url_regex_flavors	terminal-screen.c	/^static TerminalURLFlavour *url_regex_flavors;$/;"	v	file:
+url_regex_patterns	terminal-screen.c	/^static const TerminalRegexPattern url_regex_patterns[] = {$/;"	v	file:
+url_regexes	terminal-screen.c	/^static GRegex **url_regexes;$/;"	v	file:
+use_default_menubar_visibility	terminal-window.c	/^  guint use_default_menubar_visibility : 1;$/;"	m	struct:_TerminalWindowPrivate	file:
+use_factory	terminal-app.c	/^  gboolean use_factory;$/;"	m	struct:_TerminalApp	file:
+use_factory	terminal-options.h	/^  gboolean  use_factory;$/;"	m	struct:__anon36
+user_title	terminal-screen.c	/^  gboolean user_title; \/* title was manually set *\/$/;"	m	struct:_TerminalScreenPrivate	file:
+user_visible_name	terminal-accels.c	/^  const char *user_visible_name;$/;"	m	struct:__anon6	file:
+user_visible_name	terminal-accels.c	/^  const char *user_visible_name;$/;"	m	struct:__anon7	file:
+valid	terminal-encoding.h	/^  guint valid            : 1;$/;"	m	struct:__anon35
+validity_checked	terminal-encoding.h	/^  guint validity_checked : 1;$/;"	m	struct:__anon35
+values_equal	terminal-profile.c	/^values_equal (GParamSpec *pspec,$/;"	f	file:
+view_entries	terminal-accels.c	/^static KeyEntry view_entries[] =$/;"	v	file:
+view_fullscreen_toggled_callback	terminal-window.c	/^view_fullscreen_toggled_callback (GtkToggleAction *action,$/;"	f	file:
+view_menubar_toggled_callback	terminal-window.c	/^view_menubar_toggled_callback (GtkToggleAction *action,$/;"	f	file:
+view_zoom_in_callback	terminal-window.c	/^view_zoom_in_callback (GtkAction *action,$/;"	f	file:
+view_zoom_normal_callback	terminal-window.c	/^view_zoom_normal_callback (GtkAction *action,$/;"	f	file:
+view_zoom_out_callback	terminal-window.c	/^view_zoom_out_callback (GtkAction *action,$/;"	f	file:
+visible_name_entry_changed_cb	profile-editor.c	/^visible_name_entry_changed_cb (GtkEntry *entry,$/;"	f	file:
+waiting_to_emit_quit	eggsmclient-xsmp.c	/^  guint waiting_to_emit_quit : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+waiting_to_emit_quit_cancelled	eggsmclient-xsmp.c	/^  guint waiting_to_emit_quit_cancelled : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+waiting_to_save_myself	eggsmclient-xsmp.c	/^  guint waiting_to_save_myself : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+waiting_to_set_initial_properties	eggsmclient-xsmp.c	/^  guint waiting_to_set_initial_properties : 1;$/;"	m	struct:_EggSMClientXSMP	file:
+widget	terminal-util.c	/^  GtkWidget *widget;$/;"	m	struct:__anon27	file:
+widget_and_labels_set_sensitive	profile-editor.c	/^widget_and_labels_set_sensitive (GtkWidget *widget, gboolean sensitive)$/;"	f	file:
+widget_change_notify_cb	terminal-util.c	/^widget_change_notify_cb (PropertyChange *change)$/;"	f	file:
+widget_notify_id	terminal-util.c	/^  gulong widget_notify_id;$/;"	m	struct:__anon27	file:
+will_quit	eggsmclient-win32.c	/^  volatile gboolean will_quit;$/;"	m	struct:_EggSMClientWin32	file:
+will_quit	eggsmclient.h	/^  void	   (*will_quit)           (EggSMClient          *client,$/;"	m	struct:_EggSMClientClass
+window	terminal-screen.c	/^  TerminalWindow *window;$/;"	m	struct:_TerminalScreenPrivate	file:
+window	terminal-screen.h	/^  TerminalWindow *window;$/;"	m	struct:_TerminalScreenPopupInfo
+window	terminal-tabs-menu.c	/^	TerminalWindow *window;$/;"	m	struct:_TerminalTabsMenuPrivate	file:
+windows	terminal-app.c	/^  GList *windows;$/;"	m	struct:_TerminalApp	file:
+working_dir	terminal-options.h	/^  char *working_dir;$/;"	m	struct:__anon37
+xsmp_die	eggsmclient-xsmp.c	/^xsmp_die (SmcConn   smc_conn,$/;"	f	file:
+xsmp_interact	eggsmclient-xsmp.c	/^xsmp_interact (SmcConn   smc_conn,$/;"	f	file:
+xsmp_save_complete	eggsmclient-xsmp.c	/^xsmp_save_complete (SmcConn   smc_conn,$/;"	f	file:
+xsmp_save_yourself	eggsmclient-xsmp.c	/^xsmp_save_yourself (SmcConn   smc_conn,$/;"	f	file:
+xsmp_shutdown_cancelled	eggsmclient-xsmp.c	/^xsmp_shutdown_cancelled (SmcConn   smc_conn,$/;"	f	file:
+zoom	terminal-options.h	/^  double    zoom;$/;"	m	struct:__anon36
+zoom	terminal-options.h	/^  double zoom;$/;"	m	struct:__anon37
+zoom_factors	terminal-window.c	/^static const double zoom_factors[] = {$/;"	v	file:
+zoom_set	terminal-options.h	/^  guint zoom_set : 1;$/;"	m	struct:__anon37
