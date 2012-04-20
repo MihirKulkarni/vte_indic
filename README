@@ -1,0 +1,26 @@
+	The main objective of our project was to develop support for Devanagari Script in the
+GNOME-terminal. This involved improving the rendering of Devanagari Script which at
+present is not proper.
+
+-----------------------ABSTRACT------------------------------
+
+	There are a wide range of users in the computer world. Computer users may or may not
+be well versed in English language. So there is need to make available software which have
+their GUI and/or instructions in local languages for people to make use of them. This
+will not only make it easy for the masses to use software but will also increase computer
+literacy in the country. Building new software with interfaces in various local languages
+is one of ways to achieve this. But, to understand and modify existing free software
+available under GNU GPLv3 and similar licenses and port them into local languages is
+perhaps the best and the easiest way. The main advantage of this approach is that we
+already have very good quality software available for English which has been tested and
+changed to make it the perfect one. So instead of developing a new software right from
+scratch it is easier to modify this available software to provide Indic language support.
+With this approach in mind, we have selected the most widely used applications in the
+GNU/Linux environment which is the GNOME-terminal and vim-editor. There is very
+little support for local languages in the GNOME-terminal. Languages like the Devanagari
+script (Hindi and Marathi) have almost no support. Our aim is to make the GNOME-
+terminal available for people who know the Devanagari script.
+
+	The successful implementation of Devanagari script rendering in GNOME-terminal
+will help the developers from other language communities to implement support for their
+language also.
